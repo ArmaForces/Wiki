@@ -1,4 +1,10 @@
 <!-- docs/_sidebar.md -->
 
-* [Home](/)
-* [ACRE](acre.md)
+- **Poradniki**
+    - [ACRE](guides/acre.md)
+    - [Instalacja modów](guides/mods.md)
+- **Rozwiązywanie problemów**
+    - [ACRE](troubleshooting/acre.md)
+    - [Arma](troubleshooting/arma.md)
+    - [Mody](troubleshooting/mods.md)
+    - [TeamSpeak](troubleshooting/ts.md)
