@@ -9,3 +9,5 @@
     - [Arma](troubleshooting/arma.md)
     - [Mody](troubleshooting/mods.md)
     - [TeamSpeak](troubleshooting/ts.md)
+- **Mody**
+    - [ArmaForces - Mods](mods/armaforces_mods.md)
