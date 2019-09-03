@@ -11,4 +11,4 @@
     - [TeamSpeak](troubleshooting/ts.md)
 - **Mody**
     - [ArmaForces - Mods](mods/armaforces_mods.md)
-    - [ArmaForces - Unsung Stuff](mods/armaforces_unsung_stuff.md)
+    - [Pozostałe addony](mods/other_addons.md)
