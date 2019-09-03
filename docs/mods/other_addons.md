@@ -16,7 +16,7 @@ Addon dodaje zdolność VTOL do [AV-8B Harrier 2](https://steamcommunity.com/wor
 Addon naprawiający wartości pancerza budynków z moda [JBAD](https://steamcommunity.com/workshop/filedetails/?id=520618345), używanych m.in. na [Lythium](https://steamcommunity.com/sharedfiles/filedetails/?id=909547724). [Link](https://steamcommunity.com/sharedfiles/filedetails/?id=1781106281)
 
 ## ArmaForces - No Actions
-Addon usuwa niepotrzebne akcje z menu akcji.
+Addon usuwa niepotrzebne akcje z menu akcji. [Link](https://steamcommunity.com/sharedfiles/filedetails/?id=1682845363)
 
 - Wyskocz (domyślnie włączone), (nie działa dla akcji dodanych skryptem, np. przez ACE do helikopterów)
 - Przezbrój (do włączenia w ustawieniach CBA)
