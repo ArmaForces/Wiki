@@ -29,6 +29,14 @@ Zmienia pętlę aktualizującą mapę w Strykerze z RHS:USAF tak, by zlikwidowa�
 ## ArmaForces - RobotoFont (FFAA Fix)
 Mod na hiszpańskie siły zbrojne - [FFAA](https://steamcommunity.com/workshop/filedetails/?id=820994401) powoduje zmianę czcionki na Purista, która nie współpracuje najlepiej z interfejsem przygotowanym pod Roboto. Ten addon przywraca domyślną czcionkę Arma 3. [Link](https://steamcommunity.com/sharedfiles/filedetails/?id=1687770349)
 
+## ArmaForces - SoundSystems
+Mody z serii [ArmaForces - SoundSystems](https://steamcommunity.com/workshop/filedetails/?id=1708844156) zawierają tematyczną muzykę wpasowującą się w nasz styl gry oraz ogrywany temat. Dostępne moduły to:
+
+- Main
+- OFP
+- Vietnam
+- WW2
+
 ## ArmaForces - Unsung Stuff
 Addon zawierający poprawki do Unsunga. [Link](https://steamcommunity.com/sharedfiles/filedetails/?id=1643338196)
 
