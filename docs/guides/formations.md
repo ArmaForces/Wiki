@@ -7,6 +7,7 @@ Formacje służą do rozmieszczenia ludzi tak by jak najlepiej pod względem tak
 Domyślnie dowódca kieruje formacją i ona powinna ustawiać się wokół niego. Nie należy się skupiać na tym by formacja wyglądała perfekcyjnie jak na obrazku - należy dostosowywać się do terenu i sytuacji. Dowódca powinien kontrolować szyk i zwracać uwagę gdy ktoś oddali się za daleko. Formacje najlepiej ustawiać według ustandaryzowanego wzoru:
 
 `zwrócenie się do elementu -> nazwa formacji -> kierunek -> szczegóły dotyczące rozstawienia konkretnych jednostek`
+
 np.
 
 `Alpha 1, formacja klin na azymut 37, niebiescy po lewej, zieloni po prawej.`
