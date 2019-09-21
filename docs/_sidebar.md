@@ -3,6 +3,7 @@
 - **Poradniki**
     - [ArmaForces 101](guides/101.md)
     - [ACRE](guides/acre.md)
+    - [Formacje](guides/formations.md)
     - [Instalacja modów](guides/mods.md)
 - **Rozwiązywanie problemów**
     - [ACRE](troubleshooting/acre.md)
