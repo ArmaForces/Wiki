@@ -8,6 +8,7 @@ Domyślnie dowódca kieruje formacją i ona powinna ustawiać się wokół niego
 
 `zwrócenie się do elementu -> nazwa formacji -> kierunek -> szczegóły dotyczące rozstawienia konkretnych jednostek`
 np.
+
 `Alpha 1, formacja klin na azymut 37, niebiescy po lewej, zieloni po prawej.`
 `Alpha, formacja linia, kierunek północ, Alpha 1 na zachodzie, Alpha 2 na wschodzie.`
 
