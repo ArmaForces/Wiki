@@ -15,7 +15,7 @@ np.
 
 ## Klin
 [Klin](_data/klin.png)
-Uniwersalna i łatwa w utworzeniu i utrzymaniu formacja. Pozwala na dobrą oberwacje i prowadzenie ognia na front i flanki. Łatwo ją dostosować do sytuacji. Bardzo dobra na poruszanie się po otwartym terenie.
+Uniwersalna, łatwa w utworzeniu i utrzymaniu formacja. Pozwala na dobrą oberwacje i prowadzenie ognia na front i flanki. Łatwo ją dostosować do sytuacji. Bardzo dobra na poruszanie się po otwartym terenie.
 
 ## Linia
 [Linia](_data/linia.png)
