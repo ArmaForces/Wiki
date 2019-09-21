@@ -21,7 +21,7 @@ Uniwersalna, łatwa w utworzeniu i utrzymaniu formacja. Pozwala na dobrą oberwa
 
 ## Linia
 ![Linia](_data/linia.png)
-skupia całą siłę ognia na front. Najlepiej stosowana przy szturmowaniu znanych pozycji wroga lub w określonych sytuacjach, np. ustawianiu się na granicy lasu przy drzewach.
+Linia skupia całą siłę ognia na front. Najlepiej stosowana przy szturmowaniu znanych pozycji wroga lub w określonych sytuacjach, np. ustawianiu się na granicy lasu przy drzewach.
 
 ## Kolumna
 ![Kolumna](_data/kolumna.png)
