@@ -30,9 +30,9 @@ Linia skupia całą siłę ognia na front. Najlepiej stosowana przy szturmowaniu
 
 Prosta formacja, na tak zwanego "gęsiego". Ma ograniczone zastosowanie. Bardzo słaba obserwacja i siła ognia na froncie - nie powinna być stosowana gdy spodziewamy się kontaktu od przodu i przy atakowaniu wrogich pozycji. Bardzo dobra obrona z flanek - cała sekcja może szybko sie obrócić w razie zagrożenia.
 Najlepiej stosowana w przypadkach:
--ograniczonej widoczności (dżungla, gęsta mgła)
--przechodzenia przez pole minowe
--poruszania się przy osłonie (murek, wzdłuż rowu, przez dolinę)
+- ograniczonej widoczności (dżungla, gęsta mgła)
+- przechodzenia przez pole minowe
+- poruszania się przy osłonie (murek, wzdłuż rowu, przez dolinę)
 
 ## Kolumna przestawna
 ![Kolumna przestawna](../_data/mod/kolumna_przestawna.png)
