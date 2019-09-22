@@ -11,6 +11,7 @@ Domyślnie dowódca kieruje formacją i ona powinna ustawiać się wokół niego
 np.
 
 `Alpha 1, formacja klin na azymut 37, niebiescy po lewej, zieloni po prawej.`
+
 `Alpha, formacja linia, kierunek północ, Alpha 1 na zachodzie, Alpha 2 na wschodzie.`
 
 !> Zależnie od źródeł nazwy formacji mogą się różnić. W poradniku zostały użyte nazwy najczęściej stosowane w naszej grupie.
