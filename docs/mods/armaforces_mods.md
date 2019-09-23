@@ -97,13 +97,20 @@ Dodaje insygnia na mundurach graczy mające na celu ułatwić identyfikację dru
 
 Moduł daje możliwość ustawienia insygniów drużyny lub indywidualnej jednostki z poziomu edytora misji. Aby to zrobić należy otworzyć panel atrybutów grupy/jednostki.
 
-[Atrybuty grupy](_data/af_mods_insignia_group.png)
+<center>
 
-[Atrybuty jednostki](_data/af_mods_insignia_unit.png)
+![Atrybuty grupy](../_data/mod/af_mods_insignia_group.png)
+
+![Atrybuty jednostki](../_data/mod/af_mods_insignia_unit.png)
+</center>
 
 Jeżeli jednostka ma przydzielone indywidualne insygnia to może wybrać je z menu zarządzania drużyną w menu interakcji ACE. W takim przypadku indywidualne insygnia mają priorytet nad insygniami drużynowymi.
 
-[Wybieranie insygniów przez ACE menu](_data/af_mods_insignia_ace_selection.png)
+<center>
+
+![Wybieranie insygniów przez ACE menu](../_data/mod/af_mods_insignia_ace_selection.png)
+
+</center>
 
 ### Ustawienia Addonów
 
