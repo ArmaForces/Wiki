@@ -11,3 +11,7 @@ Jeśli masz to spróbuj go zrestartować, czasami się wiesza.
 
 ## Krótkie radio mi nie działa.
 Upewnij się, że przyczepiłeś uchwyt z powrotem po zmianie bloku.
+
+## ACRE nie chce się połączyć z TSem
+Upewnij się, że masz włączony plugin w TS.
+Jeżeli włączasz TS jako administrator to nie rób tego.
