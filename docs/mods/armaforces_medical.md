@@ -9,26 +9,36 @@
 - Dostosowany do współpracy z ADV ACE CPR
 
 ## Bandaże
-Bandaże mają wydłużony czas po którym ulegają otwarciu, może on wynosić nawet ponad 20 minut dla dobrej kombinacji bandaż-rana. Oprócz tego mają znacznie zwiększoną efektywność pokrywania ran w stosunku do domyślnych wartości w ACE. Tabela przedstawia efektywność bandaży dla odpowiednich ran.
+Bandaże mają wydłużony czas po którym ulegają otwarciu, może on wynosić do 30 minut dla dobrej kombinacji bandaż-rana. Oprócz tego mają znacznie zwiększoną efektywność pokrywania ran w stosunku do domyślnych wartości w ACE. Tabela przedstawia efektywność bandaży dla odpowiednich ran.
 
-| Rana\Bandaż | Elastyczny | Jałowy | QuikClot | Uciskowy |
-|-------------|------------|--------|----------|----------|
-| Otarcie     | +          | +++    | +        | +        |
-| Rozerwana   | +++        | +      | +        | +        |
-| Stłuczenie  | +++        | +      | +        | +        |
-| Cięta       | +          | +++    | +        | +        |
-| Zgniecenie  | +++        | +      | +        | +        |
-| Szarpana    | +          | +++    | +        | +        |
-| Kłuta       | ++         | ++     | +++      | +++      |
-| Postrzałowa | ++         | ++     | +++      | +++      |
+### Tabela efektywności bandaży
 
-Efektywności bandaży (w plusach) można odszyfrować zgodnie z poniższą tabelą, zawierającą zakres czasu, po którym może otworzyć się rana i kolejno ile ran danej wielkości można załatać jednym bandażem. W przypadku czasu (podany jest w minutach) są to tylko orientacyjne wartości, ze względu na dużą liczbę kombinacji. Warto dodać, że dla wszystkich bandaży istnieje szansa (całkiem duża, rosnąca wraz z efektywnością) na to, że bandaż nigdy się nie otworzy.
+`++` = Super | `+` = Zwiększona | Brak = Standardowa
 
-| Efektywność | Czas  | Duże | Średnie | Małe |
-|-------------|-------|------|---------|------|
-| +           | 2-5   | 10   | 9       | 8    |
-| ++          | 5-10  | 6    | 5       | 4    |
-| +++         | 10-60 | 4    | 3       | 2    |
+| Rana\Bandaż | Jałowy | Elastyczny | Uciskowy | QuikClot |
+|:-----------:|:------:|:----------:|:--------:|:--------:|
+|   Otarcie   |   ++   |            |          |          |
+|  Rozerwana  |        |     ++     |          |          |
+|  Stłuczenie |        |     ++     |          |          |
+|  Zgniecenie |        |     ++     |          |          |
+|    Cięta    |   ++   |            |          |          |
+|   Szarpana  |   ++   |            |          |          |
+| Postrzałowa |    +   |      +     |    ++    |    ++    |
+|    Kłuta    |    +   |      +     |    ++    |    ++    |
+
+Efektywności bandaży (w plusach) można odszyfrować zgodnie z poniższą tabelą, zawierającą:
+
+- zakres czasu, po którym może otworzyć się rana (przedział od wartości minimalnej do maksymalnej)
+- szansę, że otworzy się w tym czasie (jeśli się nie otworzy w tym czasie to nigdy się nie otworzy)
+- kolejno ile ran danej wielkości można załatać jednym bandażem
+
+| Efektywność           |      | +    | ++    |
+|-----------------------|:----:|:----:|:-----:|
+| Czas otwierania (min) | 5-10 | 6-20 | 10-30 |
+| Szansa otwarcia       | 0.4  | 0.3  | 0.1   |
+| Ef. Duże              | 10   | 6    | 4     |
+| Ef. Średnie           | 9    | 5    | 3     |
+| Ef. Małe              | 8    | 4    | 2     |
 
 ## Walka z bólem
 
