@@ -11,6 +11,6 @@
     - [Mody](troubleshooting/mods.md)
     - [TeamSpeak](troubleshooting/ts.md)
 - **Mody**
-    - [ArmaForces - ACE Medical](mods/armaforces_ace_medical.md)
+    - [ArmaForces - Medical](mods/armaforces_medical.md)
     - [ArmaForces - Mods](mods/armaforces_mods.md)
     - [Pozostałe addony](mods/other_addons.md)
