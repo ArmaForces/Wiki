@@ -1,4 +1,4 @@
-# ArmaForces - ACE Medical
+# ArmaForces - Medical
 
 ## Główne zmiany
 
@@ -30,28 +30,15 @@ Efektywności bandaży (w plusach) można odszyfrować zgodnie z poniższą tabe
 | ++          | 5-10  | 6    | 5       | 4    |
 | +++         | 10-60 | 4    | 3       | 2    |
 
-## Medykamenty i strzykawki
+## Walka z bólem
 
-Tabela nowych strzykawek:
+Osoby przytomne mogą używać nowego środka przeciwbólowego - Apapu. Został on poprawiony w stosunku do poprzedniej wersji i teraz powinien wystarczać na dłużej. Nie można go też już podawać nieprzytomnym, więc morfina wciąż ma pole do popisu. Poniżej porównanie obu środków przeciwbólowych.
 
-| Efektywność | Czas    | Użycie                                                      | Dodatkowe informacje                                                                                                                                   |
-|-------------|---------|-------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Adenozyna   | 10 s    | Zatrzymuje tętno i próbuje przywrócić normalne              | 98% szansy na sukces gdy pacjent jest całkowicie zdrowy. Stopniowo maleje do minimum 50% gdy występuje obfite krwawienie, niskie ciśnienie i duży ból. |
-| Adrenalina  | 2-5 min | Natychmiastowo podnosi tętno i opór obwodowy                | Domyślny opór obwodowy wynosi 100, 1x adrenalina dodaje 50. Bez zmiany pozostałych parametrów daje to 50% zwiększone ciśnienie.                        |
-| Apap        | 5 min   | Używany do walki z małym bólem                              | Brak efektów ubocznych w przeciwieństwie do Fentanylu i Morfiny                                                                                        |
-| Atropina    | 2 min   | Podnosi tętno kosztem niewielkiego spadku ciśnienia         |                                                                                                                                                        |
-| Fentanyl    | 10 min  | Używany do walki z olbrzymim bólem                          | Efekt uboczny w postaci obniżonego tętna.                                                                                                              |
-| Morfina     | 60 min  | Używana do walki z dużym bólem                              | Efekt uboczny w postaci obniżonego tętna.                                                                                                              |
-| Nalokson    | 2 min   | Używany by zwalczać skutki przedawkowania fentanylu/morfiny |                                                                                                                                                        |
-
-## Plany rozwoju
-
-### Aktualnie zawieszone ze względu na nowy medyczny ACE
-
-- Ketamina
-- Wódka
-- Nitrogliceryna
-
-## Znane błędy
-
-- Adenozyna działa na zastazowane kończyny
+| Cecha                     | Apap                   | Morfina                       |
+|---------------------------|------------------------|-------------------------------|
+| Maksymalny czas działania | 10 min                 | 30 min                        |
+| Opóźnienie działania      | 2 min                  | 0.5 min                       |
+| Siła przeciwbólowa        | 0.6                    | 0.8                           |
+| Zastosowanie              | Ból u przytomnych osób | Duży ból lub u nieprzytomnych |
+| Efekty uboczne            | Brak                   | Obniżone tętno                |
+| Ryzyko nieprzytomności    | Pomijalne              | Wysokie, wystarczą 2 użycia   |
