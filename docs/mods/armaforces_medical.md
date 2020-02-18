@@ -2,11 +2,9 @@
 
 ## Główne zmiany
 
-- Szybsze i wytrzymalsze bandażowanie
+- Wytrzymalsze bandaże
 - Wszystkie akcje medyczne zajmują mniej czasu
-- Szybsze szycie (domyślnie szybsze niż w ACE, medycy szyją dwukrotnie szybciej, doktorzy czterokrotnie)
 - Bardziej przyjazny graczom system medyczny (nie trzeba się tak często bandażować i wystarczy jeść Apap, którym nie można się zabić)
-- Dostosowany do współpracy z ADV ACE CPR
 
 ## Bandaże
 Bandaże mają wydłużony czas po którym ulegają otwarciu, może on wynosić do 30 minut dla dobrej kombinacji bandaż-rana. Oprócz tego mają znacznie zwiększoną efektywność pokrywania ran w stosunku do domyślnych wartości w ACE. Tabela przedstawia efektywność bandaży dla odpowiednich ran.
