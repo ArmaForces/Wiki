@@ -50,3 +50,13 @@ Osoby przytomne mogą używać nowego środka przeciwbólowego - Apapu. Został 
 | Zastosowanie              | Ból u przytomnych osób | Duży ból lub u nieprzytomnych |
 | Efekty uboczne            | Brak                   | Obniżone tętno                |
 | Ryzyko nieprzytomności    | Pomijalne              | Wysokie, wystarczą 2 użycia   |
+
+## Opaski uciskowe
+
+Opaski uciskowe (znane też jako stazy, tourniquets) pozwalają na zatamowanie krwawienia z kończyn pacjenta.
+
+- zakładane tylko na ręce i nogi,
+- drastycznie szybsze w użyciu od bandażowania (kupują czas medykowi na opatrzenie torsu i głowy, piechocie pozwalają na nieprzerwane prowadzenie ognia w przypadku obrażeń kończyn),
+- wielokrotnego użytku - po ściągnięciu wracają do ekwipunku ściągającego,
+- po kilku minutach od założenia powodują narastający ból,
+- wlewy medyczne (krew, morfina) nie przynoszą efektu przy podaniu drogą zastazowanej kończyny.
