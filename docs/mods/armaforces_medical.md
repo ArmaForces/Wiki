@@ -53,7 +53,7 @@ Osoby przytomne mogą używać nowego środka przeciwbólowego - Apapu. Został 
 
 ## Opaski uciskowe
 
-Opaski uciskowe (znane tez jako stazy, tourniquets) pozwalają na zatamowanie krwawienia z kończyn pacjenta.
+Opaski uciskowe (znane też jako stazy, tourniquets) pozwalają na zatamowanie krwawienia z kończyn pacjenta.
 
 - zakładane tylko na ręce i nogi,
 - drastycznie szybsze w użyciu od bandażowania (kupują czas medykowi na opatrzenie torsu i głowy, piechocie pozwalają na nieprzerwane prowadzenie ognia w przypadku obrażeń kończyn),
