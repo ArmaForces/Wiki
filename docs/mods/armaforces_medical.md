@@ -87,10 +87,10 @@ Jeśli pacjent ma rozległe rany wielu kończyn warto zastosować stazy (tourniq
 
 ### 4. Reanimacja
 Sprawdź czy pacjent ma puls.  
-**Brak pulsu**  
+#### Brak pulsu 
 Oceń ilość krwi. Jeśli pacjent stracił dużo krwi warto przetoczyć rozpocząć przetaczanie krwi. Jeśli nie jesteś medykiem rozpocznij RKO (CPR).  
 Rozpocznij wykonywanie RKO (CPR). Po każdym wykonaniu sprawdź czy nie wrócił puls. Jeśli pacjentem zajmuje się więcej osób to podczas sprawdzania pulsu upewnij się, że nikt nie wykonuje RKO, ponieważ możesz odczytać fałszywy puls. Jeśli po kilku próbach puls nadal nie wraca przetocz więcej krwi.   
-**Jest puls**  
+#### Jest puls
 Jeśli puls jest słaby (<45BPM) zastosuj adrenalinę (Epinephrine).   
 Jeśli pacjent stracił dużo krwi i się nie budzi - przetocz krew.  
 Zaszyj rany. Jeśli nie jesteś medykiem lub nie masz zestawu do szycia regularnie sprawdzaj czy żaden z bandaży się nie otworzył. Pacjent może się wykrwawić i nikt może tego nie zauważyć.
