@@ -14,6 +14,7 @@ Bandaże mają wydłużony czas po którym ulegają otwarciu, może on wynosić 
 `++` = Super | `+` = Zwiększona | Brak = Standardowa
 
 # PL
+#### PL
 | Rana\Bandaż | Jałowy | Elastyczny | Uciskowy | QuikClot |
 |:-----------:|:------:|:----------:|:--------:|:--------:|
 |   Otarcie   |   ++   |            |          |          |
@@ -25,7 +26,7 @@ Bandaże mają wydłużony czas po którym ulegają otwarciu, może on wynosić 
 | Postrzałowa |    +   |      +     |    ++    |    ++    |
 |    Kłuta    |    +   |      +     |    ++    |    ++    |
 
-# ENG
+#### ENG
 | Rana\Bandaż | Field Dressing |  Elastic  |  Packing | QuikClot |
 |:-----------:|:--------------:|:---------:|:--------:|:--------:|
 |   Abrasion  |       ++       |           |          |          |
