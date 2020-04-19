@@ -13,6 +13,9 @@ Bandaże mają wydłużony czas po którym ulegają otwarciu, może on wynosić 
 
 `++` = Super | `+` = Zwiększona | Brak = Standardowa
 
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 | Rana\Bandaż | Jałowy | Elastyczny | Uciskowy | QuikClot |
 |:-----------:|:------:|:----------:|:--------:|:--------:|
 |   Otarcie   |   ++   |            |          |          |
@@ -24,6 +27,20 @@ Bandaże mają wydłużony czas po którym ulegają otwarciu, może on wynosić 
 | Postrzałowa |    +   |      +     |    ++    |    ++    |
 |    Kłuta    |    +   |      +     |    ++    |    ++    |
 
+<<<<<<< Updated upstream
+=======
+| Rana\Bandaż | Field Dressing |  Elastic  |  Packing | QuikClot |
+|:-----------:|:--------------:|:---------:|:--------:|:--------:|
+|   Abrasion  |       ++       |           |          |          |
+|  Avulsion   |                |     ++    |          |          |
+|  Contusion  |                |     ++    |          |          |
+|    Crush    |                |     ++    |          |          |
+|     Cut     |       ++       |           |          |          |
+|  Laceration |       ++       |           |          |          |
+|   Velocity  |        +       |      +    |    ++    |    ++    |
+|   Puncture  |        +       |      +    |    ++    |    ++    |
+
+>>>>>>> Stashed changes
 Efektywności bandaży (w plusach) można odszyfrować zgodnie z poniższą tabelą, zawierającą:
 
 - zakres czasu, po którym może otworzyć się rana (przedział od wartości minimalnej do maksymalnej)
@@ -60,3 +77,6 @@ Opaski uciskowe (znane też jako stazy, tourniquets) pozwalają na zatamowanie k
 - wielokrotnego użytku - po ściągnięciu wracają do ekwipunku ściągającego,
 - po kilku minutach od założenia powodują narastający ból,
 - wlewy medyczne (krew, morfina) nie przynoszą efektu przy podaniu drogą zastazowanej kończyny.
+<<<<<<< Updated upstream
+=======
+
