@@ -77,7 +77,7 @@ Opaski uciskowe (znane też jako stazy, tourniquets) pozwalają na zatamowanie k
 ## Procedura leczenia
 
 ### 1. Zadbaj o swoje bezpieczeństwo
-Nigdy nie rozpoczynaj leczenia na środku drogi pod ostrzałem. Postaraj się zadbać o bezpieczną pozycję do rozpoczęcia działań. 
+Nigdy nie rozpoczynaj leczenia na środku drogi pod ostrzałem. Postaraj się zadbać o bezpieczną pozycję do rozpoczęcia działań. W razie potrzeby można przeciągnąć lub przenieść rannego w bezpieczniejsze miejsce. Jeżeli chcemy go przenosić (co trwa dłużej niż przeciąganie) powinniśmy najpierw spróbować zastazować mu rany.
 
 ### 2 Nieprzytomny dowódca
 Jeśli dowódca jest nieprzytomny lub martwy podnieś jego radio. Do czasu odzyskania przytomności przez dowódcę przejmij dowodzenie lub wyznacz inną osobę do tej roli. 
