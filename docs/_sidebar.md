@@ -5,6 +5,7 @@
     - [ACRE](guides/acre.md)
     - [Arma](guides/arma.md)
     - [Formacje](guides/formations.md)
+    - [Robienie Misji](guides/missionmaking.md)
 - **Rozwiązywanie problemów**
     - [ACRE](troubleshooting/acre.md)
     - [Arma](troubleshooting/arma.md)
@@ -14,4 +15,3 @@
     - [ArmaForces - Medical](mods/armaforces_medical.md)
     - [ArmaForces - Mods](mods/armaforces_mods.md)
     - [Pozostałe addony](mods/other_addons.md)
-- [**Robienie Misji 101**](missionmaking/tutorial.md)

@@ -194,8 +194,7 @@ Następnie zadowolony odpalisz misję na serwerze i zobaczysz, że Twoje własne
 
 ## **Misja pokazowa**
 
-[DO POBRANIA TUTAJ](../_data/missionmaking/MisjaTutorial.zip)
-
+[DO POBRANIA TUTAJ](docs/_data/guides/missionmaking/MisjaTutorial.zip)
 
 Na potrzeby tego poradnika została przygotowana "misja", żeby bez nadmiaru informacji można było zapoznać się z częściami składowymi misji i pokazać że trzeba relatywnie niewiele aby misja była grywalna. Oczywiście, żeby to była dobra misja trzeba czegoś więcej niż kilku botów i zadań.
 
@@ -231,4 +230,4 @@ Wszystkie pliki `*.hpp` nie powinny być edytowane ani usuwane. Zwykłe usunięc
 | onPlayerRespawn.sqf  |                                       Skrypt wykonywany w momencie respawnu gracza                                       |
 | script_component.hpp |                                           Nie dotykaj, bo zepsujesz wszystko.                                            |
 |   stringtable.xml    |          Plik zmiennych tekstowych. W misji pokazowej zmieniona została nazwa misji i dodana zawartość intelu.           |
-|      tasks.hpp       |                     Tutaj definiujesz wszystkie zadania. Omówione [TUTAJ](#5-Przygotuj-celezadania)                     |
+|      tasks.hpp       |                     Tutaj definiujesz wszystkie zadania. Omówione [TUTAJ](_5-Przygotuj-celezadania)                     |
