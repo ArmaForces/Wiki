@@ -13,6 +13,7 @@ Bandaże mają wydłużony czas po którym ulegają otwarciu, może on wynosić 
 
 `++` = Super | `+` = Zwiększona | Brak = Standardowa
 
+#### PL
 | Rana\Bandaż | Jałowy | Elastyczny | Uciskowy | QuikClot |
 |:-----------:|:------:|:----------:|:--------:|:--------:|
 |   Otarcie   |   ++   |            |          |          |
@@ -23,6 +24,18 @@ Bandaże mają wydłużony czas po którym ulegają otwarciu, może on wynosić 
 |   Szarpana  |   ++   |            |          |          |
 | Postrzałowa |    +   |      +     |    ++    |    ++    |
 |    Kłuta    |    +   |      +     |    ++    |    ++    |
+
+#### ENG
+| Rana\Bandaż | Field Dressing |  Elastic  |  Packing | QuikClot |
+|:-----------:|:--------------:|:---------:|:--------:|:--------:|
+|   Abrasion  |       ++       |           |          |          |
+|  Avulsion   |                |     ++    |          |          |
+|  Contusion  |                |     ++    |          |          |
+|    Crush    |                |     ++    |          |          |
+|     Cut     |       ++       |           |          |          |
+|  Laceration |       ++       |           |          |          |
+|   Velocity  |        +       |      +    |    ++    |    ++    |
+|   Puncture  |        +       |      +    |    ++    |    ++    |
 
 Efektywności bandaży (w plusach) można odszyfrować zgodnie z poniższą tabelą, zawierającą:
 
@@ -50,3 +63,36 @@ Osoby przytomne mogą używać nowego środka przeciwbólowego - Apapu. Został 
 | Zastosowanie              | Ból u przytomnych osób | Duży ból lub u nieprzytomnych |
 | Efekty uboczne            | Brak                   | Obniżone tętno                |
 | Ryzyko nieprzytomności    | Pomijalne              | Wysokie, wystarczą 2 użycia   |
+
+## Opaski uciskowe
+
+Opaski uciskowe (znane też jako stazy, tourniquets) pozwalają na zatamowanie krwawienia z kończyn pacjenta.
+
+- zakładane tylko na ręce i nogi,
+- drastycznie szybsze w użyciu od bandażowania (kupują czas medykowi na opatrzenie torsu i głowy, piechocie pozwalają na nieprzerwane prowadzenie ognia w przypadku obrażeń kończyn),
+- wielokrotnego użytku - po ściągnięciu wracają do ekwipunku ściągającego,
+- po kilku minutach od założenia powodują narastający ból,
+- wlewy medyczne (krew, morfina) nie przynoszą efektu przy podaniu drogą zastazowanej kończyny.
+
+## Procedura leczenia
+
+### 1. Zadbaj o swoje bezpieczeństwo
+Nigdy nie rozpoczynaj leczenia na środku drogi pod ostrzałem. Postaraj się zadbać o bezpieczną pozycję do rozpoczęcia działań. W razie potrzeby można przeciągnąć lub przenieść rannego w bezpieczniejsze miejsce. Jeżeli chcemy go przenosić (co trwa dłużej niż przeciąganie) powinniśmy najpierw spróbować zastazować mu rany.
+
+### 2. Nieprzytomny dowódca
+Jeśli dowódca jest nieprzytomny lub martwy podnieś jego radio. Do czasu odzyskania przytomności przez dowódcę przejmij dowodzenie lub wyznacz inną osobę do tej roli. 
+
+### 3. Leczenie ran
+Jeśli pacjent ma rozległe rany wielu kończyn warto zastosować stazy (tourniquets) dopóki rany nie zostaną zabandażowane. Następnie zabandażuj wszystkie rany. Pacjent musi przestać krwawić. 
+
+### 4. Reanimacja
+Sprawdź czy pacjent ma puls.  
+#### Brak pulsu 
+Oceń ilość krwi. Jeśli pacjent stracił dużo krwi warto rozpocząć przetaczanie krwi.  
+Rozpocznij wykonywanie RKO (CPR). Po każdym wykonaniu sprawdź czy nie wrócił puls. Jeśli pacjentem zajmuje się więcej osób to podczas sprawdzania pulsu upewnij się, że nikt nie wykonuje RKO, ponieważ możesz odczytać fałszywy puls. Jeśli po kilku próbach puls nadal nie wraca przetocz więcej krwi.   
+Jeśli nie jesteś medykiem wykonuj RKO (CPR), aż do przybycia pomocy lub odzyskania pulsu. Każdorazowa akcja reanimacyjna wydłuża czas do śmierci. 
+#### Jest puls
+Jeśli puls jest słaby (<45BPM) zastosuj adrenalinę (Epinephrine).   
+Jeśli pacjent stracił dużo krwi i się nie budzi - przetocz krew.  
+Zaszyj rany. Jeśli nie jesteś medykiem lub nie masz zestawu do szycia regularnie sprawdzaj czy żaden z bandaży się nie otworzył. Pacjent może się wykrwawić i nikt może tego nie zauważyć.
+  

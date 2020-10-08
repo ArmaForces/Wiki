@@ -5,6 +5,7 @@
     - [ACRE](guides/acre.md)
     - [Arma](guides/arma.md)
     - [Formacje](guides/formations.md)
+    - [Robienie Misji](guides/missionmaking.md)
 - **Rozwiązywanie problemów**
     - [ACRE](troubleshooting/acre.md)
     - [Arma](troubleshooting/arma.md)
