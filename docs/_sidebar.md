@@ -6,6 +6,8 @@
     - [Arma](guides/arma.md)
     - [Formacje](guides/formations.md)
     - [Robienie Misji](guides/missionmaking.md)
+    - [Symlink - ArmA SSD, mody HDD](https://drive.google.com/file/d/1lWbsHtAd6JXc7X-ZiMUpWLUAMQwwKrw9/view)
+    - [Wzywanie artylerii](https://drive.google.com/file/d/17DtQ8Z-7kXtwKS9dSXE29iuRrXvg9yse/view)
 - **Rozwiązywanie problemów**
     - [ACRE](troubleshooting/acre.md)
     - [Arma](troubleshooting/arma.md)
