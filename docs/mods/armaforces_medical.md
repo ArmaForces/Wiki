@@ -7,6 +7,7 @@
 - Bardziej przyjazny graczom system medyczny (nie trzeba się tak często bandażować i wystarczy jeść Apap, którym nie można się zabić)
 
 ## Bandaże
+
 Bandaże mają wydłużony czas po którym ulegają otwarciu, może on wynosić do 30 minut dla dobrej kombinacji bandaż-rana. Oprócz tego mają znacznie zwiększoną efektywność pokrywania ran w stosunku do domyślnych wartości w ACE. Tabela przedstawia efektywność bandaży dla odpowiednich ran.
 
 ### Tabela efektywności bandaży
@@ -14,6 +15,7 @@ Bandaże mają wydłużony czas po którym ulegają otwarciu, może on wynosić 
 `++` = Super | `+` = Zwiększona | Brak = Standardowa
 
 #### PL
+
 | Rana\Bandaż | Jałowy | Elastyczny | Uciskowy | QuikClot |
 |:-----------:|:------:|:----------:|:--------:|:--------:|
 |   Otarcie   |   ++   |            |          |          |
@@ -26,6 +28,7 @@ Bandaże mają wydłużony czas po którym ulegają otwarciu, może on wynosić 
 |    Kłuta    |    +   |      +     |    ++    |    ++    |
 
 #### ENG
+
 | Rana\Bandaż | Field Dressing |  Elastic  |  Packing | QuikClot |
 |:-----------:|:--------------:|:---------:|:--------:|:--------:|
 |   Abrasion  |       ++       |           |          |          |
@@ -47,9 +50,9 @@ Efektywności bandaży (w plusach) można odszyfrować zgodnie z poniższą tabe
 |-----------------------|:----:|:----:|:-----:|
 | Czas otwierania (min) | 5-10 | 6-20 | 10-30 |
 | Szansa otwarcia       | 0.4  | 0.3  | 0.1   |
-| Ef. Duże              | 10   | 6    | 4     |
-| Ef. Średnie           | 9    | 5    | 3     |
-| Ef. Małe              | 8    | 4    | 2     |
+| Ef. Duże              | 4    | 6    | 10    |
+| Ef. Średnie           | 3    | 5    | 9     |
+| Ef. Małe              | 2    | 4    | 8     |
 
 ## Walka z bólem
 
@@ -77,22 +80,29 @@ Opaski uciskowe (znane też jako stazy, tourniquets) pozwalają na zatamowanie k
 ## Procedura leczenia
 
 ### 1. Zadbaj o swoje bezpieczeństwo
+
 Nigdy nie rozpoczynaj leczenia na środku drogi pod ostrzałem. Postaraj się zadbać o bezpieczną pozycję do rozpoczęcia działań. W razie potrzeby można przeciągnąć lub przenieść rannego w bezpieczniejsze miejsce. Jeżeli chcemy go przenosić (co trwa dłużej niż przeciąganie) powinniśmy najpierw spróbować zastazować mu rany.
 
 ### 2. Nieprzytomny dowódca
-Jeśli dowódca jest nieprzytomny lub martwy podnieś jego radio. Do czasu odzyskania przytomności przez dowódcę przejmij dowodzenie lub wyznacz inną osobę do tej roli. 
+
+Jeśli dowódca jest nieprzytomny lub martwy podnieś jego radio. Do czasu odzyskania przytomności przez dowódcę przejmij dowodzenie lub wyznacz inną osobę do tej roli.
 
 ### 3. Leczenie ran
-Jeśli pacjent ma rozległe rany wielu kończyn warto zastosować stazy (tourniquets) dopóki rany nie zostaną zabandażowane. Następnie zabandażuj wszystkie rany. Pacjent musi przestać krwawić. 
+
+Jeśli pacjent ma rozległe rany wielu kończyn warto zastosować stazy (tourniquets) dopóki rany nie zostaną zabandażowane. Następnie zabandażuj wszystkie rany. Pacjent musi przestać krwawić.
 
 ### 4. Reanimacja
-Sprawdź czy pacjent ma puls.  
-#### Brak pulsu 
-Oceń ilość krwi. Jeśli pacjent stracił dużo krwi warto rozpocząć przetaczanie krwi.  
-Rozpocznij wykonywanie RKO (CPR). Po każdym wykonaniu sprawdź czy nie wrócił puls. Jeśli pacjentem zajmuje się więcej osób to podczas sprawdzania pulsu upewnij się, że nikt nie wykonuje RKO, ponieważ możesz odczytać fałszywy puls. Jeśli po kilku próbach puls nadal nie wraca przetocz więcej krwi.   
-Jeśli nie jesteś medykiem wykonuj RKO (CPR), aż do przybycia pomocy lub odzyskania pulsu. Każdorazowa akcja reanimacyjna wydłuża czas do śmierci. 
+
+Sprawdź czy pacjent ma puls.
+
+#### Brak pulsu
+
+Oceń ilość krwi. Jeśli pacjent stracił dużo krwi warto rozpocząć przetaczanie krwi.
+Rozpocznij wykonywanie RKO (CPR). Po każdym wykonaniu sprawdź czy nie wrócił puls. Jeśli pacjentem zajmuje się więcej osób to podczas sprawdzania pulsuupewnij się, że nikt nie wykonuje RKO, ponieważ możesz odczytać fałszywy puls. Jeśli po kilku próbach puls nadal nie wraca przetocz więcej krwi.
+Jeśli nie jesteś medykiem wykonuj RKO (CPR), aż do przybycia pomocy lub odzyskania pulsu. Każdorazowa akcja reanimacyjna wydłuża czas do śmierci.
+
 #### Jest puls
-Jeśli puls jest słaby (<45BPM) zastosuj adrenalinę (Epinephrine).   
-Jeśli pacjent stracił dużo krwi i się nie budzi - przetocz krew.  
+
+Jeśli puls jest słaby (<45BPM) zastosuj adrenalinę (Epinephrine).
+Jeśli pacjent stracił dużo krwi i się nie budzi - przetocz krew.
 Zaszyj rany. Jeśli nie jesteś medykiem lub nie masz zestawu do szycia regularnie sprawdzaj czy żaden z bandaży się nie otworzył. Pacjent może się wykrwawić i nikt może tego nie zauważyć.
-  
