@@ -1,3 +1,3 @@
 - Translations
   - [Polish](/)
-  - [English](/en)
+  - [English](/en/home.md)
