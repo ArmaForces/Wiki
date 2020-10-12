@@ -5,9 +5,10 @@
     - [ACRE](guides/acre.md)
     - [Arma](guides/arma.md)
     - [Formacje](guides/formations.md)
+    - [Poradnik dla nowych](guides/rookieguide.md)
     - [Robienie Misji](guides/missionmaking.md)
-    - [Symlink - ArmA SSD, mody HDD](https://drive.google.com/file/d/1lWbsHtAd6JXc7X-ZiMUpWLUAMQwwKrw9/view)
-    - [Wzywanie artylerii](https://drive.google.com/file/d/17DtQ8Z-7kXtwKS9dSXE29iuRrXvg9yse/view)
+    - [Symlink - ArmA SSD, mody HDD](guides/symlinks)
+    - [Wzywanie artylerii](guides/artillerycall.md)
 - **Rozwiązywanie problemów**
     - [ACRE](troubleshooting/acre.md)
     - [Arma](troubleshooting/arma.md)
