@@ -194,7 +194,7 @@ Następnie zadowolony odpalisz misję na serwerze i zobaczysz, że Twoje własne
 
 ## **Misja pokazowa**
 
-[DO POBRANIA TUTAJ](docs/_data/guides/missionmaking/MisjaTutorial.zip)
+[DO POBRANIA TUTAJ](/_data/guides/missionmaking/MisjaTutorial.zip)
 
 Na potrzeby tego poradnika została przygotowana "misja", żeby bez nadmiaru informacji można było zapoznać się z częściami składowymi misji i pokazać że trzeba relatywnie niewiele aby misja była grywalna. Oczywiście, żeby to była dobra misja trzeba czegoś więcej niż kilku botów i zadań.
 
