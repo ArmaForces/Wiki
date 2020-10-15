@@ -50,9 +50,9 @@ Efektywności bandaży (w plusach) można odszyfrować zgodnie z poniższą tabe
 |-----------------------|:----:|:----:|:-----:|
 | Czas otwierania (min) | 5-10 | 6-20 | 10-30 |
 | Szansa otwarcia       | 0.4  | 0.3  | 0.1   |
-| Ef. Duże              | 4    | 6    | 10    |
+| Ef. Duże              | 2    | 4    | 8    |
 | Ef. Średnie           | 3    | 5    | 9     |
-| Ef. Małe              | 2    | 4    | 8     |
+| Ef. Małe              | 4    | 6    | 10     |
 
 ## Walka z bólem
 
