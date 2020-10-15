@@ -1,0 +1,3 @@
+- Translations
+  - [Polish](/)
+  - [English](/en/home.md)
