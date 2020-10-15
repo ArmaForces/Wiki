@@ -15,10 +15,15 @@
             name: "ArmaForces Wiki",
             repo: "https://github.com/ArmaForces/wiki",
             homepage: "main/101.md",
+            fallbackLanguages: ["en"],
             loadSidebar: true,
+            loadNavbar: true,
             subMaxLevel: 2,
             search: 'auto',
-            themeColor: "#2684C1"
+            themeColor: "#2684C1",
+            noCompileLinks: [
+                '/_data/.*'
+            ]
         }
     </script>
     <script src="//unpkg.com/docsify/lib/docsify.min.js" data-ga="UA-156451763-3"></script>
