@@ -40,7 +40,7 @@ These are the radios used mainly by support and command units.
 PRC-152 - medium-range (effective distance in perfect conditions - 5-7km, city range 3-5km)
 PRC-117F - long-range (effective distance in perfect conditions - all the way to the horizon, city range 10-20km)
 
-Neither of the radios has block setting. Only channels can be chosen, also do note that these channels are shared between the two radios - words spoken on channel 2 of PRC-152 will be heard on channel 2 of PRC-117f and vice versa!
+Neither of the radios has block setting. Only channels can be chosen, also do note that these channels are shared between the two radios - words spoken on channel 2 of PRC-152 will be heard on channel 2 of PRC-117F and vice versa!
 
 In most cases medium-range radio is used alongside short-range radio. To transmit on it use the combination of Left CTRL key and CAPS LOCK.
 
