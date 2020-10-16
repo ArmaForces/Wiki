@@ -2,9 +2,9 @@
 
 ## Main changes
 
-- dressings made more efficient
-- medical actions take less time to complete
-- medical system made friendlier to the players (no need to keep bandaging yourself as often as before, also munch on these apap pills with extra paracetamol to easily fight the pain without worry of losing consciousness)
+- Dressings made more efficient
+- Medical actions take less time to complete
+- Medical system made friendlier to the players (no need to keep bandaging yourself as often as before, also munch on these apap pills with extra paracetamol to easily fight the pain without worry of losing consciousness)
 
 ## Dressings
 
