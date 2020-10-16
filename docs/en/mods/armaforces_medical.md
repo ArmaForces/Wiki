@@ -43,14 +43,14 @@ The table below shows additional parameters worth taking into consideration when
 
 Conscious soldiers can use new pain suppressing medication - APAP pills. These little bad boys with high dose of paracetamol are safe to use - they pose little to no chance of overdosing. The drawback is that they can't be used on unconscious units.
 
-| Feature                            | Apap                   | Morphine                                 |
-|------------------------------------|------------------------|------------------------------------------|
-| Max efficiency time                | 10 min                 | 30 min                                   |
-| Delay before kicking in            | 2 min                  | 0.5 min                                  |
-| Painkilling strength               | 0.6                    | 0.8                                      |
-| Use case                           | Conscious units in pain| Great pain and unconscious units in pain |
-| Side effects                       | None                   | Lowers pulse                             |
-| Chance of inducing unconsciousness | Negligible             | Very high, 2 injections might lead to loss of consciousness|
+| Feature                            | Apap                    | Morphine                                                    |
+| ---------------------------------- | ----------------------- | ----------------------------------------------------------- |
+| Max efficiency time                | 10 min                  | 30 min                                                      |
+| Delay before kicking in            | 2 min                   | 0.5 min                                                     |
+| Painkilling strength               | 0.6                     | 0.8                                                         |
+| Use case                           | Conscious units in pain | Great pain and unconscious units in pain                    |
+| Side effects                       | None                    | Lowers pulse                                                |
+| Chance of inducing unconsciousness | Negligible              | Very high, 2 injections might lead to loss of consciousness |
 
 ## Tourniquets 
 
