@@ -116,7 +116,7 @@ W naszych misjach pojawiają się różne treści. Takie rzeczy można przygotow
 
 Czasem możesz mieć potrzebę (nawet w prostej misji) zrobić coś więcej niż tylko chodzenie i zabijanie. Przykładem w misji pokazowej jest przeszukiwanie przedmiotu w celu znalezienia intelu - plik `initPlayerLocal.sqf`:
 
-```SQF
+```sqf
 // Dodanie akcji przeszukania i znalezienia intelu dla przedmiotu z nazwą "Intel1Item"
 [
 Intel_1_Item,
@@ -142,7 +142,7 @@ false
 
 Dodatkowo w `initServer.sqf` znajduje się EventHandler kończący misję, który oczekuje na event `MissionEnd`:
 
-```SQF
+```sqf
 // Event kończący automatycznie misję. Można misję kończyć samemu komendą w konsoli
 ["MissionEnd", {
     titleText ["No i gitara", "PLAIN DOWN", 0.5];
@@ -154,19 +154,19 @@ Dodatkowo w `initServer.sqf` znajduje się EventHandler kończący misję, któr
 
 Można wymusić dowolny event ręcznie dzięki poniższej komendzie w konsoli:
 
-```SQF
+```sqf
 ["nazwa_eventu_który_zalicza_cel"] call CBA_fnc_serverEvent;
 ```
 
 W tym przypadku wystarczy:
 
-```SQF
+```sqf
 ["MissionEnd"] call CBA_fnc_serverEvent;
 ```
 
 Dzięki temu w ostateczności (lub jeżeli cel jest zbyt trudny do automatycznego zaliczenia), można samemu zaliczyć zadanie wpisując stosowną komendę w konsoli:
 
-```SQF
+```sqf
 "EveryoneWon" call BIS_fnc_endMission;
 ```
 
