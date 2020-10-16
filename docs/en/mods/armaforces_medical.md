@@ -31,13 +31,13 @@ The table below shows additional parameters worth taking into consideration when
 - chance of bleeding occurring in aforementioned timeframe (if bleeding doesn't happen under these terms, it won't happen at all),
 - how many wounds of specific size you can dress using specific dressing
 
-| Efficiency            |      | +    | ++    |
-|-----------------------|:----:|:----:|:-----:|
-| Bleeding timeframe    | 5-10 | 6-20 | 10-30 |
-| Bleeding chance       | 0.4  | 0.3  | 0.1   |
-| Large wounds          | 2    | 4    | 8     |
-| Medium wounds         | 3    | 5    | 9     |
-| Minor wounds          | 4    | 6    | 10    |
+| Efficiency         |       |   +   |  ++   |
+| ------------------ | :---: | :---: | :---: |
+| Bleeding timeframe | 5-10  | 6-20  | 10-30 |
+| Bleeding chance    |  0.4  |  0.3  |  0.1  |
+| Large wounds       |   2   |   4   |   8   |
+| Medium wounds      |   3   |   5   |   9   |
+| Minor wounds       |   4   |   6   |  10   |
 
 ## Fighting pain
 
