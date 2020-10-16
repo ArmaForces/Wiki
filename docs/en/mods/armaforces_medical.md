@@ -14,16 +14,16 @@ Dressings take longer to deplete their usefulness, it can take up to 30 minutes 
 
 `++` = Excellent | `+` = Increased | None = Standard
 
-| Wound\Dressing| Field Dressing |  Elastic  |  Packing | QuikClot |
-|:-----------:|:--------------:|:---------:|:--------:|:--------:|
-|   Abrasion  |       ++       |           |          |          |
-|  Avulsion   |                |     ++    |          |          |
-|  Contusion  |                |     ++    |          |          |
-|    Crush    |                |     ++    |          |          |
-|     Cut     |       ++       |           |          |          |
-|  Laceration |       ++       |           |          |          |
-|   Velocity  |        +       |      +    |    ++    |    ++    |
-|   Puncture  |        +       |      +    |    ++    |    ++    |
+| Wound\Dressing | Field Dressing | Elastic | Packing | QuikClot |
+| :------------: | :------------: | :-----: | :-----: | :------: |
+|    Abrasion    |       ++       |         |         |          |
+|    Avulsion    |                |   ++    |         |          |
+|   Contusion    |                |   ++    |         |          |
+|     Crush      |                |   ++    |         |          |
+|      Cut       |       ++       |         |         |          |
+|   Laceration   |       ++       |         |         |          |
+|    Velocity    |       +        |    +    |   ++    |    ++    |
+|    Puncture    |       +        |    +    |   ++    |    ++    |
 
 The table below shows additional parameters worth taking into consideration when applying specific dressing. 
 
@@ -90,4 +90,3 @@ Conduct CPR. After each turn check if the heartbeat came back. If there's more t
 If the heartbeat is low (<45 BPM) inject Epinephrine (aka Adrenaline).
 If the patient lost too much blood - blood transfusion. Duh.
 Suture his wounds. If you ain't no medic and you lack stitching kit then you have to regularly check up on his injuries - apply dressings when the wounds open up. Stay vigilant - forget about the poor soul, and he might just bleed out under your nose.
-
