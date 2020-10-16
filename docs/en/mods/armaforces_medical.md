@@ -56,11 +56,11 @@ Conscious soldiers can use new pain suppressing medication - APAP pills. These l
 
 These little devices are tight - literally. They can be put on all four limbs to stop bleeding occurring within correspondent part:
 
-- can be only applied to arms and legs,
-- drastically faster to apply than dressings, 
-- multiple use - after taking them off, they go back to the backpack of person detaching them from limbs,
-- after a few minutes they induce a growing pain on the person wearing them,
-- medical injections (e.g. blood, saline, morphine) are inefficient when injected through limbs with tourniquet applied
+- Can be only applied to arms and legs,
+- Drastically faster to apply than dressings, 
+- Multiple use - after taking them off, they go back to the backpack of person detaching them from limbs,
+- After a few minutes they induce a growing pain on the person wearing them,
+- Medical injections (e.g. blood, saline, morphine) are inefficient when injected through limbs with tourniquet applied.
 
 ## Saving pvt. Ryan - step by step
 
