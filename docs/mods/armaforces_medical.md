@@ -2,9 +2,9 @@
 
 ## Główne zmiany
 
-- Wytrzymalsze bandaże
+- Wytrzymalsze bandaże, nie trzeba już się ciągle bandażować
 - Wszystkie akcje medyczne zajmują mniej czasu
-- Bardziej przyjazny graczom system medyczny (nie trzeba się tak często bandażować i wystarczy jeść Apap, którym nie można się zabić)
+- Skuteczny i bezpieczny APAP przeciwbólowy, którego niesposób przedawkować
 
 ## Bandaże
 
@@ -27,19 +27,6 @@ Bandaże mają wydłużony czas po którym ulegają otwarciu, może on wynosić 
 | Postrzałowa |    +   |      +     |    ++    |    ++    |
 |    Kłuta    |    +   |      +     |    ++    |    ++    |
 
-#### ENG
-
-| Rana\Bandaż | Field Dressing |  Elastic  |  Packing | QuikClot |
-|:-----------:|:--------------:|:---------:|:--------:|:--------:|
-|   Abrasion  |       ++       |           |          |          |
-|  Avulsion   |                |     ++    |          |          |
-|  Contusion  |                |     ++    |          |          |
-|    Crush    |                |     ++    |          |          |
-|     Cut     |       ++       |           |          |          |
-|  Laceration |       ++       |           |          |          |
-|   Velocity  |        +       |      +    |    ++    |    ++    |
-|   Puncture  |        +       |      +    |    ++    |    ++    |
-
 Efektywności bandaży (w plusach) można odszyfrować zgodnie z poniższą tabelą, zawierającą:
 
 - zakres czasu, po którym może otworzyć się rana (przedział od wartości minimalnej do maksymalnej)
@@ -50,9 +37,9 @@ Efektywności bandaży (w plusach) można odszyfrować zgodnie z poniższą tabe
 |-----------------------|:----:|:----:|:-----:|
 | Czas otwierania (min) | 5-10 | 6-20 | 10-30 |
 | Szansa otwarcia       | 0.4  | 0.3  | 0.1   |
-| Ef. Duże              | 2    | 4    | 8    |
+| Ef. Duże              | 2    | 4    | 8     |
 | Ef. Średnie           | 3    | 5    | 9     |
-| Ef. Małe              | 4    | 6    | 10     |
+| Ef. Małe              | 4    | 6    | 10    |
 
 ## Walka z bólem
 
