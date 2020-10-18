@@ -1,10 +1,10 @@
-﻿# ArmaForces - Medical
+# ArmaForces - Medical
 
 ## Main changes
 
-- Dressings made more efficient
+- Dressings made more efficient, no need to keep bandaging yourself as often as before
 - Medical actions take less time to complete
-- Medical system made friendlier to the players (no need to keep bandaging yourself as often as before, also munch on these apap pills with extra paracetamol to easily fight the pain without worry of losing consciousness)
+- New safe and efficient painkiller - APAP, hard to overdose and easy to use
 
 ## Dressings
 
