@@ -11,7 +11,7 @@ Jeżeli nie planujesz wykorzystać którejś z properties (parametrów) usuń wp
 
 ## Parametry tasków (properties)
 
-Poniższy kod przedstawia możliwe do wykorzystania 
+Poniższy kod przedstawia możliwe do wykorzystania properties. Są częściami składowymi tasków, więc należy zrozumieć, za co poszczególne z nich odpowiadają - część z może być gorzej opisana, najlepiej jest wtedy zostawić wartość domyślną, która jest podana.
 
 ```sqf
 class CfgTasks {
@@ -23,7 +23,7 @@ class CfgTasks {
         Alternatywnym rozwiązaniem jest dostarczenie kooordynatów {x, y, z}.
         Jeżeli nie pojawi się żaden z tych wpisów, to task będzie na mapie niewidoczny.*/
         position[] = {}; // Do wykorzystania przy podawaniu konkretnych koordynatów
-        object = ""; // Do wykorzystanie dla obiektów
+        object = ""; // Do wykorzystanie dla nazw obiektów
         marker = ""; // Do wykorzystania dla nazw znaczników/markerów
         icon = "unknown"; // Icon TUTAJ POPRAWIC classname TUTAJ POPRAWIC from TUTAJ POPRAWIC https://community.bistudio.com/wiki/Arma_3_Tasks_Overhaul#Appendix TUTAJ POPRAWIC
         owners[] = { "true" }; // Domyślna wartość, wpisz "All"/"true", aby task był dostepny dla wszystkich grających.
@@ -31,10 +31,9 @@ class CfgTasks {
         priority = -1; // Domyślna wartość
         createdShowNotification = "false"; // Domyślna wartość
         visibleIn3D = "false"; // Domyślna wartość
+        parentTask = ""; // Do konfigurowania nazwy taska nadrzędnego
 
-        parentTask = ""; // Config entry name of parent task
-
-        // Pokazywanie/tworzenie taska
+        // Pokazywanie/tworzenie taska  TUTAJ TUTAJ TUTAJ TUTAJ TUTAJ
         conditionCodeShow = "true";
         conditionEventsShow[] = {}; // Domyślna wartość dla wszystkich conditionEvents*[] jest równa [] co przekłada się na {} w configu.
         conditionEventsShowRequired = 1; // Ile eventów musi się uruchomić, aby spełnić warunek eventów.
@@ -44,40 +43,40 @@ class CfgTasks {
         conditionCodeFailed = ""; // Task spartaczony
         conditionCodeCanceled = ""; // Task anulowany
         // Kody eventów CBA, które muszą być odpalone, żeby osiagnąć to co wyżej
-        conditionEventsSuccess[] = {};
-        conditionEventsFailed[] = {};
-        conditionEventsCanceled[] = {};
-        // And number required as in show but for all others 
-        conditionEventsSuccessRequired = 1;
+        conditionEventsSuccess[] = {}; // Task udany
+        conditionEventsFailed[] = {}; // Task spartaczony
+        conditionEventsCanceled[] = {}; // Task anulowany
+        // Ile eventów musi zakończyć się sukcesem/porażką/anulowaniem, TUTAJ TUTAJ TUTAJ TUTAJ TUTAJ 
+        conditionEventsSuccessRequired = 1; 
         conditionEventsFailedRequired = 1;
         conditionEventsCanceledRequired = 1;
 
         // Server CBA events called. If you want custom code just add appropriate CBA EH on server. // 
-        onShowEvents[] = {};
-        onSuccessEvents[] = {};
-        onFailedEvents[] = {};
-        onCanceledEvents[] = {};
+        onShowEvents[] = {}; // eventy wywoływane przy ujawnieniu taska
+        onSuccessEvents[] = {}; // eventy wywoływane przy sukcesie taska
+        onFailedEvents[] = {}; // eventy wywoływane przy spartaczeniu, porażce taska
+        onCanceledEvents[] = {}; // eventy wywoływane przy anulowaniu taska
     };
-    class FindHorse {
-        title = "Find Horse";
-        icon = "search";
-        parentTask = "Soapy_Mission_XD";
-        conditionCodeShow = "true";
-        conditionCodeSuccess = "unit1 distance horse < 50";
-        onSuccessEvents[] = { "horseFound" };
+    class FindHorse { // nazwa klasy
+        title = "Znajdź kunia"; // tytuł, nazwa taska
+        icon = "search"; // ikona, którą zobaczą na tasku gracze
+        parentTask = "Soapy_Mission_XD"; // Task nadrzędny, odwołanie następuje po nazwie klasy
+        conditionCodeShow = "true"; // Task będzie widoczny dla graczy na liście tasków
+        conditionCodeSuccess = "unit1 distance horse < 50"; // Sukces taska nastąpi w momencie, kiedy dystans między obiektami unit1 oraz horse < 50
+        onSuccessEvents[] = { "horseFound" }; // event wywoływany zaliczeniem taska (odwołanie nastąpi nieco niżej, czytajcie uważnie)
     };
-    class KnockHorse {
-        title = "Knock Horse";
-        icon = "attack";
-        object = "horse";
+    class KnockHorse { 
+        title = "Zwal kunia"; 
+        icon = "attack"; 
+        object = "horse"; // Wskazuje nazwę konkretnego obiektu, który będzie posiadał na sobie powyższą ikonę
         parentTask = "FindHorse";
 
-        conditionEventsShow[] = { "horseFound" };
-        conditionCodeSuccess = "!(alive horse)";
-        conditionCodeFailed = "!(alive unit1)";
+        conditionEventsShow[] = { "horseFound" }; // warunek, który musi być spełniony, by task się pojawił. Patrz linia 66
+        conditionCodeSuccess = "!(alive horse)"; // by zaszło zwycięstwo obiekt "horse" ma być martwy (negacją jest znak "!")
+        conditionCodeFailed = "!(alive unit1)"; // by zaszła porażka obiekt "unit1" ma być martwy
 
         onSuccessEvents[] = { "horseKnocked" };
-        onFailedEvents[] = { "playerDied" };
+        onFailedEvents[] = { "playerDied" }; // event wywołany porażką taska
     };
 };
 ```
