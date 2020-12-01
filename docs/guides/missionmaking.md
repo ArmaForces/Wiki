@@ -119,7 +119,7 @@ Czasem możesz mieć potrzebę (nawet w prostej misji) zrobić coś więcej niż
 ```sqf
 // Dodanie akcji przeszukania i znalezienia intelu dla przedmiotu z nazwą "Intel1Item"
 [
-Intel_1_Item,
+Intel1Item,
 "Przeszukaj",
 "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_search_ca.paa",
 "",
@@ -128,7 +128,7 @@ Intel_1_Item,
 {},
 {},
 {
-    ["Intel_1_Found"] call CBA_fnc_serverEvent;
+    ["Intel1Found"] call CBA_fnc_serverEvent;
     player createDiaryRecord ["Diary", ["Intel", LLSTRING(IntelContent)]];
 },
 {},
