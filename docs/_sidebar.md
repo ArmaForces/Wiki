@@ -17,4 +17,5 @@
 - **Mody**
     - [ArmaForces - Medical](mods/armaforces_medical.md)
     - [ArmaForces - Mods](mods/armaforces_mods.md)
+    - [ArmaForces - Tasks](mods/armaforces_tasks.md)
     - [Pozostałe addony](mods/other_addons.md)

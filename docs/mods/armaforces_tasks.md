@@ -2,18 +2,18 @@
 
 ## O taskach
 
-Framework zadań. Automatyczne tworzenie tasków (zadań) na bazie mission config. Wszystkie skrypty, warunki, i eventy uruchamiane są tylko po stronie serwera.
+Framework zadań - szkielet, w oparciu o który możecie tworzyć swoje super misje, które na pewno sprostają oczekiwaniom. Automatyczne tworzenie tasków (zadań) na bazie mission config. Wszystkie skrypty, warunki, i eventy uruchamiane są tylko po stronie serwera.
 
 ## Jak korzystać
 
 Utwórz klasę **CfgTasks** w pliku **description.ext** swojej misji i wypełnij ją taskami. Tyle wystarczy!
-Jeżeli nie planujesz wykorzystać którejś z properties (parametrów) usuń wpis, zamiast zostawiać go pustym. W innym wypadku mogą dziać się rzeczy niestworzone.
+Jeżeli nie planujesz wykorzystać którejś z properties (parametrów) usuń wpis, zamiast zostawiać go pustym. W innym wypadku mogą dziać się rzeczy niestworzone. Uwaga - są to rzeczy relatywnie skomplikowane dla zupełnego laika, więc należy je przeanalizować sumiennie i ze zrozumieniem - nie zalecam podchodzić do tego z podejściem "raz przeczytam i będę umiał", jeżeli masz zerowe doświadczenie.
 
 ## Parametry tasków (properties)
 
-Poniższy kod przedstawia możliwe do wykorzystania properties. Są częściami składowymi tasków, więc należy zrozumieć, za co poszczególne z nich odpowiadają - część z może być gorzej opisana, najlepiej jest wtedy zostawić wartość domyślną, która jest podana.
+Poniższy kod przedstawia możliwe do wykorzystania properties. Są częściami składowymi tasków, więc należy zrozumieć, za co poszczególne z nich odpowiadają - część z może być gorzej opisana, najlepiej jest wtedy zostawić wartość domyślną, która jest już podana przy zmiennych.
 
-```sqf
+```hpp
 class CfgTasks {
     class Soapy_Mission_XD {
         title = "Soapy Mission XD - Horse Knocked"; // Nazwa taska
@@ -25,38 +25,40 @@ class CfgTasks {
         position[] = {}; // Do wykorzystania przy podawaniu konkretnych koordynatów
         object = ""; // Do wykorzystanie dla nazw obiektów
         marker = ""; // Do wykorzystania dla nazw znaczników/markerów
-        icon = "unknown"; // Icon TUTAJ POPRAWIC classname TUTAJ POPRAWIC from TUTAJ POPRAWIC https://community.bistudio.com/wiki/Arma_3_Tasks_Overhaul#Appendix TUTAJ POPRAWIC
-        owners[] = { "true" }; // Domyślna wartość, wpisz "All"/"true", aby task był dostepny dla wszystkich grających.
+        icon = "unknown"; // jak ikonka ma wyglądać na mapie - https://community.bistudio.com/wiki/Arma_3_Task_Framework#Task_icons - tutaj znajdziecie wylistowane możliwości.
+        owners[] = { "true" }; // Domyślna wartość, wpisz "All"/"true", aby task był dostępny dla wszystkich grających.
         initialState = "CREATED"; // Domyślna wartość
         priority = -1; // Domyślna wartość
         createdShowNotification = "false"; // Domyślna wartość
         visibleIn3D = "false"; // Domyślna wartość
         parentTask = ""; // Do konfigurowania nazwy taska nadrzędnego
 
-        // Pokazywanie/tworzenie taska  TUTAJ TUTAJ TUTAJ TUTAJ TUTAJ
+        // Pokazywanie/tworzenie taska
         conditionCodeShow = "true";
         conditionEventsShow[] = {}; // Domyślna wartość dla wszystkich conditionEvents*[] jest równa [] co przekłada się na {} w configu.
-        conditionEventsShowRequired = 1; // Ile eventów musi się uruchomić, aby spełnić warunek eventów.
+        conditionEventsShowRequired = 1; // Ile eventów musi się uruchomić, aby spełnić warunek uruchomienia eventów.
 
         // Kody warunków, które musza zwracać true, aby zakończyć task
         conditionCodeSuccess = ""; // Task udany
         conditionCodeFailed = ""; // Task spartaczony
         conditionCodeCanceled = ""; // Task anulowany
-        // Kody eventów CBA, które muszą być odpalone, żeby osiagnąć to co wyżej
+        // Kody eventów CBA, które muszą być odpalone, żeby  zakończyć task
         conditionEventsSuccess[] = {}; // Task udany
         conditionEventsFailed[] = {}; // Task spartaczony
         conditionEventsCanceled[] = {}; // Task anulowany
-        // Ile eventów musi zakończyć się sukcesem/porażką/anulowaniem, TUTAJ TUTAJ TUTAJ TUTAJ TUTAJ 
-        conditionEventsSuccessRequired = 1; 
-        conditionEventsFailedRequired = 1;
-        conditionEventsCanceledRequired = 1;
+        // Ile eventów musi zakończyć się sukcesem/porażką/anulowaniem, aby dany task się uruchomił
+        conditionEventsSuccessRequired = 1;  // sukces
+        conditionEventsFailedRequired = 1; // porażka
+        conditionEventsCanceledRequired = 1; // anulowanie
 
-        // Server CBA events called. If you want custom code just add appropriate CBA EH on server. // 
+        // Wywoływanie eventów CBA. Wywoływanie customowych zdarzeń i kodu odbywa się przez dodanie odpowiednich event handlerów CBA na serwerze - patrz niżej.
         onShowEvents[] = {}; // eventy wywoływane przy ujawnieniu taska
         onSuccessEvents[] = {}; // eventy wywoływane przy sukcesie taska
         onFailedEvents[] = {}; // eventy wywoływane przy spartaczeniu, porażce taska
         onCanceledEvents[] = {}; // eventy wywoływane przy anulowaniu taska
     };
+
+    // definiujemy taski podrzędne
     class FindHorse { // nazwa klasy
         title = "Znajdź kunia"; // tytuł, nazwa taska
         icon = "search"; // ikona, którą zobaczą na tasku gracze
@@ -75,8 +77,45 @@ class CfgTasks {
         conditionCodeSuccess = "!(alive horse)"; // by zaszło zwycięstwo obiekt "horse" ma być martwy (negacją jest znak "!")
         conditionCodeFailed = "!(alive unit1)"; // by zaszła porażka obiekt "unit1" ma być martwy
 
-        onSuccessEvents[] = { "horseKnocked" };
-        onFailedEvents[] = { "playerDied" }; // event wywołany porażką taska
+        onSuccessEvents[] = { "horseKnocked" }; // event wywołany udanym zakończeniem taska, patrz niżej
+        onFailedEvents[] = { "playerDied" }; // event wywołany porażką taska, patrz niżej
     };
 };
 ```
+
+## Przykładowy niestandardowy event handling 
+
+```sqf
+// kod wprowadzamy w pliku initServer.sqf
+
+// Event handler dla udanego taska (onSuccessEvents)
+["horseKnocked", { // nazwa eventu wywoływana w description.ext
+    titleText ["You beat the horse!", "PLAIN DOWN", 0.5];
+    [{
+        "EveryoneWon" call BIS_fnc_endMission;
+    }, [], 3] call CBA_fnc_waitAndExecute;
+}] call CBA_fnc_addEventHandler;
+
+// Event handler dla nieudanego taska (onFailedEvents)
+["playerDied", { // nazwa eventu wywoływana w description.ext
+    titleText ["You died!", "PLAIN DOWN", 0.5];
+    [{
+        "EveryoneLost" call BIS_fnc_endMission;
+    }, [], 3] call CBA_fnc_waitAndExecute;
+}] call CBA_fnc_addEventHandler;
+```
+
+## Framework events
+
+```
+Event "afm_tasks_taskCreated"
+  Params
+  - 0: Task config name <STRING>
+Event "afm_tasks_taskStateChanged"
+  Params
+  - 0: Task config name <STRING>
+  - 1: New task state <STRING>
+```
+
+### Autorzy
+- [3Mydło3](http://github.com/3Mydlo3)
