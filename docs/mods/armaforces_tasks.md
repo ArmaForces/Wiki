@@ -23,15 +23,15 @@ class CfgTasks {
         Alternatywnym rozwiązaniem jest dostarczenie kooordynatów {x, y, z}.
         Jeżeli nie pojawi się żaden z tych wpisów, to task będzie na mapie niewidoczny.*/
         position[] = {}; // Do wykorzystania przy podawaniu konkretnych koordynatów
-        object = ""; // Do wykorzystanie dla nazw obiektów
-        marker = ""; // Do wykorzystania dla nazw znaczników/markerów
+        object = ""; // Do wykorzystanie dla nazwy obiektu
+        marker = ""; // Do wykorzystania dla nazwy znacznika/markera
         icon = "unknown"; // jak ikonka ma wyglądać na mapie - https://community.bistudio.com/wiki/Arma_3_Task_Framework#Task_icons - tutaj znajdziecie wylistowane możliwości.
-        owners[] = { "true" }; // Domyślna wartość, wpisz "All"/"true", aby task był dostępny dla wszystkich grających.
+        owners[] = { "true" }; // Domyślna wartość "All"/"true" pokazuje zadanie wszystkim graczom.
         initialState = "CREATED"; // Domyślna wartość
         priority = -1; // Domyślna wartość
         createdShowNotification = "false"; // Domyślna wartość
         visibleIn3D = "false"; // Domyślna wartość
-        parentTask = ""; // Do konfigurowania nazwy taska nadrzędnego
+        parentTask = ""; // Umożliwia wskazanie zadania nadrzędnego
 
         // Pokazywanie/tworzenie taska
         conditionCodeShow = "true";
@@ -46,10 +46,10 @@ class CfgTasks {
         conditionEventsSuccess[] = {}; // Task udany
         conditionEventsFailed[] = {}; // Task spartaczony
         conditionEventsCanceled[] = {}; // Task anulowany
-        // Ile eventów musi zakończyć się sukcesem/porażką/anulowaniem, aby dany task się uruchomił
-        conditionEventsSuccessRequired = 1;  // sukces
-        conditionEventsFailedRequired = 1; // porażka
-        conditionEventsCanceledRequired = 1; // anulowanie
+        // Ile eventów z odpowiadającej listy musi zostać wywołanych aby zadanie zostało zakończone w określony sposób
+        conditionEventsSuccessRequired = 1;  // Task udany
+        conditionEventsFailedRequired = 1; // Task spartaczony
+        conditionEventsCanceledRequired = 1; // Task anulowany
 
         // Wywoływanie eventów CBA. Wywoływanie customowych zdarzeń i kodu odbywa się przez dodanie odpowiednich event handlerów CBA na serwerze - patrz niżej.
         onShowEvents[] = {}; // eventy wywoływane przy ujawnieniu taska
@@ -59,26 +59,26 @@ class CfgTasks {
     };
 
     // definiujemy taski podrzędne
-    class FindHorse { // nazwa klasy
-        title = "Znajdź kunia"; // tytuł, nazwa taska
+    class FindHorse { // nazwa klasy taska
+        title = "Znajdź kunia"; // Tytuł taska
         icon = "search"; // ikona, którą zobaczą na tasku gracze
         parentTask = "Soapy_Mission_XD"; // Task nadrzędny, odwołanie następuje po nazwie klasy
-        conditionCodeShow = "true"; // Task będzie widoczny dla graczy na liście tasków
+        conditionCodeShow = "true"; // Task będzie od razu widoczny dla graczy na liście tasków
         conditionCodeSuccess = "unit1 distance horse < 50"; // Sukces taska nastąpi w momencie, kiedy dystans między obiektami unit1 oraz horse < 50
         onSuccessEvents[] = { "horseFound" }; // event wywoływany zaliczeniem taska (odwołanie nastąpi nieco niżej, czytajcie uważnie)
     };
     class KnockHorse { 
         title = "Zwal kunia"; 
         icon = "attack"; 
-        object = "horse"; // Wskazuje nazwę konkretnego obiektu, który będzie posiadał na sobie powyższą ikonę
+        object = "horse"; // Wskazuje nazwę konkretnego obiektu, za którym będzie podążał task na mapie
         parentTask = "FindHorse";
 
-        conditionEventsShow[] = { "horseFound" }; // warunek, który musi być spełniony, by task się pojawił. Patrz linia 66
+        conditionEventsShow[] = { "horseFound" }; // warunek, który musi być spełniony, by task się pojawił. Patrz onSuccessEvents[] dla zadania FindHorse
         conditionCodeSuccess = "!(alive horse)"; // by zaszło zwycięstwo obiekt "horse" ma być martwy (negacją jest znak "!")
         conditionCodeFailed = "!(alive unit1)"; // by zaszła porażka obiekt "unit1" ma być martwy
 
-        onSuccessEvents[] = { "horseKnocked" }; // event wywołany udanym zakończeniem taska, patrz niżej
-        onFailedEvents[] = { "playerDied" }; // event wywołany porażką taska, patrz niżej
+        onSuccessEvents[] = { "horseKnocked" }; // event wywołany udanym zakończeniem taska, przykład obsługi w rozdziale "Przykładowy niestandardowy event handling"
+        onFailedEvents[] = { "playerDied" }; // event wywołany porażką taska, przykład obsługi w rozdziale "Przykładowy niestandardowy event handling"
     };
 };
 ```
@@ -106,6 +106,11 @@ class CfgTasks {
 ```
 
 ## Framework events
+
+Zaawansowana obsługa eventów CBA wywoływanych przez framework tasków. Dostępne są 2 eventy:
+
+- `afm_tasks_taskCreated` wywoływany jest gdy zadanie zostaje utworzone (czyli w momencie spełnienia warunku utworzenia zadania). Jako parametr posiada nazwę klasy zadania, które zostało utworzone.
+- `afm_tasks_taskStateChanged` wywoływany jest, gdy zadanie zmieni swój stan. Jako parametry posiada nazwę klasy zadania oraz nowy stan zadania.
 
 ```
 Event "afm_tasks_taskCreated"
