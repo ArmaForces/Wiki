@@ -110,7 +110,7 @@ _Jeżeli zamierzasz bawić się skryptami to bardzo polecamy `Visual Studio Code
 
 ## **6. Wstaw opisy**
 
-W naszych misjach pojawiają się różne treści. Takie rzeczy można przygotowywać w pliku stringtable.xml. Misja pokazowa ma tam zdefiniowaną nazwę nazwę misji oraz treść intelu. Najprościej przyjąć że to tablica stałych tekstowych.
+W naszych misjach pojawiają się różne treści. Takie rzeczy można przygotowywać w pliku stringtable.xml. Misja pokazowa ma tam zdefiniowaną nazwę nazwę misji oraz treść intelu. Najprościej przyjąć, że to tablica stałych tekstowych.
 
 ## **7. Dodawanie akcji czy event handlerów**
 
