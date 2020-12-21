@@ -202,7 +202,7 @@ Głównym elementem misji są zadania. Kolejno są to:
 
 - Znaleźć intel - akcja na leżaku obok respawnu
 - Odnaleźć VIPa, zbliżając się do niego na mniej niż 100m
-- Zabić VIPa
+- Zabić VIP
 - Wysadzić wieżę
 - Przejąć kontrolę na zadanym terenie
 
