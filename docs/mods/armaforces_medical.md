@@ -1,5 +1,5 @@
 # ArmaForces - Medical
-
+Lej te kurła krew..
 ## Główne zmiany
 
 - Wytrzymalsze bandaże, nie trzeba już się ciągle bandażować
