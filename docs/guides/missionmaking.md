@@ -112,6 +112,14 @@ _Jeżeli zamierzasz bawić się skryptami to bardzo polecamy `Visual Studio Code
 
 W naszych misjach pojawiają się różne treści. Takie rzeczy można przygotowywać w pliku stringtable.xml. Misja pokazowa ma tam zdefiniowaną nazwę nazwę misji oraz treść intelu. Najprościej przyjąć, że to tablica stałych tekstowych.
 
+**UWAGA**
+Nie pomijaj tego punktu. Jeśli nie masz potrzeby niczego zmieniać przynajmniej edytuj nazwę misji. W miejsce `ArmaForces - Preset` wpisz swoją unikalną nazwę misji. Unikniesz dzięki temu problemów z dublowaniem się nazw na serwerze i tym samym brakiem Twojej misji na liście. Najlepiej wyeduj wszystkie pola, oprócz korzyści czysto porządkowych gracze zobaczą większe napracowanko. 
+```xml
+<Key ID="STR_AFP_Scripts_DisplayName">
+	<Polish>ArmaForces - Preset</Polish>
+</Key>
+```
+
 ## **7. Dodawanie akcji czy event handlerów**
 
 Czasem możesz mieć potrzebę (nawet w prostej misji) zrobić coś więcej niż tylko chodzenie i zabijanie. Przykładem w misji pokazowej jest przeszukiwanie przedmiotu w celu znalezienia intelu - plik `initPlayerLocal.sqf`:
