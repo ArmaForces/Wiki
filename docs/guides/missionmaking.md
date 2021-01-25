@@ -112,8 +112,31 @@ _Jeżeli zamierzasz bawić się skryptami to bardzo polecamy `Visual Studio Code
 
 W naszych misjach pojawiają się różne treści. Takie rzeczy można przygotowywać w pliku stringtable.xml. Misja pokazowa ma tam zdefiniowaną nazwę nazwę misji oraz treść intelu. Najprościej przyjąć, że to tablica stałych tekstowych.
 
-**UWAGA**
-Nie pomijaj tego punktu. Jeśli nie masz potrzeby niczego zmieniać przynajmniej edytuj nazwę misji. W miejsce `ArmaForces - Preset` wpisz swoją unikalną nazwę misji. Unikniesz dzięki temu problemów z dublowaniem się nazw na serwerze i tym samym brakiem Twojej misji na liście. Najlepiej wyeduj wszystkie pola, oprócz korzyści czysto porządkowych gracze zobaczą większe napracowanko. 
+W przypadku dłuższych tekstów warto z tego korzystać. Mając wszystkie opisy w jednym miejscu łatwiej je edytować. Jeśli chcesz użyć tego pliku np. w opisach celów, dodawaj kolejne klucze w pliku `stringtable.xml` zgodnie z poniższym przykładem. Kiedy tworzysz nowe klucze to każde `ID` musi być unikalne. Aby jednak wszystko działało fragment `STR_AFP_Scripts_` musi być na początku każdego `ID`. 
+```xml
+<Key ID="STR_AFP_Scripts_Task_NazwaCelu">
+	<English>Nazwa po angielsku.</English>
+	<Polish>Nazwa po polsku.</Polish>
+</Key>
+
+<Key ID="STR_AFP_Scripts_Task_OpisCelu">
+	<English>Opis po angielsku.</English>
+	<Polish>Opis po polsku.</Polish>
+</Key>
+```
+A następnie wywołaj go w innych plikach, np. `tasks.hpp` w ten sposób:
+```hpp
+title = "STR_AFP_Scripts_Task_NazwaCelu";
+description = "STR_AFP_Scripts_Task_OpisCelu";
+```
+
+Pierwszy język pojawiający się w kluczu jest uznawany za domyślny, dlatego jeśli robisz misję dla grupy międzynarodowej stawiaj angielski na pierwszym miejscu, wtedy jeśli nie masz tłumaczenia na język gracza tekst wyświetli mu się w języku angielskim.</br>
+Oczywiście robiąc misję dla grupy gdzie wszyscy gracze mówią w jednym języku nie ma potrzeby dodawania tłumaczeń. Szczególnie, że wiele osób ma ustawiony język na angielski i widziałoby te opisy po angielsku. 
+
+Być może trafisz w internecie na jakieś przykłady gdzie zmienne tekstowe poprzedzane są symbolem `$`. Unikaj używania tego i stosuj przykład pokazany wyżej, bo inaczej możesz mieć problemy z prawidłowym tłumaczeniem tekstów. 
+
+**UWAGA**</br>
+Nie pomijaj tego punktu. Jeśli nie masz potrzeby niczego zmieniać przynajmniej edytuj nazwę misji. W miejsce `ArmaForces - Preset` wpisz swoją unikalną nazwę misji. Unikniesz dzięki temu problemów z dublowaniem się nazw na serwerze i tym samym brakiem Twojej misji na liście. Najlepiej edytuj wszystkie pola, dzięki temu oprócz korzyści czysto porządkowych gracze zobaczą większe napracowanko. 
 ```xml
 <Key ID="STR_AFP_Scripts_DisplayName">
 	<Polish>ArmaForces - Preset</Polish>
