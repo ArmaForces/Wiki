@@ -6,6 +6,7 @@
     - [Arma](guides/arma.md)
     - [Formacje](guides/formations.md)
     - [Poradnik dla nowych](guides/rookieguide.md)
+	- [Poradnik medyczny](guides/medical.md)
     - [Robienie Misji](guides/missionmaking.md)
     - [Symlink - ArmA SSD, mody HDD](guides/symlinks.md)
     - [Wzywanie artylerii](guides/artillerycall.md)
