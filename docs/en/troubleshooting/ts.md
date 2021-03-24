@@ -6,4 +6,4 @@ ACRE plugin controls microphone muting and its default settings always unmute yo
 
 ## I keep getting "Action currently not possible due to spam protection"
 
-TeamSpeak server has anti-flood enabled. Server administrator should set point limits to some big value (we use 100000).
+TeamSpeak server has anti-flood enabled. Server administrator should set point limits to some big value (it is set to 100000 on our server).
