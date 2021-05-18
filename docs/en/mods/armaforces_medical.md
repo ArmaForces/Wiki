@@ -18,7 +18,7 @@ Dressings take longer to deplete their usefulness, it can take up to 30 minutes 
 | :------------: | :------------: | :-----: | :-----: | :------: |
 |    Abrasion    |       ++       |         |         |          |
 |    Avulsion    |                |   ++    |         |          |
-|   Contusion    |                |   ++    |         |          |
+|   Contusion    |       N/A      |   N/A   |   N/A   |    N/A   |
 |     Crush      |                |   ++    |         |          |
 |      Cut       |       ++       |         |         |          |
 |   Laceration   |       ++       |         |         |          |
