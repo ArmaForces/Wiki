@@ -80,6 +80,34 @@ Cechy staz taktycznych:
 
 Podczas rozgrywki krew jest jednym z najcenniejszych zapasów. Z tego powodu, w miarę możliwości trzymaj przy sobie krew i uzupełniaj jej zapas, jeżeli jest taka możliwość. 0,5 - 1,0 l w twoim ekwipunku znacząco odciąży medyka oraz może Ci uratować życie, gdy zapasy medyków będą na wyczerpaniu. Jeżeli jesteś przytomny, nie potrzebujesz przetoczenia krwi do momentu pojawienia się szarego ekranu.
 
+### Wskaźnik utraty krwi
+
+ACE Medical ma zaimplementowany wskaźnik utraty krwi, umiejscowiony obok ikony żołnierza wskazującej akutalną posturę (prawy, górny róg ekranu). Dzięki niemu możesz orientacyjne określić, ile krwi utraciłeś bez uruchamiana menu medycznego. Stanowi on alternatywę do opisu słownego z menu medycznego, aczkolwiek z uwagi na fakt, że jest on widoczny dopiero po pierwszej utracie świadomości (wynik testów na serwerze), należy go bardziej traktować jako drugorzędną opcję. Poniżej przedstawiono wszystkie graficzne oznaczenia ww. wskaźnika wraz z przedziałem wartości litrów krwi zawartych w organiźmie żołnierza w danym momencie.
+
+![Wskaźnik utraty krwi1](../_data/guides/medical/bloodVolume_1.png)
+
+(5,1 - 4,85)
+
+![Wskaźnik utraty krwi2](../_data/guides/medical/bloodVolume_2.png)
+
+(4,85 - 4,6)
+
+![Wskaźnik utraty krwi3](../_data/guides/medical/bloodVolume_3.png)
+
+(4,6 - 4,35)
+
+![Wskaźnik utraty krwi4](../_data/guides/medical/bloodVolume_4.png)
+
+(4,35 - 4,1)
+
+![Wskaźnik utraty krwi5](../_data/guides/medical/bloodVolume_5.png)
+
+(4,1 - 3,85)
+
+![Wskaźnik utraty krwi6](../_data/guides/medical/bloodVolume_6.png)
+
+(3,85 - 3,0)
+
 ## Środki przeciwbólowe
 
 ### APAP
