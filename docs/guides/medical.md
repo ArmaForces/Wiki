@@ -84,29 +84,15 @@ Podczas rozgrywki krew jest jednym z najcenniejszych zapasów. Z tego powodu, w 
 
 ACE Medical ma zaimplementowany wskaźnik utraty krwi, umiejscowiony obok ikony żołnierza wskazującej akutalną posturę (prawy, górny róg ekranu). Dzięki niemu możesz orientacyjne określić, ile krwi utraciłeś bez uruchamiana menu medycznego. Stanowi on alternatywę do opisu słownego z menu medycznego, aczkolwiek z uwagi na fakt, że jest on widoczny dopiero po pierwszej utracie świadomości (wynik testów na serwerze), należy go bardziej traktować jako drugorzędną opcję. Poniżej przedstawiono wszystkie graficzne oznaczenia ww. wskaźnika wraz z przedziałem wartości litrów krwi zawartych w organiźmie żołnierza w danym momencie.
 
-![Wskaźnik utraty krwi1](../_data/guides/medical/bloodVolume_1.png)
+![Wskaźnik utraty krwi pozycja](../_data/guides/medical/blood_level_indicator_position.jpg)
 
-(5,1 - 4,85)
-
-![Wskaźnik utraty krwi2](../_data/guides/medical/bloodVolume_2.png)
-
-(4,85 - 4,6)
-
-![Wskaźnik utraty krwi3](../_data/guides/medical/bloodVolume_3.png)
-
-(4,6 - 4,35)
-
-![Wskaźnik utraty krwi4](../_data/guides/medical/bloodVolume_4.png)
-
-(4,35 - 4,1)
-
-![Wskaźnik utraty krwi5](../_data/guides/medical/bloodVolume_5.png)
-
-(4,1 - 3,85)
-
-![Wskaźnik utraty krwi6](../_data/guides/medical/bloodVolume_6.png)
-
-(3,85 - 3,0)
+|   Krew [l]   |                             Oznaczenie graficzne                    |
+| ------------ | ------------------------------------------------------------------- |
+| (5,1 - 4,85) | ![Wskaźnik utraty krwi1](../_data/guides/medical/bloodVolume_1.png) |
+| (4,85 - 4,6) | ![Wskaźnik utraty krwi2](../_data/guides/medical/bloodVolume_2.png) |
+| (4,6 - 4,35) | ![Wskaźnik utraty krwi3](../_data/guides/medical/bloodVolume_3.png) |
+| (4,1 - 3,85) | ![Wskaźnik utraty krwi4](../_data/guides/medical/bloodVolume_4.png) |
+| (3,85 - 3,0) | ![Wskaźnik utraty krwi5](../_data/guides/medical/bloodVolume_5.png) |
 
 ## Środki przeciwbólowe
 
