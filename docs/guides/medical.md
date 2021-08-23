@@ -88,11 +88,12 @@ ACE Medical ma zaimplementowany wskaźnik utraty krwi, umiejscowiony obok ikony 
 
 |   Krew [l]   |                             Oznaczenie graficzne                    |
 | ------------ | ------------------------------------------------------------------- |
-| (5,1 - 4,85) | ![Wskaźnik utraty krwi1](../_data/guides/medical/bloodVolume_1.png) |
-| (4,85 - 4,6) | ![Wskaźnik utraty krwi2](../_data/guides/medical/bloodVolume_2.png) |
-| (4,6 - 4,35) | ![Wskaźnik utraty krwi3](../_data/guides/medical/bloodVolume_3.png) |
-| (4,1 - 3,85) | ![Wskaźnik utraty krwi4](../_data/guides/medical/bloodVolume_4.png) |
-| (3,85 - 3,0) | ![Wskaźnik utraty krwi5](../_data/guides/medical/bloodVolume_5.png) |
+| (6,0 - 5,1)  | ![Wskaźnik utraty krwi1](../_data/guides/medical/bloodVolume_1.png) |
+| (5,1 - 4,85) | ![Wskaźnik utraty krwi2](../_data/guides/medical/bloodVolume_2.png) |
+| (4,85 - 4,6) | ![Wskaźnik utraty krwi3](../_data/guides/medical/bloodVolume_3.png) |
+| (4,6 - 4,35) | ![Wskaźnik utraty krwi4](../_data/guides/medical/bloodVolume_4.png) |
+| (4,1 - 3,85) | ![Wskaźnik utraty krwi5](../_data/guides/medical/bloodVolume_5.png) |
+| (3,85 - 3,0) | ![Wskaźnik utraty krwi6](../_data/guides/medical/bloodVolume_6.png) |
 
 ## Środki przeciwbólowe
 
