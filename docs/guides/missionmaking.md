@@ -230,4 +230,4 @@ Wszystkie pliki `*.hpp` nie powinny być edytowane ani usuwane. Zwykłe usunięc
 | onPlayerRespawn.sqf  |                                       Skrypt wykonywany w momencie respawnu gracza                                       |
 | script_component.hpp |                                           Nie dotykaj, bo zepsujesz wszystko.                                            |
 |   stringtable.xml    |          Plik zmiennych tekstowych. W misji pokazowej zmieniona została nazwa misji i dodana zawartość intelu.           |
-|      tasks.hpp       |                     Tutaj definiujesz wszystkie zadania. Omówione [TUTAJ](_5-Przygotuj-celezadania)                     |
+|      tasks.hpp       |                     Tutaj definiujesz wszystkie zadania. Omówione [TUTAJ](/guides/missionmaking?id=_5-przygotuj-celezadania)                     |
