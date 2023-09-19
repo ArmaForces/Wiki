@@ -18,18 +18,18 @@ chcielibyśmy mieć mody do naszej ukochanej gry Army 3. Dla uproszczenia ja mam
 prostu nazwane foldery i ścieżkę tak samo jak w oryginalnym katalogu steam.
 Pamiętaj, że ostatni folder 107410 nie może mieć zmienionej nazwy!
 
-![image](https://github.com/ArmaForces/Wiki/assets/55647626/463a7613-b981-4431-823c-f1ac40235544)
-![image](https://github.com/ArmaForces/Wiki/assets/55647626/91d7d3c3-c752-4077-ba26-7f939e30c9e4)
+![image](../_data/guides/simlink101/scr1.png)
+![image](../_data/guides/simlink101/scr2.png)
 
 W każdym z folderów 107410 w katalogu content i downloads tworzymy puste pliki tekstowe z
 losową nazwą (dla sprawdzenia czy całość działa)
 
-![image](https://github.com/ArmaForces/Wiki/assets/55647626/c8c9b80a-dc9d-4a98-9805-db1c2852fd02)
+![image](../_data/guides/simlink101/scr3.png)
 
 Posiadając już zrobiony katalog na dysku HDD, przystępujemy do skopiowania adresu folderów z
 dysku SSD i HDD
 
-![image](https://github.com/ArmaForces/Wiki/assets/55647626/7fb16832-045e-4ad8-9826-23d405734111)
+![image](../_data/guides/simlink101/scr4.png)
 
 Dokonujemy tego odpowiednio dla ścieżek SSD downloads/107410 ; content/107410 i vice-versa dla
 HDD
@@ -46,7 +46,7 @@ Następnie wyszukujemy programu Windows PowerShell i przytrzymując Shift + Ctrl
 Enter – To powinno odpalić go w trybie administracyjnym. [Musi być odpalony z prawami
 administratora]
 
-![image](https://github.com/ArmaForces/Wiki/assets/55647626/07b887dd-d765-4fb2-b50d-60d028b0d310)
+![image](../_data/guides/simlink101/scr5.png)
 
 New-Item -ItemType SymbolicLink -Path "Link" -Target "Target"
 Jest komendą używaną do simlinku – w miejscu Link (pomiędzy znakami cudzysłowia)
@@ -64,15 +64,15 @@ New-Item -ItemType SymbolicLink -Path "C:\Program Files
 
 Podajemy komendę i ją wykonujemy, powinno wyskoczyć nam coś takiego dla obydwu.
 
-![image](https://github.com/ArmaForces/Wiki/assets/55647626/ab1e3c27-48a3-4ef0-89da-c1d01f442d4a)
+![image](../_data/guides/simlink101/scr6.png)
 
 A same foldery (już w ścieżce SSD) powinny wyglądać tak (czyli mieć ikonkę skrótu):
 
-![image](https://github.com/ArmaForces/Wiki/assets/55647626/69d8928a-b2ec-4a32-9bcf-2971b27d9983)
+![image](../_data/guides/simlink101/scr7.png)
 
 Gdy wejdziemy akurat w ten folder, to powinniśmy zobaczyć znajome pliki
 
-![image](https://github.com/ArmaForces/Wiki/assets/55647626/13b41423-eeb8-43fe-8444-e173f2422800)
+![image](../_data/guides/simlink101/scr8.png)
 
 Podobnie powinien wyglądać folder w katalogu downloads
 
