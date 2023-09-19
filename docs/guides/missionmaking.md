@@ -59,6 +59,16 @@ Pamiętaj, żeby każdy miał swój zestaw medykamentów. Przykładowy zestaw u�
 - 1 morfina
 - 2 stazy
 
+Przykładowy zestaw medykamentów dla Medyka:
+
+- 20 APAPów
+- 30 bandaży
+- 5 staz
+- 10 morfin
+- 10 adrenalin
+- 3L Krwi
+- Zestaw do szycia
+
 ### Radia
 
 Są 3 główne modele radia, operujące na 2 różnych zakresach kanałów.
