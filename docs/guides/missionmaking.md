@@ -59,11 +59,12 @@ Pamiętaj, żeby każdy miał swój zestaw medykamentów. Przykładowy zestaw u�
 - 1 morfina
 - 2 stazy
 
-Przykładowy zestaw medykamentów:
+Przykładowy zestaw medykamentów dla Medyka:
 
 - 20 APAPów
 - 30 bandaży
 - 5 staz
+- 20 morfin
 - Zestaw do szycia
 
 ### Radia
