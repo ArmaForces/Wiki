@@ -65,6 +65,7 @@ Przykładowy zestaw medykamentów dla Medyka:
 - 30 bandaży
 - 5 staz
 - 10 morfin
+- 10 adrenalin
 - 3L Krwi
 - Zestaw do szycia
 
