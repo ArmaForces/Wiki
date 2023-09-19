@@ -64,7 +64,8 @@ Przykładowy zestaw medykamentów dla Medyka:
 - 20 APAPów
 - 30 bandaży
 - 5 staz
-- 20 morfin
+- 10 morfin
+- 3L Krwi
 - Zestaw do szycia
 
 ### Radia
