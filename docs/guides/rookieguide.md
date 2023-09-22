@@ -6,7 +6,7 @@ Poradnik został opracowany z myślą o graczach dopiero rozpoczynających czło
 
 ## *Discord Arma Forces*
 
-### 1. Wejdź na Discord Arma Forces.
+### 1. Wejdź na Discord Arma Forces
 
 ### 2. Wejdź na kanał #rekrut_game_announcements
 
