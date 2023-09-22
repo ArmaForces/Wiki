@@ -68,7 +68,7 @@ Nastąpi połączenie z serwerem. Hasło powinno wejść samo, ale w razie czego
 ## **FAQ.**
 Q: Dlaczego w zapisach nie ma podanej modlisty/nie ma jej na stronie z modsetami?
 
-A: Najpewniej oznacza to, że do misji jest dużo czasu i autor nie przygotwał jeszcze modlisty, sprawdź ponownie bliżej terminu misji.
+A: Najpewniej oznacza to, że do misji jest dużo czasu i autor nie przygotował jeszcze modlisty. Sprawdź ponownie bliżej terminu misji.
 
 Q: Misja jest za 5 minut, dlaczego i tak nie ma tego do pobrania?
 
