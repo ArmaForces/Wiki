@@ -84,7 +84,7 @@ A: TS - TeamSpeak, taki komunikator. ACRE to plugin do TSa i mod do Army3 w jedn
 
 TeamSpeaka możecie nawet odpalić w trakcie gry, ale robimy to z reguły przed lub po wejściu do lobby na serwerze. Kiedy już Zeus (Game Master) odpali misję, to automatycznie przerzuci was do odpowiedniego kanału na TSie.
 
-ACRE symuluje komunikację jak w prawdziwości - jeżeli ktoś jest daleko, to usłyszycie go tylko jak krzyknie przy odpowiednio podregulowanej głośności. Są też radia, czyli podstawa łańcucha dowidzenia. Tutaj odsyłam do [poradnika poświęconego ACRE2](../guides/acre), gdzie znajdziecie też informacje na temat obsługi radia. Na serwerze zawsze ktoś wam z tym pomoże jeżeli poprosicie, ale przydaje się wcześniejsza świadomość istnienia takiej mechaniki.
+ACRE symuluje komunikację głosową - jeżeli ktoś jest daleko, to usłyszycie go tylko jak krzyknie przy odpowiednio podregulowanej głośności. Są też radia, czyli podstawa łańcucha dowidzenia. Tutaj odsyłam do [poradnika poświęconego ACRE2](../guides/acre), gdzie znajdziecie też informacje na temat obsługi radia. Na serwerze zawsze ktoś wam z tym pomoże jeżeli poprosicie, ale przydaje się wcześniejsza świadomość istnienia takiej mechaniki.
 
 Jeżeli macie problemy z ACRE i TS to przeczytajcie ponownie poświęconą temu część poradnika.
 
