@@ -90,7 +90,7 @@ Jeżeli macie problemy z ACRE i TS to przeczytajcie ponownie poświęconą temu 
 
 Q: Na stronie z modlistą świeci się na żółto jedna z paczek. Co to znaczy?
 
-A: Że ta żółta paczka jest obecnie załadowana na serwerze. Nie uda ci się dołączyć do serwera odpalając grę z inną paczką modów, niż jest obecnie załadowana. Gra będzie sypać błędami. Paczka musi być aktualna, więc najlepiej parę godzin przed misją pobrać paczkę jeszcze raz, żeby mieć pewność, że wszystko się zaktualizowało. Raz na ruski rok mission maker zmieni zawartość paczki na chwilę przed misją (np. godzinę), wtedy jest dawany cynk na discordzie. Ale ta sytuacja dzieje się dość rzadko.
+A: Oznacza to, że ta żółta paczka jest obecnie załadowana na serwerze. Nie uda ci się dołączyć do serwera odpalając grę z inną paczką modów, niż jest obecnie załadowana. Gra będzie sypać błędami. Paczka musi być aktualna, więc najlepiej parę godzin przed misją pobrać paczkę jeszcze raz, żeby mieć pewność, że wszystko się zaktualizowało. Raz na ruski rok mission maker zmieni zawartość paczki na chwilę przed misją (np. godzinę), wtedy jest dawany cynk na discordzie. Ale ta sytuacja dzieje się dość rzadko.
 
 Q: Bardzo dużo teorii, a ja nie potrafię szybko czytać. Czy mogę jakoś w praktyce wypróbowac zaprezentowaną tu wiedzę?
 
