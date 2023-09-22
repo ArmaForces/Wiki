@@ -25,7 +25,7 @@ Przykładowe zapisy dla rekrutów:
 
 ![Przykładowe zapisy](../_data/guides/rookie/rookie2.png)
 
-### Misje zawsze odbywają się o 20 chyba, że zostanie inaczej powiedziane.
+### Misje zawsze odbywają się o godzinie 20:00, chyba że zostanie powiedziane inaczej.```
 
 
 ## Pobieranie modów
