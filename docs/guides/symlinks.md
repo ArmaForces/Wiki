@@ -88,7 +88,7 @@ jest gdzieś indziej to komenda może się nie wykonywać (sam się na tym
 naciąłem)
 
 3. Folder pozostaje taki sam, nic się nie zmienia
-Można spróbować wyjebać folder 107410 (downloads i content) z SSD i
+Można spróbować usunąć folder 107410 (downloads i content) z SSD i
 wykonać komendę - nie trzeba zmieniać jej treści
 
 4. Jak mi się mody ściągają to folder 107410 na SSD zamienia się z
