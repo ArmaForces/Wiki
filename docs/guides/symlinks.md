@@ -4,9 +4,6 @@
 
 Poradnik został opracowany z myślą o graczach, którzy chcieliby zaoszczędzić precjozo jakim jest wolna przestrzeń na ich dyskach SSD, ale wciąż posiadać Armę na swoim szybszym dysku. Pokazuje on jak osiągnąć zamierzony cel przerzucając często spore paczki modów na dysk HDD i tworząc do nich linki. Twórcą poradnika jest @Renchon. 
 
-  [Symlink - ArmA SSD, mody HDD](https://drive.google.com/file/d/1lWbsHtAd6JXc7X-ZiMUpWLUAMQwwKrw9/view)
-
-
 ## Symlink 101 dla ludzi, którzy kończyli podstawówkę, nie informatykę - czyli jak mieć mody z Army 3 na HDD gdy gra jest na SSD.
 
 Dysk C – SSD | Dysk D – HDD
@@ -37,9 +34,11 @@ Ostatecznie nasze ścieżki powinny wyglądać tak jak poniżej: (Oczywiście tr
 nazwaniu folderów.
 
 `C:\Program Files (x86)\Steam\steamapps\workshop\content\107410`
+
 `C:\Program Files (x86)\Steam\steamapps\workshop\downloads\107410`
 
 `D:\workshop\content\107410`
+
 `D:\workshop\downloads\107410`
 
 Następnie wyszukujemy programu Windows PowerShell i przytrzymując Shift + Ctrl klikamy na niego
@@ -48,19 +47,22 @@ administratora]
 
 ![image](../_data/guides/symlink101/scr5.png)
 
+```powershell
 New-Item -ItemType SymbolicLink -Path "Link" -Target "Target"
+```
+
 Jest komendą używaną do symlinku – w miejscu Link (pomiędzy znakami cudzysłowia)
 dajemy ścieżkę do dysku SSD a w miejscu Target to SSD. Oznacza to, że na dysku SSD tworzy się
-<mydło zredaguj xD> którego celem jest dysk HDD.
+link którego celem jest dysk HDD.
 W przypadku moich wyżej podanych ścieżek komenda będzie wyglądała tak:
 
-New-Item -ItemType SymbolicLink -Path "C:\Program Files
-(x86)\Steam\steamapps\workshop\content\107410" -Target
-"D:\workshop\content\107410"
+```powershell
+New-Item -ItemType SymbolicLink -Path "C:\Program Files (x86)\Steam\steamapps\workshop\content\107410" -Target "D:\workshop\content\107410"
+```
 
-New-Item -ItemType SymbolicLink -Path "C:\Program Files
-(x86)\Steam\steamapps\workshop\downloads\107410" -Target
-"D:\workshop\download\107410"
+```powershell
+New-Item -ItemType SymbolicLink -Path "C:\Program Files (x86)\Steam\steamapps\workshop\downloads\107410" -Target "D:\workshop\download\107410"
+```
 
 Podajemy komendę i ją wykonujemy, powinno wyskoczyć nam coś takiego dla obydwu.
 
@@ -95,3 +97,6 @@ wykonać komendę - nie trzeba zmieniać jej treści
 powrotem w zwykły w katalogu downloads.
 Usunąć wszystko co w środku, wyłączyć steama! jeszcze raz i
 symlinkować ponownie
+
+
+Oryginalny poradnik: [Symlink - ArmA SSD, mody HDD](https://drive.google.com/file/d/1lWbsHtAd6JXc7X-ZiMUpWLUAMQwwKrw9/view)
