@@ -123,4 +123,4 @@ A: Mission maker utworzy jakiś czas przed misją (z reguły kilka dni) tzw. zap
 
 **Sekcja “Delta” i wykaz zajętych/wolnych ról. Obsadzony jest np. dowódca drużyny, ale wolne są sloty LKMisty, anti-tank, granadiera. Nasza reakcja (zapis na misję) zostanie odrzucona w przypadku próby zapisania się na dowódcę lub medyka (bo są zajęte), ale każda inna rola wciąż ma jeden “slot” wolny. W czerwonym polu klikamy ikonę interesującej nas roli.**
 
-**Ten tutorial stanowi nowszą wersję trochę bardziej śmieszkowego tutoriala napisanego przez jednego z rekruterów - Nakimetelesa. Tamta wersja posiada kilka przestarzałych informacji, lecz polecam zapoznać się z nią: https://docs.google.com/document/d/1nOPqnTeu9Flph8oBtN2FFMQ5dUvwFet_Y80uH1ckp1s/edit**
+**Ten tutorial stanowi nowszą wersję trochę bardziej śmieszkowego tutoriala napisanego przez jednego z rekruterów - Nakimetelesa. Tamta wersja posiada kilka przestarzałych informacji, lecz wciąż jest dostępna jeżeli istnieje taka potrzeba: https://docs.google.com/document/d/1nOPqnTeu9Flph8oBtN2FFMQ5dUvwFet_Y80uH1ckp1s/edit**
