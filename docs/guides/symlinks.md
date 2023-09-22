@@ -7,12 +7,12 @@ Poradnik został opracowany z myślą o graczach, którzy chcieliby zaoszczędzi
   [Symlink - ArmA SSD, mody HDD](https://drive.google.com/file/d/1lWbsHtAd6JXc7X-ZiMUpWLUAMQwwKrw9/view)
 
 
-Symlink 101 dla ludzi, którzy kończyli podstawówkę, nie informatykę - czyli jak
-mieć mody z Army 3 na HDD gdy gra jest na SSD.
+## Symlink 101 dla ludzi, którzy kończyli podstawówkę, nie informatykę - czyli jak mieć mody z Army 3 na HDD gdy gra jest na SSD.
 
 Dysk C – SSD | Dysk D – HDD
 
-Wyłączamy Steam!
+**Wyłączamy Steam!**
+
 Następnie dysku HDD tworzymy foldery (dwa, ponieważ download i content), w którym
 chcielibyśmy mieć mody do naszej ukochanej gry Army 3. Dla uproszczenia ja mam po
 prostu nazwane foldery i ścieżkę tak samo jak w oryginalnym katalogu steam.
@@ -36,11 +36,11 @@ HDD
 Ostatecznie nasze ścieżki powinny wyglądać tak jak poniżej: (Oczywiście trzeba pamiętać o różnicy w
 nazwaniu folderów.
 
-C:\Program Files (x86)\Steam\steamapps\workshop\content\107410
-C:\Program Files (x86)\Steam\steamapps\workshop\downloads\107410
+`C:\Program Files (x86)\Steam\steamapps\workshop\content\107410`
+`C:\Program Files (x86)\Steam\steamapps\workshop\downloads\107410`
 
-D:\workshop\content\107410
-D:\workshop\downloads\107410
+`D:\workshop\content\107410`
+`D:\workshop\downloads\107410`
 
 Następnie wyszukujemy programu Windows PowerShell i przytrzymując Shift + Ctrl klikamy na niego
 Enter – To powinno odpalić go w trybie administracyjnym. [Musi być odpalony z prawami
@@ -93,5 +93,5 @@ wykonać komendę - nie trzeba zmieniać jej treści
 
 4. Jak mi się mody ściągają to folder 107410 na SSD zamienia się z
 powrotem w zwykły w katalogu downloads.
-Wyjebać wszystko co w środku, wyłączyć steama! jeszcze raz i
+Usunąć wszystko co w środku, wyłączyć steama! jeszcze raz i
 symlinkować ponownie
