@@ -39,7 +39,6 @@ Na tym obrazku widać, że modlista Wietnam wymaga Creator DLC: S.O.G Prairie Fi
 Po pobraniu modlisty wybierz, w którym pliku chcesz ją zapisać. Następnie odpal launcher army i wybierz zakładkę "mody/mods". Na zaimportowanie modlisty są dwa sposoby:
 
 1. W zakładce mody kliknij: więcej/more po czym importuj listę modów z.../import list of mods from a file... a następnie wybierz zapisaną modlistę.
-
 2. Po wybraniu zakładki mody zapisaną modlistę przenosimy na launcher i puszczamy.
 
 W prawym górnym rogu widać nazwę aktualnie załadowanej modlisty. Jeśli na nią klikniesz pokaże ci się lista wszystkich zaimportowanych modlist.
@@ -53,7 +52,7 @@ Teraz, kiedy już modlista jest załadowana to kliknij przycisk "GRAJ/PLAY" i ar
 
 ![To takie proste!](../_data/guides/rookie/joining-via-button.png/)
 
-Następmnie nastąpi połączenie z serwerem. Hasło powinno wejść samo, ale w razie czego jest ono na wspomianym przed chwilą kanale z informacjami dla rekrutów.
+Następnie nastąpi połączenie z serwerem. Hasło powinno wejść samo, ale w razie czego jest ono na wspomianym przed chwilą kanale z informacjami dla rekrutów.
 
 !> Pierwsze odpalenie modów dokonaj bez włączonego Team Speaka, żeby zainstalowało się ACRE, mod umożliwiający rozmowę w grze. UWAGA! Kiedy ACRE się zainstaluje, to pokaże się komunikat, że działa. Wtedy możesz odpalić TSa i wejść na SERWER ARMAFORCES, link jest w #_info_rekrut, tak jak WSZYSTKO, czego potrzebujesz. Serio, wystarczy przeczytać i poświęcić na to 15 sekund.
 
@@ -104,4 +103,4 @@ A: Mission maker utworzy jakiś czas przed misją (z reguły kilka dni) tzw. zap
 
 Na obrazku przedstawiona jest sekcja "Bravo" i wykaz zajętych/wolnych ról. W tym przypadku obsadzone są wszystkie role poza squad leaderem. Jeśli spróbujemy zapisać się na zajętą już rolę to nasza reakcja (zapis na misje) zostanie odrzucona. Kliknij ikonę interesującej ciebie roli w polu zaznaczonym na czerwono i, pod warunkiem, że nie jest już ona zajęta, twój nick pojawi się obok niej w zapisach.
 
-#### Ten tutorial stanowi nowszą wersję trochę bardziej śmieszkowego tutoriala napisanego przez jednego z rekruterów - Nakimetelesa. Tamta wersja posiada kilka przestarzałych informacji, lecz wciąż jest dostępna jeżeli istnieje taka potrzeba: <https://docs.google.com/document/d/1nOPqnTeu9Flph8oBtN2FFMQ5dUvwFet_Y80uH1ckp1s/edit>
+Ten tutorial stanowi nowszą wersję trochę bardziej śmieszkowego tutoriala napisanego przez jednego z rekruterów - Nakimetelesa. Tamta wersja posiada kilka przestarzałych informacji, lecz wciąż jest dostępna jeżeli istnieje taka potrzeba: <https://docs.google.com/document/d/1nOPqnTeu9Flph8oBtN2FFMQ5dUvwFet_Y80uH1ckp1s/edit>
