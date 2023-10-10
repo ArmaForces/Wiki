@@ -50,7 +50,7 @@ Teraz, kiedy już modlista jest załadowana to kliknij przycisk "GRAJ/PLAY" i ar
 1. Najedź na "Multiplayer", następnie kliknij na "Server browser", potem wybierz na pasku na górze "Direct connect", pojawi ci się okienko, które uzupełniasz danymi serwera i klikasz "Join".
 2. Drugim, lepszy i szybszym sposobem jest kliknięcie na logo grupy z napisem "Join", które powinno ci się wyświetlać na środku menu głównego.
 
-![To takie proste!](../_data/guides/rookie/joining-via-button.png/)
+![To takie proste!](../_data/guides/rookie/joining-via-button.jpg/)
 
 Następnie nastąpi połączenie z serwerem. Hasło powinno wejść samo, ale w razie czego jest ono na wspomianym przed chwilą kanale z informacjami dla rekrutów.
 
