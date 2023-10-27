@@ -12,7 +12,7 @@ Poradnik został opracowany z myślą o graczach dopiero rozpoczynających czło
 
 Obrazek orientacyjny:
 
-![Obrazek orientacyjny](../_data/guides/rookie/recruit-channels.png)
+![Obrazek orientacyjny](../_data/guides/rookie/recruit-channels.jpg)
 
 ### 3. Na tym kanale znajdują się zapisy na misje ze slotami dla rekrutów. Zapisy działają na zasadzie odklikania reakcji, zasady listuje rekruter wysyłający ogłoszenie
 
@@ -50,7 +50,7 @@ Teraz, kiedy już modlista jest załadowana to kliknij przycisk "GRAJ/PLAY" i ar
 1. Najedź na "Multiplayer", następnie kliknij na "Server browser", potem wybierz na pasku na górze "Direct connect", pojawi ci się okienko, które uzupełniasz danymi serwera i klikasz "Join".
 2. Drugim, lepszy i szybszym sposobem jest kliknięcie na logo grupy z napisem "Join", które powinno ci się wyświetlać na środku menu głównego.
 
-![To takie proste!](../_data/guides/rookie/joining-via-button.jpg/)
+![To takie proste!](../_data/guides/rookie/joining-via-button.jpg)
 
 Następnie nastąpi połączenie z serwerem. Hasło powinno wejść samo, ale w razie czego jest ono na wspomianym przed chwilą kanale z informacjami dla rekrutów.
 
@@ -99,7 +99,7 @@ A: Od 1,5h do 2,5h. Jeżeli coś się wysypie - może trwać dłużej. Misje, kt
 
 A: Mission maker utworzy jakiś czas przed misją (z reguły kilka dni) tzw. zapisy na misję na naszym Discordzie. Bot (Boderator) zawoła wtedy cały serwer, więc na pewno nie przeoczysz. Każda misja ma utworzony dedykowany kanał z zapisami, gdzie zawarty jest briefing, data misji, data zamknięcia zapisów, poszczególne sekcje i role do obsadzenia. Zapisy odbywają się poprzez kliknięcie adekwatnej reakcji po daną sekcją. Reakcję kliknij raz (czasami może być lag), możesz się oczywiście wypisać przed upływem terminu końca zapisów, później pod groźbą tymczasowego bana na zapisy jesteś zobligowani stawić się na misji.
 
-![Przykładowe zapisy](../_data/guides/rookie/sign-up-slots.png)
+![Przykładowe zapisy](../_data/guides/rookie/sign-up-slots.jpg)
 
 Na obrazku przedstawiona jest sekcja "Bravo" i wykaz zajętych/wolnych ról. W tym przypadku obsadzone są wszystkie role poza squad leaderem. Jeśli spróbujemy zapisać się na zajętą już rolę to nasza reakcja (zapis na misje) zostanie odrzucona. Kliknij ikonę interesującej ciebie roli w polu zaznaczonym na czerwono i, pod warunkiem, że nie jest już ona zajęta, twój nick pojawi się obok niej w zapisach.
 
