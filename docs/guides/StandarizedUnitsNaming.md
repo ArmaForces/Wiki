@@ -4,9 +4,11 @@
 
 ## Wstęp
 
-W Armaforces przyjęło się stosowanie zwyczajowego, standardowego nazewnictwa jednostek. Należy pamiętać, że to nie jest jedyne nazewnictwo jakie missionmaker może wprowadzić w swojej misji. 
+W Armaforces przyjęło się stosowanie zwyczajowego, standardowego nazewnictwa jednostek. Należy tu zaznaczyć, że zwyczajowe nazewnictwo nie jest obowiązkowe (nie jest wymuszane na missionmakerach). Missionmaker może wprowadzić inne nazewnictwo w swojej misji. 
 
-Jako przykład dla rzadziej używanych jednostek (inne niż np. Alpha, Bravo, Kilo, November, Zulu, itd.), nazewnictwa nie raz różniło się między różnymi misjami oraz także między różnymi missionmakerami (np. Mike - transport lądowy zamiast Mike - transport powietrzny). 
+Przykładowo, w przeszłosci występowały różnice w nazewnictwie, np.:
+- jednostki były nazywane zupełnie inaczej, np. w celu zachowania klimatu misji (np. Alpha -> Anton, Bravo -> Boris, itd.),
+- rzadziej używane jednostki (inne niż np. Alpha, Bravo, Kilo, November, Zulu, itd.) miały inne funkcje niż zazwyczaj (np. Mike był transportem lądowym zamiast powietrznym).
 
 W związku z powyższym, należy przyjmować poniższe nazewnictwo wyłącznie jako "dobre praktyki". 
 
@@ -37,80 +39,80 @@ Adekwatnie, standardowy sposób komunikacji na misji przez radio używajac ACRE2
 
 ### <u>Dowództwo</u>
 
-#### **- Zulu** (głównodowodzący)
+- #### **Zulu** (głównodowodzący)
 
-#### **- Xray** (JFO - wsparcie Zulu <span style="color:red">???</span>) <!-- prośba o potwierdzenie, potencjalnie wymagana dyskusja -->
+- #### **Xray** (JFO - wsparcie Zulu <span style="color:red">???</span>) <!-- prośba o potwierdzenie, potencjalnie wymagana dyskusja -->
 
-#### **- Yankee** (NCO - wsparcie Zulu <span style="color:red">???</span>) <!-- prośba o potwierdzenie, potencjalnie wymagana dyskusja -->
+- #### **Yankee** (NCO - wsparcie Zulu <span style="color:red">???</span>) <!-- prośba o potwierdzenie, potencjalnie wymagana dyskusja -->
 
 
 ### <u>Siły lądowe (podstawa)</u>
 
-#### **- Alpha** (BPP)
+- #### **Alpha** (BPP)
 
-#### **- Bravo** (BPP)
+- #### **Bravo** (BPP)
 
-#### **- Charlie** (BPP)
+- #### **Charlie** (BPP)
 
-#### **- Delta** (BPP)
+- #### **Delta** (BPP)
 
 
 ### <u>Siły lądowe (wsparcie)</u>
 
-#### **- Golf** (wsparcie logistyczne)
+- #### **Golf** (wsparcie logistyczne)
 
-#### **- Juliett** (JTAC/FAC/ATC <span style="color:red">???</span>) <!-- prośba o potwierdzenie, potencjalnie wymagana dyskusja -->
+- #### **Juliett** (JTAC/FAC/ATC <span style="color:red">???</span>) <!-- prośba o potwierdzenie, potencjalnie wymagana dyskusja -->
 
-#### **- Kilo** (wsparcie pancerne)
+- #### **Kilo** (wsparcie pancerne)
 
-#### **- Papa** (wsparcie artyleryjskie) 
+- #### **Papa** (wsparcie artyleryjskie) 
 
 
 ### <u>Wojska specjalne</u>
 
-#### **- India** (komandosi)
+- #### **India** (komandosi)
 
-#### **- Lima** (snajperzy/rozpoznanie)
+- #### **Lima** (snajperzy/rozpoznanie)
 
 
 ### <u>Siły powietrzne</u>
 
-#### **- Mike** (transport)
+- #### **Mike** (transport)
 
-#### **- Oscar** (MEDEVAC)
+- #### **Oscar** (MEDEVAC)
 
-#### **- November** (CAS)
+- #### **November** (CAS)
 
 
 
 ## Uporządkowane wg alfabetu fonetyczego ICAO:
 
-#### **- Alpha** (BPP)
-#### **- Bravo** (BPP)
-#### **- Charlie** (BPP)
-#### **- Delta** (BPP)
-#### **- Echo** (<span style="color:red">???</span>) <!-- jakiś rodzaj specjalsów? prośba o wsparcie -->
-#### **- Foxtrot** (<span style="color:red">???</span>) <!-- jakiś rodzaj specjalsów? prośba o wsparcie --> 
-#### **- Golf** (wsparcie logistyczne)
-#### **- Hotel** (<span style="color:red">???</span>) <!-- nie pamiętam, prośba o wsparcie --> 
-#### **- India** (komandosi)
-#### **- Juliett** (JTAC/FAC/ATC <span style="color:red">???</span>) <!-- prośba o potwierdzenie, potencjalnie wymagana dyskusja -->
-#### **- Kilo** (wsparcie pancerne)
-#### **- Lima** (snajperzy/rozpoznanie)
-#### **- Mike** (transport)
-#### **- November** (CAS)
-#### **- Oscar** (MEDEVAC)
-#### **- Papa** (wsparcie artyleryjskie) 
-#### **- Quebec**(<span style="color:red">???</span>) <!-- nie pamiętam, prośba o wsparcie --> 
-#### **- Romeo** (<span style="color:red">???</span>) <!--  jakiś rodzaj specjalsów? nie pamiętam, prośba o wsparcie --> 
-#### **- Sierra** (<span style="color:red">???</span>) <!--  jakiś rodzaj specjalsów? nie pamiętam, prośba o wsparcie --> 
-#### **- Tango** (<span style="color:green">wolny</span>) <!-- prośba o potwierdzenie, potencjalnie wymagana dyskusja -->
-#### **- Uniform** (<span style="color:green">wolny</span>) <!-- prośba o potwierdzenie, potencjalnie wymagana dyskusja -->
-#### **- Victor** (<span style="color:green">wolny</span>) <!-- prośba o potwierdzenie, potencjalnie wymagana dyskusja -->
-#### **- Whiskey** (<span style="color:red">???</span>) <!-- nie pamiętam, prośba o wsparcie --> 
-#### **- Xray** (JFO - wsparcie Zulu <span style="color:red">???</span>) <!-- prośba o potwierdzenie, potencjalnie wymagana dyskusja -->
-#### **- Yankee** (NCO - wsparcie Zulu <span style="color:red">???</span>) <!-- prośba o potwierdzenie, potencjalnie wymagana dyskusja -->
-#### **- Zulu** (głównodowodzący)
+- #### **Alpha** (BPP)
+- #### **Bravo** (BPP)
+- #### **Charlie** (BPP)
+- #### **Delta** (BPP)
+- #### **Echo** (<span style="color:red">???</span>) <!-- jakiś rodzaj specjalsów? prośba o wsparcie -->
+- #### **Foxtrot** (<span style="color:red">???</span>) <!-- jakiś rodzaj specjalsów? prośba o wsparcie --> 
+- #### **Golf** (wsparcie logistyczne)
+- #### **Hotel** (<span style="color:red">???</span>) <!-- nie pamiętam, prośba o wsparcie --> 
+- #### **India** (komandosi)
+- #### **Juliett** (JTAC/FAC/ATC <span style="color:red">???</span>) <!-- prośba o potwierdzenie, potencjalnie wymagana dyskusja -->
+- #### **Kilo** (wsparcie pancerne)
+- #### **Lima** (snajperzy/rozpoznanie)
+- #### **Mike** (transport)
+- #### **November** (CAS)
+- #### **Oscar** (MEDEVAC)
+- #### **Papa** (wsparcie artyleryjskie) 
+- #### **Quebec**(<span style="color:red">???</span>) <!-- nie pamiętam, prośba o wsparcie --> 
+- #### **Romeo** (<span style="color:red">???</span>) <!--  jakiś rodzaj specjalsów? nie pamiętam, prośba o wsparcie --> 
+- #### **Sierra** (<span style="color:red">???</span>) <!--  jakiś rodzaj specjalsów? nie pamiętam, prośba o wsparcie --> 
+- #### **Tango** (<span style="color:green">wolny</span>) <!-- prośba o potwierdzenie, potencjalnie wymagana dyskusja -->
+- #### **Uniform** (<span style="color:green">wolny</span>) <!-- prośba o potwierdzenie, potencjalnie wymagana dyskusja -->
+- #### **Victor** (<span style="color:green">wolny</span>) <!-- prośba o potwierdzenie, potencjalnie wymagana dyskusja -->
+- #### **Whiskey** (<span style="color:red">???</span>) <!-- nie pamiętam, prośba o wsparcie --> 
+- #### **Xray** (JFO - wsparcie Zulu <span style="color:red">???</span>) <!-- prośba o potwierdzenie, potencjalnie wymagana dyskusja -->
+- #### **Yankee** (NCO - wsparcie Zulu <span style="color:red">???</span>) <!-- prośba o potwierdzenie, potencjalnie wymagana dyskusja -->
+- #### **Zulu** (głównodowodzący)
 
 
 
