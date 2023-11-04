@@ -1,93 +1,89 @@
+Oto poprawiony tekst:
+
 # Od zera do missionmakera
 
-Byśmy wszyscy robili misje niegorsze niż DDOS :)
+Chciałbym, aby każdy kto chce tworzyć misje, posiadał jak najwięcej iformacji w jednym miejscu. I robił fajne misje jak ja (DDOS) :)
 
 ## Wprowadzenie
 
-Jest to poradnik mający na celu pokazanie jak zacząć przygody w tworzenie misji by nie ogłupieć.
+To jest poradnik, którego celem jest pokazanie, jak rozpocząć przygodę w tworzeniu misji, bez poczucia zagubienia.
 
-W tym poradniku postaram się omówić:
+W tym poradniku omówię:
 
-- Co warto zaistalować, gdzie zaoglądać i czego się wystrzegać przy szukaniu "jak coś zrobić"
-- Ogólny sposób używania edytora i co warto zrobić po pierwszym uruchomieniu
-- Attributes, moduły które w edytorze są najcześciej wykorzystywane + triggerki + najprostrze wykorzystanie simple spawnów/build spawnów z MAI-a
-- Wyjaśnienie presetu
-- Co można robić by mieć jak największe szanse osiągnąc dobre fps-y.
-- Wygląd kilku misji w edytorze. Co chciałem osiągnąc i co było skryptowane na misji.
+- Co warto zaistalować, gdzie zaoglądać i czego się wystrzegać przy szukaniu "jak coś zrobić".
+- Ogólny sposób używania edytora i co warto zrobić po pierwszym uruchomieniu.
+- Attributes, moduły które w edytorze są najcześciej wykorzystywane + triggerki + najprostrze wykorzystanie simple spawnów/build spawnów z MAI-a.
+- Wyjaśnienie presetu.
+- Co można robić by mieć jak największe szanse osiągnąć dobre fps-y.
 - Na co zwracać uwagę w ogólnym tworzeniu misji, co pomaga, czego unikać i co zwykle nie ma sensu
 - Ogólne Zeusowanie, problemy i rozwiązania
-- Przykłady wątpliwych decyzji przy tworzeniu misji z wyjaśnieniem
-- Wprowadzenie do pisania głupich skryptów w armie
-- Czym jest lokalność i dlaczego jest to coś na co zawsze uważać
-- Przykłady napisania skryptów z ogólnego "chce aby X się stało"
+- Wprowadzenie do skryptów w armie.
+- Czym jest lokalność i dlaczego jest to coś na co zawsze trzeba uważać.
+- Dlaczego CBA jest fajne i co warto z niego wiedzieć.
 - Pisanie tasków
-- Czego unikać przy skryptach, na moich błędach
+- Wygląd kilku misji w edytorze. Co chciałem osiągnąc i co było skryptowane na misji.
 
-Zaznaczm że nie jestem w to super dobry, poradnik zawierać będzie masę uproszczeń i niedopowiedzień które pewnie odkryjesz na własnej skórze. W takim wypadku serdecznie zapraszam do zwrócenia uwagi co dodać i poprawić.
+Chciałbym zaznaczyć, że nie jestem ekspertem w tej dziedzinie, więc ten poradnik zawierać będzie uproszczenia i niedopowiedzenia, które będziesz musiał samodzielnie zrozumieć. Zachęcam do dzielenia się uwagami i poprawkami.
 
-## 1. **Co warto zaistalować, gdzie zaoglądać i czego się wystrzegać przy szukaniu "jak coś zrobić"**
+## 1. **Co warto zainstalować, gdzie szukać informacji i na co uważać, gdy próbujesz dowiedzieć się "jak coś zrobić"**
 
-Do zrobienia najbardziej generycznej misji byśmy wszyscy mogli zagrać wystarczy w sumie Arma + preset. [Preset](https://discord.com/channels/386882491484602368/541577429010087937) to gotowa misja która zawiera podstawową strukturę plików misji na której będziesz pracowować.
+Aby stworzyć ogólną misję, która pozwoli nam wszystkim grać, wystarczy w zasadzie sama Arma wraz z presetem. [Preset](https://discord.com/channels/386882491484602368/541577429010087937) to gotowa misja, która zawiera podstawową strukturę plików misji, na której będziesz pracować.
 
-Wymienione dalej programy, linki i mody mogą w wielu przypadkach być niepotrzebne, jednak warto się z każdym zaznajomić by później wiedzieć szybciej gdzie sie udać
+Poniżej znajdziesz programy, linki i mody, które w wielu przypadkach mogą nie być konieczne, ale warto z nimi się zapoznać, aby w przyszłości łatwiej znaleźć potrzebne informacje.
 
-### **Ogólne strony www**
+### **Strony internetowe**
 
-Przy tworzeniu misji spędzisz masę czasu na stronach typu:
+Podczas tworzenia misji spędzisz dużo czasu na przeglądaniu stron internetowych, takich jak:
 
-- [Google](https://www.google.com/) - wyszukując czy ktoś gdzieś nie napisał jakiegoś prostego skryptu do tego czego szukasz. Wiele wyników odeśle cię do Forum Bohemi i Wiki Army
-- [Wiki Army](https://community.bistudio.com/wiki/Category:Scripting_Commands) - Każdy skrypt który znajdziez na wujku google będzie składał się z komend które tutaj znajdziesz. Większość jest rozpisana co robi z podanymi przykładami jakiegoś zastosowania i uwagami społecznośći
-- [Kanale "mission_making" na naszym discordzie](https://discord.com/channels/386882491484602368/590073885362487306) - Bardzo podobne zastosowanie co przy Googlu. Wpisujesz swoje pytania i ktoś kiedyś ci odpowie. Warto pytać jeśli wyniki w googlu nie są dla nas jednoznaczne, bądź mamy wątpliwości. Niezależnie czy to skrypty, zamysł czy możliwość osiągniecią czegoś
-- [Wiki CBA](https://cbateam.github.io/CBA_A3/docs/index/General.html) - CBA zawiera kilka przydatnych rzeczy które są często wykorzystywane w podstawowych skryptach, omówione w sekcji poświęconej skryptom
-- [ACE Functions Wiki](https://ace3.acemod.org/wiki/functions/) - ACE jest na zdecydowanej większości misji, dodaje wiele usprawnień jak i rzeczy których w podstawowej armie nie ma (Większość by denerwować Krystola). Zajrzysz tutaj choćby po to by zobaczyć co trzeba zrobić by uleczyć gracza skryptem na misji.
-- Githubach/odpowiednikach - wiele rzeczy które się szuka ktoś już gdzieś kiedyś napisał i do czegoś użył. Zwykle na zasadzie pytasz o coś i dostajesz linka do funkcji/linijek kodu które robią to czego szukasz
-- Skryptowe tutorialsy - [Multiplayer Scripting Bohemia](https://community.bistudio.com/wiki/Multiplayer_Scripting), [Ace Coding guide](https://ace3.acemod.org/wiki/development/coding-guidelines), [Acre Guideline](https://acre2.idi-systems.com/wiki/development/coding-guidelines-sqf)
+- [Google](https://www.google.com/) - aby sprawdzić, czy ktoś gdzieś nie opublikował prostego skryptu, którego potrzebujesz. Wiele wyników przekieruje cię do Forum Bohemia i Wiki Army.
+- [Wiki Army](https://community.bistudio.com/wiki/Category:Scripting_Commands) - Każdy skrypt, który znajdziesz na Google, opiera się na komendach dostępnych tutaj. Większość z nich jest szczegółowo opisana, z przykładami zastosowania i uwagami społeczności.
+- [Kanały "mission_making" na naszym discordzie](https://discord.com/channels/386882491484602368/590073885362487306) - Służą podobnym celom co Google. Możesz tam zadawać pytania, a ktoś kiedyś na pewno na nie odpowie. Warto pytać, jeśli wyniki w Google nie są jasne lub masz wątpliwości, niezależnie od tego, czy dotyczy to skryptów, koncepcji czy możliwości osiągnięcia czegoś.
+- [Wiki CBA](https://cbateam.github.io/CBA_A3/docs/index/General.html) - CBA zawiera kilka przydatnych rzeczy często wykorzystywanych w podstawowych skryptach, opisanych w sekcji poświęconej skryptom.
+- [ACE Functions Wiki](https://ace3.acemod.org/wiki/functions/) - ACE jest na zdecydowanej większości misji i dodaje wiele usprawnień oraz funkcji, których brakuje w wersji podstawowej Army (głównie po to, by irytować Krystola). Zajrzyj tutaj, aby dowiedzieć się, jak stworzyć skrypt leczący gracza ACE Medical na misji.
+- Githuby/inne odpowiedniki - wiele potrzebnych rzeczy już zostało napisanych i użytych przez kogoś wcześniej. Zazwyczaj, po zadaniu pytania, otrzymasz link do funkcji lub kodu, który spełnia twoje potrzeby.
+- Tutoriale dotyczące skryptowania - [Poradniki Bohemiove: ](https://community.bistudio.com/wiki/Category:Arma_Scripting_Tutorials), [Przewodnik Ace Coding](https://ace3.acemod.org/wiki/development/coding-guidelines), [Poradnik Acre](https://acre2.idi-systems.com/wiki/development/coding-guidelines-sqf)
 
 ### **Mody**
 
-Przy tworzeniu misji w swojej modliście KONIECZNIE posiadać:
+W trakcie tworzenia misji na swojej liście modów NALEŻY mieć:
 
-- [3denEnhanced](https://steamcommunity.com/workshop/filedetails/?id=623475643) - Dodaje gigantyczną liczbę rzeczy które przyspieszają, ułatwiają tworzenie misji
-- [ZeusEnhanced](https://steamcommunity.com/workshop/filedetails/?id=1779063631) - Rozbudowanie i ułatwienie wielu rzeczy przy zeusowaniu
-- [MAI-Dev](https://steamcommunity.com/sharedfiles/filedetails/?id=1852213757) - Simplespawny, BuildSpawny i Madinowe twory (które w większości są wyłączone na serwerze) przy odpowiednim stosowaniu bardzo optymalizujesz misje. Tak serio jest opcjonalny, jednak postaram się opisać jak z niego korzystać i rozwiązania jak bez niego również.
+- [3denEnhanced](https://steamcommunity.com/workshop/filedetails/?id=623475643) - Dodaje wiele przydatnych narzędzi, które przyspieszają i ułatwiają tworzenie misji.
+- [ZeusEnhanced](https://steamcommunity.com/workshop/filedetails/?id=1779063631) - Rozbudowuje i ułatwia wiele aspektów zeusowania.
+- [MAI-Dev](https://steamcommunity.com/sharedfiles/filedetails/?id=1852213757) - Simple spawny, Build Spawny i twory Madina (które na ogół są wyłączone na serwerze) mogą znacząco zoptymalizować misje. Ten mod jest opcjonalny. Zwyczajnie jednak łatwo z jego pomocą zachować ładne fps-y
 
-Opcjonalne, przydatne czasem rzeczy z workshopu:
+Opcjonalne, ale czasem przydatne mody z Warsztatu:
 
-- [Deformer](https://steamcommunity.com/sharedfiles/filedetails/?id=2822758266) - Możliwość edycji kształtu terenu w edytorze na potrzeby misji
-- [ZEI-Zeus and Eden Interiors](https://steamcommunity.com/sharedfiles/filedetails/?id=1251859358) - dodaje moduł który zwyczajnie zapycha propami domki i podłogi/stoły
-- [Emitter 3Ditor](https://steamcommunity.com/sharedfiles/filedetails/?id=1613905318) - Przydatne przy chęci dodania do swoich skryptów efektów cząsteczkowych (Bardzo zaawansowane)
-- kompozycje budynków typu:
-  - [ZEC - Zeus and Eden Templates / Building Compositions
-](https://steamcommunity.com/sharedfiles/filedetails/?id=642912021)
-  - [ZECCUP - Zeus and Eden Templates for CUP Terrains
-](https://steamcommunity.com/sharedfiles/filedetails/?id=750186990)
-- [O&T Expansion Eden
-](https://steamcommunity.com/sharedfiles/filedetails/?id=1923321700) - Mod który dodaje vanillowe obiekty które normalnie nie są widoczne łatwo do postawienia przykładowo model pioruna, drzewa
-- [Snapping for Eden and Zeus](https://steamcommunity.com/sharedfiles/filedetails/?id=2961167812) - Przydatne jak budujesz własne miasta, dużo płotów. obiekty starają się dopasować do obiektów wokół nich
+- [Deformer](https://steamcommunity.com/sharedfiles/filedetails/?id=2822758266) - Pozwala edytować teren w edytorze na potrzeby misji.
+- [ZEI-Zeus and Eden Interiors](https://steamcommunity.com/sharedfiles/filedetails/?id=1251859358) - Dodaje moduł, który wypełnia budynki meblami oraz zapełnia podłogi/stoliki.
+- [Emitter 3Ditor](https://steamcommunity.com/sharedfiles/filedetails/?id=1613905318) - Przydatny, gdy chcesz dodać efekty cząsteczkowe do swoich skryptów (bardzo zaawansowane).
+- Kompozycje budynków, takie jak:
+  - [ZEC - Zeus and Eden Templates / Building Compositions](https://steamcommunity.com/sharedfiles/filedetails/?id=642912021)
+  - [ZECCUP - Zeus and Eden Templates for CUP Terrains](https://steamcommunity.com/sharedfiles/filedetails/?id=750186990)
+- [O&T Expansion Eden](https://steamcommunity.com/sharedfiles/filedetails/?id=1923321700) - Mod dodający vanillove obiekty, które zazwyczaj są trudno dostępne, np. modele piorunów, drzewa.
+- [Snapping for Eden and Zeus](https://steamcommunity.com/sharedfiles/filedetails/?id=2961167812) - Przydatny, gdy tworzysz własne miasta z wieloma płotami i obiektami. Będą starać się dopasować do innych obiektów wokół nich.
 
-UWAGA: Przy tworzeniu misji najlepiej nie używać tzw. modów opcjonalnych. JSRS zostawia ślad w pliku misji i później okazuje się że opcjonalny mod jest wymagany. Nie jest to coś co psuje totalnie misje, jednak dodaje to niepotrzebny krok by misje odpalić poprawnie na serwerze.
+UWAGA: Podczas tworzenia misji lepiej unikać "opcjonalnych" modów. JSRS może zostawić ślad w pliku misji, a potem okaże się, że mod jest wymagany. To nie jest coś, co całkowicie psuje misję, ale wprowadza niepotrzebny krok, aby uruchomić misję poprawnie na serwerze.
 
 ### **Programy**
 
-Cała ta sekcja przy prostych misjach jest raczej super pomijalna, wszystko można napisać poprawnie  w edytorze Armowym i notatniku/Notepadzie++. Jednak na dłuższą męte i tak skończysz z czymś w rodzaju:
+W przypadku prostych misji można spokojnie używać edytora Armowego oraz notatnika lub Notepad++. Jednak w przypadku bardziej zaawansowanych projektów, z pewnością docenisz narzędzia, które pomogą w efektywnym pisaniu skryptów:
 
-- [VisualStudio Code](https://code.visualstudio.com/) - Program do pisania kodu. Kiedy twoje skrypty zaczną być dłuższe niż 3 linijki to docenisz fakt że program będzie ci proponował komendy, kolorował czcionkę zależnie od typu danych, ukazywał gdzie kończy się twój nawias itd.
+- [Visual Studio Code](https://code.visualstudio.com/) - Program do pisania kodu. Kiedy twoje skrypty zaczynają być dłuższe niż 3 linijki, docenisz fakt, że program ten proponuje komendy, koloruje czcionkę zależnie od typu danych, oraz podpowiada, gdzie zakończyć nawiasy itd.
 
-  - [SQF Language
-](https://marketplace.visualstudio.com/items?itemName=Armitxes.sqf) - rozrzerzenie by nasz program wiedział co to SQF.
-- Jakiś client FTP by wrzucać plik na serwer np. [WinSCP](https://winscp.net/eng/download.php)
+  - [Rozszerzenie SQF Language](https://marketplace.visualstudio.com/items?itemName=Armitxes.sqf) - Ułatwia pracę z SQF (Scripting Language używanym w Armie).
+- Jakiś klient FTP, który pozwoli na łatwe przesyłanie plików na serwer, np. [WinSCP](https://winscp.net/eng/download.php).
 
-### **Czego się wystrzegać przy szukaniu "jak coś zrobić"**
+### **Czego unikać przy szukaniu informacji na temat "jak coś zrobić"**
 
-Długich skryptów. Bardzo rzadko to czego szukasz będzie wymagało długiego skryptu. Często zwyczajnie lepiej napisać na kanale do misji lub któregoś MM-a.
+Unikaj długich skryptów. W rzadkich przypadkach to, czego szukasz, będzie wymagało długiego skryptu. Często warto skonsultować się na kanale misji lub z doświadczonym missionmakerem.
 
-Często napotkasz skrypty które są częścią jakiś większych funkcji które mogą być do jakiegoś moda/systemu. W takim wypadku najlepiej postarać się znaleźć komendy które prawdodpobonie robią to czego szukasz.
+Często napotkasz skrypty, które są częścią większych funkcji lub mogą być związane z jakimś modem lub systemem. W takich przypadkach najlepiej jest znaleźć komendy, które prawdopodobnie realizują to, czego szukasz.
 
-Następnie sprawdź co ta komenda robi na Wiki Army3 i postaraj się ją sam użyć w sposób który spełni twoje oczekiwania.
+Następnie sprawdź, co ta komenda robi w Wiki Army3 i spróbuj ją zastosować w sposób, który spełnia Twoje oczekiwania.
 
-Robiąc tak zdobywasz zwyczajnie doświadczenie co robi. Co by móc później robić bardziej skomplikowane rzeczy samemu.
+Dzięki takim działaniom zdobywasz doświadczenie i zrozumienie, co dana komenda robi, co pozwoli Ci w przyszłości tworzyć bardziej zaawansowane skrypty.
 
-Unikaj skryptów które mają w sobie wiele czegoś w stylu `_this select 0` <-- Powód prosty. Jeśli jest wiele razy to pewnie długi kod, a skoro długi i komuś nie chciało się zwyczajnie nazwać zmiennej w sposób który mówi co to. Będzie ci trudniej zrozumieć co to robi, ślepie kopiowanie kodu jest głupie.
+Unikaj skryptów, które często zawierają wyrażenia takie jak` _this select 0`. Jest to ważne z kilku prostych powodów. Jeśli widzisz te wyrażenia wielokrotnie, to znaczy, że kod jest długi. Kiedy ktoś nie zadbał o czytelność i nie użył zrozumiałych nazw zmiennych, staje się to utrudnione do zrozumienia. Ślepe kopiowanie kodu bez zrozumienia jego działania nie jest efektywne ani mądre.
 
 ## 2. **Ogólny sposób używania edytora i co warto zrobić po pierwszym uruchomieniu**
 
@@ -129,52 +125,54 @@ Guzikami na dole można usunąć puste foldery jeśli jakieś dodaliśmy, ukryć
 
 #### **Pasek u góry**
 
-Pozwolę sobie opisać tylko rzeczy które mogą być mniej jasne po zajrzeniu w kategorie lub wymagające małej uwagi. W kolejności zaczynając od góry i czy jest coś tam wykorzystywane częściej. Dodatkowo czasem wypisze skróty klawiszowe
+Pozwól mi omówić tylko te elementy, które mogą sprawiać trudności lub wymagają uwagi na górnym pasku narzędzi. Przedstawię je w kolejności, zaczynając od góry i wskazując, które z nich są częściej używane. Czasami podam także skróty klawiszowe.
 
 - **Scenario**
-  - **Save/Open Mission** - Przy zapisywaniu misji **odznacz** opcje "**BINARIZE SCENARIO"** w celu łatwiejszej możliwości naprawiania potecjalnych problemów z załadowanymi modami po stworzeniu.
-  - **MERGE** - łączy dwie misje w jedną jeśli są na tej samej mapie. Raczej przydatne jak ludzie robią wspólnie misje
-- **Edit** - Tutaj w sumie się nie zagląda, znajduję się tutaj odpowiednik CTRL+Z/Y (cofnij zmiane/cofnij cofnięcie). Reszta rzeczy która się tutaj znajduję jest na drugim pasku narzędzi w jakieś formie.
+  - **Save/Open Mission** - Przy zapisywaniu misji, zalecam odznaczenie opcji "**BINARIZE SCENARIO"**, aby ułatwić rozwiązywanie ewentualnych problemów z wczytywaniem modów po stworzeniu misji z modami których być nie powinno.
+  - **MERGE** - Pozwala na połączenie dwóch misji na tej samej mapie. Przydatne, gdy wspólnie tworzy się misje.
+- **Edit** - Do tej zakładki nie zajrzysz pratkycznie wcale,wszystkie elementy takie jak odpowiedniki CTRL+Z/Y (Cofnij/Znów) są na na paskach.
 - View
-  - **Center on Selected entity (F)** - Przydatne jak mamy dużo obiektów i szukamy tego który wybraliśmy na lewym przyborniku
-  - **Toggle Flashlight (L)** - Rozjaśnia mapę jeśli mamy ustawioną noc.
-  - **Toggle Vision (N)** - Przełącza wizje między normalem/nokto/termo.
+  - **Center on Selected entity (F)** - Przydatne, gdy na mapie jest wiele obiektów i próbujesz zlokalizować wybrany obiekt z lewego panelu narzędzi.
+  - **Toggle Flashlight (L)** - Włącza latarkę, co pomaga w ciemności, jeśli gra jest ustawiona na noc.
+  - **Toggle Vision (N)** - Przełącza tryb widzenia między normalnym, noktowizyjnym a termowizyjnym.
 - Attributes
-  - **General** - Znajdują się tutaj rzeczy które robi jeden plik z presetu, raczej nie trzeba tutaj absolutnie nic robić/zaglądać
-  - **Environment** - Ustawienia pogody/mgły, nie ustawiać visualsettings to też jest w presecie. Wartości forecast to wartości pogody które są wartościami docelowymi które zachocą w ustawionym czasie
-  - **Multiplayer** - Odpowiednik general pod multi, raczej się tutaj nie zmienia nic. Preset ustawia większość rzeczy które tutaj się znajdują
-  - **Performance** - tutaj są ustawienia Bohemiovego Garbage collectora i ogólne ustawienia do Dynamicznej symulacji o której będzie dalej
-- **Tools** - Tutaj się najwięcej zagląda bo są zwyczajnie pomocne, toolsy typu deformer też się tutaj pojawią.
-  - **Debug Console (Ctrl+D)** - Otwiera konsole w której możesz pisać komendy, wklejać skrypty, śledzić jakieś wartośći u siebie/graczy/serwera
-  - **Functions Viewer** - W grze/modach znajdują się masa funkcji które coś robią. Tutaj możesz sprawdzić co dokładnie
-  - **Animations Viewer** - Można podejrzeć animacje.
-  - **Camera/splendid camera** - Włącza tryb kamery by zrobić najlepsze zdjęcia w galaktyce.
-  - **Field Manual** - Bohemiove poradniki + czasem mody tutaj coś dorzucają.
-  - **Lobby Manager** - Ustawisz tutaj sloty w kolejności na misje.
+  - **General** - Zawiera ustawienia, które są często ustawiane przez plik presetu. Zazwyczaj nie trzeba niczego zmieniać lub przeglądać w tej sekcji.
+  - **Environment** - Zawiera ustawienia dotyczące pogody i mgły. Należy unikać zmiany ustawień "visualsettings", ponieważ są one zawarte w presecie(init.sqf). Wartości "forecast" określają  wartości pogody do której pogoda dąży w określonym czasie.
+  - **Multiplayer** - To odpowiednik sekcji "General" dla trybu wieloosobowego. Zazwyczaj nie ma potrzeby dokonywania tu zmian, ponieważ większość ustawień jest skonfigurowana w pliku presetu.
+  - **Performance** - Tutaj znajdziesz ustawienia dotyczące zbierania śmieci przez kolektor Bohemii oraz ogólne ustawienia dotyczące dynamicznej symulacji.
+- **Tools** - Ta sekcja jest często używana, ponieważ zawiera wiele przydatnych narzędzi, Pojawi się tutaj również Deformer.
+  - **Debug Console (Ctrl+D)** - Otwiera konsolę debugowania, w której można wpisywać komendy, wklejać skrypty i monitorować wartości w grze dotyczące siebie, graczy i serwera (MONITORY).
+  - **Functions Viewer** - Pozwala na przeglądanie dostępnych funkcji w grze i modach.
+  - **Animations Viewer** - Pozwala na przeglądanie dostępnych animacji.
+  - **Camera/Splendid Camera** - Włącza tryb kamery, który pozwala robić znakomite zdjęcia.
+  - **Field Manual** - Zawiera poradniki Bohemii oraz dodatkowe informacje od twórców modów.
+  - **Lobby Manager** - Pozwala na konfigurację kolejności slotów na misje.
 
-  Tutaj zaczynaja się zbiory z większą ilością toolów/skryptów. Napisze tylko te które są warte używania z danych kategorii
-  - **Utilities**
-    - **3den Radio** - Zobaczysz dostępne pliki muzyczne, ich długość. Przydatne przy szukaniu classname potrzebnego do odpalenia muzyki skryptem
-    - **Texture Finder** - Wyświetli ci wszystkie dostępne tekstury, ładuje się długo. Przydatne kiedy chcesz np. na białej tablicy ustawić teksture aktualnej mapy i potrzebujesz jej ścieżkę
-  - **Placement Tools** - raczej nie użyjesz niczego tutaj, można postawić dane obiekty w kółka/siatki/linie
-  - **Loadout Tools**
-    - **Equipment storage editor** - alternatywa do wkładania przedmiotów w skrzynie/pojazdy. Czasem łatwiej dodać rzeczy przez to do jakiegoś pojazdu/skrzynki.
-    - **Copy/Apply Loadouts (CTRL+Shift+C/A)** - Z tego bardzo często można korzystać przy ubieraniu graczy, kopiuje/wkleja całe EQ
-    - **Remove NVGs** - Przydatne kiedy nastawiasz jednostki wyposażone domyślnie wyposażone w nokto. Zaznaszczasz wszystkie jednostki, klikasz i już jednostki są lżejsze o niepotrzebne nokto
-  - **Vehicle customization** - nic tutaj nie jest przydatne praktycznie
-  - **Debug Tools** - tutaj nic się nie przyda.
-  - **Miscellaneous Tools**
-    - **Toggle Simple object (ALT + S)** - Przełącza obiekt w Simple Obiekt
-    - **Toggle Simulation (ALT + E)** - Wyłączą symulacje obiektowi
-    - **... Dynamic Simulation (ALT + D)** - Obiekt ma zastosowaną Dynamiczną symulacje
-    - **... Local Object (ALT + S)** - Obiekt nie jest sychronizowany po sieci
+Tutaj zaczynają się kategorie z większą ilością narzędzi i skryptów. Napiszę tylko te, które są częściej wykorzystywane z tych kategorii.
+
+Poprawiona wersja:
+
+- **Utilities**
+  - **3den Radio** - Pozwala zobaczyć dostępne pliki muzyczne oraz ich długość. Przydatne do znalezienia classname potrzebnego do odtworzenia muzyki za pomocą skryptu.
+  - **Texture Finder** - Wyświetli wszystkie dostępne tekstury, choć ładowanie może potrwać. Przydatne, gdy chcesz ustawić teksturę aktualnej mapy na białej tablicy i potrzebujesz jej ścieżki.
+  - **Placement Tools** - Raczej nie będziesz często korzystać z tych narzędzi. Pozwalają one na umieszczanie obiektów w określonych układach, takich jak koła, siatki czy linie.
+- **Loadout Tools**
+  - **Equipment Storage Editor** - Alternatywa do umieszczania przedmiotów w skrzyniach lub pojazdach. Czasami jest to łatwiejsze niż vanillowe dodawanie przedmiotów do pojazdów lub skrzyń.
+  - **Copy/Apply Loadouts (CTRL+Shift+C/A)** - Bardzo przydatne narzędzie przy ubieraniu graczy. Pozwala na kopiowanie i wklejanie całych ekwipunków.
+  - **Remove NVGs** - Przydatne, gdy dostajesz jednostki domyślnie wyposażone w noktowizory. Zaznaczasz wszystkie jednostki, klikasz, i noktowizory zostaną im odebrane.
+- **Vehicle Customization** - Praktycznie nic tutaj nie jest użyteczne.
+- **Debug Tools** - Tutaj również nie znajdziesz przydatnych narzędzi.
+- **Miscellaneous Tools**
+  - **Toggle Simple Object (ALT + S)** - Przełącza obiektowi  Simple Object.
+  - **Toggle Simulation (ALT + E)** - Przełącza symulację na wybranym obiekcie.
+  - **... Dynamic Simulation (ALT + D)** - Przełącza symulację dynamiczną.
+  - **... Local Object (ALT + S)** -Przełącza Obiekt w sferze komunikacji sieciowej.
 - **Settings**
-  - **Preferences** - preferencja do edytora, polecam odnaczyc tutaj domyślne binaryzowanie nowych misji.
-  - **Odpowiedniki** normalnych ustwaień army
-  - **Addon Options** - tutaj ustawisz ustawienia modów.
+  - **Preferences** - Preferencje do edytora. Polecam odznaczyć opcję domyślnego binarizowania nowych misji.
+  - **Addon Options** - Umożliwia dostosowanie ustawień modów.
 - **Play**
-  - **Play in multiplayer** - Przydatny przy sprawdzaniu samodzielnie czy twój skrypt który ma się odpalić jednemu graczu odpali się serio tylko jemu.
-- **Help** - Każdy link tutaj to pomoc! Problem jest taki że czasem bardzo stara.
+  - **Play in Multiplayer** - Odpalisz tutaj selfhosta aby móc dołączyć drugą instacją gry i sprawdzić poprawność lokalności skryptów.
+- **Help** - Zbiór różnych pomocnych linków. Czasem bardziej, czasem mniej.
 
 Reszta to zwykłe odnośniki do dokumentacji moda bądź naszego wiki
 
@@ -186,7 +184,7 @@ Zaczynając od lewej
 
 - Nowy plik , otwórz plik, zapisz plik, opublikuj misje w steam
 - Cofnij ostatnią czynność (UNDO) , Cofnij cofnięcie zmiany (REDO)
-- Zwykły kursor, Przesuwanie, Obracanie, Skalowanie, Edytor Obszarowy
+- Zwykły kursor, Przesuwanie, Obracanie, Skalowanie.
 - Switch do widgetów który zmienia ich orientacje między obiektem i światem, włączenie przyciągania obiektów do ziemii, wlączenie przyciągania do powierzchni
 - Przesuwanie o dany dystans, obracanie o dany kąt, trzecie to niby area scaling tylko nie wiem z czym to działa.
 - ustawienia pogody(czemu to się nazywa intel?), wlączenie mapy, włączenie latarki, przełączenia trybu kamery
@@ -204,7 +202,7 @@ Zaczynając od lewej
     - Toggle Local Object (ALT + S) 
     - Copy/Apply Loadouts (CTRL + Shift + C / CTRL + Shift + A)
     - Undo/Redo (CTRL + Z / CTRL + Y)
-    - Delete Selected (CTRL + X)
+    - Delete Selected (CTRL + X lub DELETE)
 
 ### **Podstawowe klikanie w edytorze i wigety**
 
@@ -222,15 +220,19 @@ W rzeczach wyżej nie jest pokazane jak sychronizować obiekt do modułu. Wyglą
 
 - Na zaznaczonym obiektie/obiektach/module nacisnąć prawy myszy
 - Wybrać connect
-- Nacisnąć lewy myszy na module/trigerze/obiekcie z którym chcemy połączyć nasze coś
+- Nacisnąć lewy myszy na module/trigerze/obiekcie z którym chcemy połączyć nasze obiekty
 
-Dodatkowo mając zaznaczone jednostki i trzymając Shift można Prawym Myszy odrazu zrobić waypoint dla zaznaczonych jednostek w miejscu kliknięcia.
+Dodatkowo, mając zaznaczone jednostki i trzymając Shift, można prawym przyciskiem myszy od razu utworzyć waypoint dla zaznaczonych jednostek w miejscu kliknięcia.
 
 Podstawowe oznaczenia widoczne w edytorze jakie się widzi wyglądają tak
 
 ![Obrazek z czołgami w róznych stanach](../_data/guides/Editor/Oznaczenia.jpg)
 
 Widoczne wyżej komentarze to prawy myszy w pustym miejscu i Place Comment
+
+### Symulacja Dynamiczna
+
+Jeśli jakiś gracz znajduje się w ustawionym dystansie od obiektu z nałożoną symulacją dynamiczną, to wtedy takiemu obiektowi zostanie włączona symulacja. Jeśli gracz się oddali, to symulacja zostanie wyłączona.
 
 ### **Co zrobić na początku**
 
@@ -239,7 +241,7 @@ Widoczne wyżej komentarze to prawy myszy w pustym miejscu i Place Comment
 - Zaznacz wszystko przy komentarzu "Moduły"
 - Zapisz jako Custom Composition. Nazwij jako moduły
 - Możesz zrobić to samo z każdymi grupami jednostek jakie się tam znajdują
-- Wywal z presetu plik mission.sqm i zachować sobie gdzieś taki folder
+- Wywal z presetu plik mission.sqm i zachowaj sobie gdzieś taki folder
 
 ## 3. **Atrybuty, moduły które w edytorze są najcześciej wykorzystywane + triggerki + najprostrze wykorzystanie simpleSpawn/BuildSpawn/Reinforce z MAI-a**
 
@@ -247,15 +249,15 @@ Mogą paść tutaj pojęcia które zostaną wyjaśnione w dalszych częściach.
 
 Każdy obiekt w Armie  posiada swoje Attributes w których można ustawić dość sporo rzeczy.
 
-Zależnie od tego na czym odpalimy attrybuty bądź tego co będziemy mieli zaznaczone przy kliknięciu prawym myszy w celu odpalenia attrybutów dla kilku obiektów ujrzemy różne opcje w okienku. Należy czytać uważnie co się do czego odnosi
+W zależności od tego, na czym odpalimy attrybuty lub co będziemy mieli zaznaczone przy kliknięciu prawym przyciskiem myszy w celu otwarcia atrybutów kilku obiektów, zobaczymy różne opcje w okienku. Należy czytać uważnie, aby zrozumieć, do czego odnoszą się te ujrzane opcje.
 
 Każdy atrybut jest raczaj ładnie opisany po przytrzymaniu kursora nad nim.
 
 Tutaj jednak wspomnę o initach oraz VariableName
 
-Inity obiektów w dużym uproszczeniu to miejsce na kod którym sam obiekt jest dostępny pod zmienną `this`.
+`Inity obiektów` w dużym uproszczeniu to miejsce na kod w którym sam obiekt jest dostępny pod zmienną `this`.
 
-VariableName to po prostu nasza nazwa aby w jakimś skrypcie odnieść się do tego obiektu
+`VariableName` to po prostu nasza nazwa aby w jakimś skrypcie odnieść się do tego obiektu
 
 ### **Trigger**
 
@@ -264,15 +266,15 @@ Triggery które są widoczne w edytorze jako niebieskie flagi mogą tak naprawd�
 Triggerowe najważniejsze atrybuty to:
 
 - **Type** - Praktycznie zawsze None
-- **Activation** - Warunek triggera by ten był true. Najczęściej któraś strona bądź "AnyPlayer". Tutaj należy wiedzieć że działa to również jako "Co trigger będzie wykrywał" Anybody wykrywa każdy obiekt z możliwą fizyką (bez pocisków i wiekszości granatów)
+- **Activation** - Warunek triggera by ten był true. Najczęściej któraś strona bądź "AnyPlayer". Tutaj należy wiedzieć że działa to również jako "Co trigger będzie wykrywał" Anybody wykrywa każdy obiekt z możliwą fizyką (bez pocisków i wiekszości granatów).
 - **Activation type** - najczęsciej Presesnt,Not Present
 - **Repeatable** - Czy trigger ma mieć możliwość wywołania się ponownie.
-- **ServerOnly** - Czy trigger ma być tylko na serwerze, w innym przypadku TRIGGER ISTNIEJE U KAŻDEGO w tym i serwera.
+- **ServerOnly** - Czy trigger ma być tylko na serwerze, w innym przypadku TRIGGER ISTNIEJE U KAŻDEGO w tym i serwerze.
 - **Condition** - Sprawdzany warunek, domyślnie jest tam `this`. W takim wypadku dla triggera ważny jest twój activation oraz activation type. Można tutaj wpisać dowolną rzecz która musi zwrócić true/false.
   - **Internal** - Jak często trigger sprawdza warunek. Nigdy 0.
-- **On Activation** - Kod wywołany jak trigger spełni warunek. Warto dodać `deletevehicle thisTrigger;` na końcu jeśli jest to jakiś jednorazowy trigger
-- **On Deactivation** - jak wyżej tylko jak warunek przestanie być spełniany.
-- **Timer Type** - Coundown to opóźnienie po jakim czasie skrypt ma się wykonać od spełnienia warunku, a timeout to jak długo warunek musi być spełniany by trigger był trigger uznał go za spełniony.
+- **On Activation** - Kod wywołany jak trigger spełni warunek. Warto dodać `deletevehicle thisTrigger;` na końcu jeśli jest to jakiś jednorazowy trigger.
+- **On Deactivation** - Jak wyżej tylko jak warunek przestanie być spełniany.
+- **Timer Type** - Coundown to opóźnienie po jakim czasie skrypt ma się wykonać od spełnienia warunku, a timeout to jak długo warunek musi być spełniany by trigger uznał go za spełniony i wykonał skrypt.
 
 ### **Hide Terrain Objects**
 
@@ -284,31 +286,31 @@ Ten moduł powinien pozwolić ci zmieniać stan uszkodzeń budynków postawionyc
 
 ### **Cover Map**
 
-przyciemnia pozostał obszar mapy pokazując ładnie obszar misji.
+przyciemnia pozostały obszar mapy pokazując zdefiniowany obszar misji. Może być jeden w danej chwili na misji.
 
 ### **Show / Hide**
 
-Ten moduł jest przydatny jak chcesz optymalizować misje. Ukrywa/odkrywa jedostki/obiekty jednocześnie włącząjąc/wyłączając im symulacje. Mało kto go używa przez simplespawny.
+Ten moduł jest przydatny jak chcesz vanillowo optymalizować misje. Ukrywa/odkrywa jednostki/obiekty jednocześnie włącząjąc/wyłączając im symulacje.
 
 ### **Cała zakładka effects**
 
-Są tutaj efekty i wezwanie CAS-a do jakiegoś triggerka.
+Są tutaj efekty w postaci dymu, i wezwanie CAS-a spiętego do  jakiegoś triggerka.
 
 ### **SimpleSpawn**
 
-SimpleSpawny w dużej mierze ułatwiają zachować ładne fps-y poprzez zrespienie botów połączonych z nim zołnierzy i pojazdów tylko w przypadku kiedy moduł zostanie aktywowany. Róznica między tym i SHOW/HIDE jest taka, że tutaj jednostki nie istnieją na mapie do czasu aktywacji. Moduł pobiera przypisane do jednostek Waypointy, stan grupy, formacje itd.
+SimpleSpawny w dużej mierze ułatwiają zachować ładne fps-y poprzez zrespienie sychronizowanych z nim zołnierzy i pojazdów tylko w przypadku kiedy moduł zostanie aktywowany. Róznica między tym i SHOW/HIDE jest taka, że tutaj jednostki nie istnieją na mapie do czasu aktywacji. Moduł pobiera przypisane do jednostek Waypointy, stan grupy, formacje itd.
 
 Posiada takie atrybuty jak:
 
-- **Activation Distance** - jak blisko modułu musi pojawić się gracz.
+- **Activation Distance** - jak blisko modułu musi pojawić się jakiś gracz.
 - **Deactivation Distace** - jeśli ustawisz wartość dodatnią to zostanie do niej dodany Activation Distance. Jeśli gracze oddalą się od modułu o te wartość boty zostaną ponownie usunięte.
 - **Plane/heli Activation** - Czy gracze w helkach/samolotach mogą odpalić moduł.
-- **Spawn internal** - co ile zsychronizowane jednostki będą się respić po aktywacji modułu.
+- **Spawn internal** - co ile jednostki będą się respić po aktywacji modułu.
 - **Spawn unit at once** - ile będzie ich respionych na każdy interwał.
-- Delete Vehicles
+- **Delete Vehicles** - pojazdy w których znajduje się boty zostaną usunięte i zostaną postawione podczas aktywacji modułu.
 - **Check Building** - jeśli jednostka była w budynku który został zniszczony to nie zrespi się.
 - Activation Condition - warunek który musi zwrócić true by moduł się aktywował
-- **Delete Trigger** - po 5 sekundach usunię trigger jeśli był jakiś z nim sychronizowany.
+- **Delete Trigger** - po 5 sekundach usunie trigger jeśli był jakiś z nim połączony.
 - **Force Activation** - Moduł się odpali jeśli którykolwiek warunek zwróci true (Distance, Activation Condition, połączony trigger).
 - **code executed on ... spawn** - miejsce na skrypty które mają być wykonane na
   - unit
@@ -323,7 +325,7 @@ Atrybuty :
 
 - **Activation Distance**
 - **Deactivation Distace**
-- **Tickets** - ile botów może zrespić moduł
+- **Tickets** - Ile botów może zrespić moduł
 - **Minimal Distance** - Dystans po którym moduł uznaje że jakiś budynek wywalony z możliwości zrespenia w nim botów patrolowych i zostaną zrespione boty Stacjonarne.
 - **Patrol Groups** - liczba grup patrolowych
 - **Patrol Units** - liczba jedostek w jednej grupie patrolowej
@@ -332,9 +334,9 @@ Atrybuty :
 - **Limit per Building** - Ile razy Boty mogą wyjść z jednego budynku
 - **Spawn Change** - szansa na zrespienie bota stacjonarnego w budynku do którego gracze podchodzą
 - **Stationary Time** - jak długo bot stacjonarny nie może chodzić.
-- **Bots per Building** - ile botów stacjonarnych ma być w środku
-- **Limit Stationary** - ile może być botów wszystkich stacjonarnych
-- **Defent Zone** - Funkcja które jest tutaj wymagana jest wyłaczona na serwerze.
+- **Bots per Building** - ile botów stacjonarnych ma być w środku jednego domku
+- **Limit Stationary** - ile może być wszystkich botów stacjonarnych
+- **Defent Zone** - Funkcja która jest tutaj wymagana jest wyłaczona na serwerze.
 - **Patrol Custom Spawn** - Po aktywacji modułu, pierwsze jednostki zrespią się w miejscu tych które są połączone z modułem
 - **Include Not Supported** - Nie wszystkie budynki są wspierane, jeśli nię są to lepiej dać w nie obiekt o nazwie "AI Build Position"
 - **Plane/Heli Activation**
@@ -343,11 +345,11 @@ Atrybuty :
   - Group
   - Vehicle
 
-Jak bardzo ten moduł jest zajebisty na pierwszy rzut oka tak absolutnie proszę nie przesadzać w poleganiu na nim. Głównie dlatego że rozleniwia i na dłuższą mete boty wybiegające z każdego budynku też nie są zawsze zbyt fajne.
+Ten moduł wydaje się być bardzo zajebisty na pierwszy rzut oka, ale proszę nie polegać na nim zbyt mocno. Głównie dlatego, że może to prowadzić do lenistwa, a na dłuższą metę, boty wybiegające z każdego budynku nie zawsze są zbyt fajne.
 
 ### Civilians
 
-Respi cywilów z jednostek zdefiniowanych lub tych które połaczysz. Chodzą, boją się strzałów.
+Respi cywilów z jednostek zdefiniowanych lub tych które połączysz z modułem po zaznaczeniu opcji w nim. Chodzą i boją się strzałów.
 
 Atrybuty raczej są jasne i dość podobne do poprzednich wymienionych
 
@@ -379,9 +381,9 @@ Atrybuty są bardzo podobne do poprzednich:
 
 Ogólny przebieg tego tworu jest taki:
 
-Gracze aktywując pierwszy simplespawn zrespią jednostki na dachach oraz obwodzie wiochy.
+Gracze aktywując pierwszy simplespawn, zrespią się jednostki na dachach oraz obwodzie wiochy.
 
-W simpleSpawnie  w kodzie wywoływanym na każdej jednostce znajduję się
+W simpleSpawnie w kodzie wywoływanym na każdej jednostce znajduję się
 
 ```sqf
 params ["_unit"];
@@ -393,7 +395,7 @@ _unit disableAI "PATH";
 [setUnitPos](https://community.bistudio.com/wiki/setUnitPos)
 [disableAI](https://community.bistudio.com/wiki/disableAI)
 
-Kod ten uniemożliwia zrespionym botom z modułu poruszanie się i nakazuje im stać.
+Kod ten uniemożliwia zrespionym botom z modułu poruszanie się i nakazuje im stać. Robie to tak ponieważ jest mi szybciej to zrobić niż wyklikiwać to na żołnierzach.
 
 BuildSpawn ma mniejszy zasięg niż simplespawn. Boty powinny zacząć wychodzić z budynków przy trochę bliższym dystansie graczy od zabudowań. Na tyle dużym by nie widzieli respiących się botów w budynkach.
 
@@ -410,13 +412,12 @@ Dla osiągnięcia podobnych efektów:
 - Musiałbym ręcznie stawiać boty w budynkach. poustawiać im jakieś waypointy.
 - Wsparcie musiałoby by być również aktywowane przez moduł SHOW/HIDE.
 
-Czy warto? Szczerze uważam że na dłuższą męte byłoby to strasznie męczace. W teorii można tutaj użyć symulacji dynamicznej tylko trzeba mieć na uwadze jakie ustawienia się ustawi. Tylko dalej masz tutaj istniejącą jednostkę, którą serwer musi sprawdzać.
+Czy warto? Szczerze uważam że na dłuższą męte byłoby to strasznie męczace. W teorii można tutaj użyć symulacji dynamicznej tylko trzeba mieć na uwadze jakie ustawienia się ustawi.
 
 W wielu scenariuszach dość dużo jednostek respi się z palca i jest to jak najbardziej ok, Zwłaszcza kiedy:
 
 - Przebieg misji jest bardzo trudny do określenia
-- Ustawienie jednostek w sensowny sposób i złączenie je z modułami byłoby zbyt pracochłonne i groziło jakimiś probletami typu, że gracze podchodzą od dupy strony i widzą jak boty się respią
-- Misja nie będzie miała dużo jednostek strzelających jednocześnie.
+- Ustawienie jednostek w sensowny sposób i złączenie je z modułami byłoby zbyt pracochłonne i groziło jakimiś probletami typu, że gracze podchodzą od dupy strony i widzą jak boty się respią.
 - Reagujemy na działania graczy w formie jakiegoś wsparcia wroga.
 
 ## Co można robić by mieć jak największe szanse osiągnąc dobre fps-y
@@ -459,13 +460,494 @@ A pliki?
 |   description.ext    | Główny plik konfiguracyjny misji. Będziesz tutaj zaglądać by dodać pliki własne pliki muzyczne, dodać banner [Link](https://community.bistudio.com/wiki/Description.ext)|
 |       init.sqf       | Skrypty wykonywane lokalnie na każdej maszynie w momencie jej dołączenia do misji (na serwerze w momencie startu misji).|
 | initPlayerLocal.sqf  | Skrypty wykonywane lokalnie u gracza gdy dołączy do misji.|
-|    initServer.sqf    | Skrypty wykonywane na serwerze w momencie startu misji. W misji pokazowej dodany event zakończenia misji.|
+|    initServer.sqf    | Skrypty wykonywane na serwerze w momencie startu misji.|
 |     mission.sqm      | Właściwy plik misji, tutaj zapisane jest wszystko co zrobisz w edytorze. Nie dotykaj go, bo zepsujesz sobie misję.|
 |  onPlayerKilled.sqf  | Skrypty wykonywane w momencie śmierci gracza |
 | onPlayerRespawn.sqf  | Skrypty wykonywane w momencie respawnu gracza|
 | script_component.hpp | Czarnia magia, tutaj nic nie zmieniaj.|
 |   stringtable.xml    | Plik w którym są zmienne tekstowe, główne zastosowanie przy tym jak chciałbys zrobić misje która zawiera teskty tasków/skryptów powiązanane z tym jaki ktoś ma ustawiony język gry.|
 |      tasks.hpp       |  Plik z Taskami do misji na bazie  [link](https://github.com/ArmaForces/Mods/tree/master/addons/tasks)|
+
+## Na co zwracać uwagę w ogólnym tworzeniu misji, co pomaga, czego unikać i co zwykle nie ma sensu
+
+Ogólne pomocne uwagi do ogólnego robienia misji. Tutaj wiele rzeczy można dodać z rzeczy które ciebie jako gracza irytują.
+
+- Stawiaj sobie komentarze na mapie co gdzie chcesz by było/jest. Misje czasami robi się kilka w krótszych sesjach i zwyczajnie łatwiej zapobiec w ten sposób ciągłym zmianom kiedy wcześniej się określi co gdzie ma być. Dodatkowo osobie sprawdzającej misje łatwiej zrozumieć będzie przebieg misji jeśli dużo się rzeczy postawiło.
+
+- Ubierać graczy na końcu. Ubierasz graczy często to tego co spotka ich na misje, jak zrobisz to na początku istnieje szansa że i tak będziesz coś poprawiał.
+
+- Pytać o pomoc jak coś zrobić, absolutnie za dużo czasu na początku się traci na rzeczy bo nie wiemy jak je osiągnąć. Początkowe próby wyszukania rozwiązań często prowadzą do głupich rzeczy/nieefektywnych/błędnych rozwiązań.
+
+- Nie słuchać ślepo poradników, wiele rzeczy na które zwracają uwage nie mają aż tak wielkiego znaczenia. Ten też traktuj krytycznie i podchodź do niego z dozą że informacje tutaj nie muszą być zawsze dobre.
+
+- Nie robić pierwszych misji zbyt wielkich czy skomplikowanych. Łatwo wpaść tutaj w "zrobię coś oryginalnego", a to oryginalne zwykle prowadzi do skryptów.
+- Pamiętać że gracze wiedzą tylko to co im powiesz. Robisz jakieś dziwne rzeczy czy masz jakiś narzucony plan to lepiej kogoś/jakoś na niego nakierować. Często jest tak że misja na zapisach ma jakieś zajebiste tło fabularne, a Zulu nawet nie wie co będzie miał do dyspozycji.
+
+- Podchodzić krytycznie do opinii/krytyki graczy. Czasem to na co narzekają nie jest aż takim dużym problemem, nawet jeśli długo się o tym mówi. Przykładowo Mydło narzekał na dużą liczbę medykamentów dość długo. A to raczej problem niewielki bo gracz może je wyrzucić, jednak pamiętać zawsze o opiniach graczy warto.
+
+- Szukaj najprostrzych rozwiązań swoich problemów, staraj się wykorzystywać rzeczy które wiesz jak działają. Jak nie wiesz pytaj i pytaj o tłumaczenie. Czytaj wiki komend.
+
+- Testuj skrypty dzień przed misją jeśli jakieś są. Jak się okaże że coś nie działa to jest czas by to poprawić/wywalić bez problemów.
+
+- Nie przesadzaj z liczbą grenadierów/pojazdów, posiadają losową możliwość zabicia wszystkich (jak zaczną napierdalać to są bardzo skuteczni)
+
+- Nie dawaj pojazdów tylko po to by przewiozły na początku graczy gdzieś.
+
+- Nie zaglądaj w ustawienia addonów bez potrzeby. Jeśli już jednak coś tam robisz to zmieniaj jak najmniej.
+
+- Zapierdalanie pół mapy gdzie nic się nie dzieje przez 25 minut nie jest fajne.
+
+- Jeśli są pojazdy dla graczy to zastanowić się nad tym co się stanie jak gracze je stracą i czy nie zdominują rozgrywki.
+
+## Ogólne Zeusowanie, problemy i rozwiązania
+
+[Bohemiowy artykuł z podstawowymi klawiszami](https://community.bistudio.com/wiki/Arma_3:_Field_Manual_-_Zeus)
+
+Przy używaniu Zeusa wiele czynności ma podobny przebieg co przy edytowaniu w edytorze i jest raczej dość intuicyjne. Tutaj warto zajrzeć w ustawienia klawiszy Zeus Enhacned i przypisać sobie klawisze które tam są. Nie będę wchodził w rzeczy które odkryjesz sam w ciągu pierwszych 3 minut klikania na jednostki i odpalania ich atrybutów bo są raczej jasne.
+
+Aby to zrobić klikamy Options -> Controls -> Configure Addons -> Zeus Enhanced.
+
+![ZeusEnhancedKlawisze](../_data/guides/Editor/KlawiszeZeus.jpg)
+
+W addon options zeun enhanced (Menu ESC w trakcie gry) można sobie też dodać sprawdzenie czy gracze widzą nasz kursor i podgląd stawianego obiektu.
+
+Samo zeusowanie w głównej mierze polega na rozkazywaniu jednostkom gdzieś się udać oraz wskakiwaniu w boty by postrzelać do graczy/zrobić rzeczy których boty nie umieją lub mają problemy.
+
+Zeusowe moduły są o tyle przyjemne że ich nazwa bardzo jasno wskazuje co robi.
+przykład: ACE Medical ->  Toggle Unconscious - Przełączanie przytomności.
+
+W jakie boty będziesz najczęściej wskakiwał?
+
+- W bota Kierowce, który ma problem po napotkaniu przeszkody terenowej.
+- Często w budynkach umieścisz boty z wyłączonym chodzeniem aby z nich postrzelać bardziej ludzko do graczy.
+- Jakiś totalnie randomowy bot by pokarać głupote graczy. Przykładowo bot z rpg by strzelić czołgowi w gąski bo porusza się bez wsparcia.
+- Jakieś boty które mają coś przekazać graczom lub coś odjebać na ich oczach. Łatwiej zablokować graczom drogę pojazdem manualnie jako bot kierowca niż sprawić by bot zrobił to idealnie tak jak chcemy w edytorze.
+
+W trakcie misji bądź nastawiony że wiele rzeczy może pójść nie tak jak chcesz i będziesz musiał improwizować. Najczęściej jest to bot się wpierdolił w drzewo/wlazł w tekstury i oszukuje. Bądź boty weszły w tryb walki i zaczęły robić jakieś dzikie flanki. Najgorzej jak gracze zagrają poniżej oczekiwań @_@
+
+### Problemy które może napotkasz na zeusie
+
+- Wlazłem w bota i on zemdlał, klawisze nie działają
+  - Naciśnij esc -> wpisz w konsole `OpenCuratorInterface`
+- Bot wpierdolił się w drzewo, wycofał się i jeździ w miejscu "zbugowanie"
+  - Najlepsze rozwiązanie to wejść w kierowce i przejechać kawałek, ewentualnie wyłączyć i włączyć PATH kierowcy
+- Bot wygląda jakby dostał freeza (a nie jest to wyłączona symulacja/dynamiczna symulacja)
+  - Odczep go od grupy, złącz w inną grupę / wejdź w niego bezpośrednio.
+- Pojazd dostał wylewu i nie jeździ
+  - Jeśli go widać to wejdź w kierowce, jeśli nie to usuń i postaw nowy
+- Gracz ma zbugowaną animacje/jeździ po ziemi.
+  - Uśpij go modułem i po chwili obudź.
+- Zabiłem się na misji jako zeus
+  - Debug console -> `setPlayerRespawnTime 1`
+- Boty mnie nie słuchają, a są daleko od akcji
+  - możesz użyć lambsowego waypointa "Task Assault". Boty siłowo są poruszane w kierunku waypointa. Jeśli super daleko to postawa je na nowo / przestaw
+- Widze latające skrzynie pod mapą
+  - To są skrzynie wrzucone przez graczy do pojazdów przez ACE, nie ruszaj.
+
+
+## Wprowadzenie do skryptów w armie
+
+Ta część jest w sumie najważniejsza, a zarazem natrudniejsza do wytłumaczenia. Bo wszędzie pada coś o skryptach, lokalnośći, różnych plikach i zwyczajnie ciężko ogarnąc od czego zacząć. Postaram się jednak wyjaśnić jak najlepiej to co potrafię. Należy pamiętać że cały ten segment jest w sumie dla tych którzy chcą się w to bawić. Do zrobienia fajnej misji nie trzeba używać skryptów. Dodatkowo należy pamiętać że jest u nas wielu którzy mogą pomóc w tej kwestii  :>
+
+Uproszczeń będzie masa, niedopowiedzeń jeszcze więcej.
+
+Do pisania skryptów w armie używany jest  SQF (Status Quo Function)
+
+[Bohemiove wprowadzenie do SQF](https://community.bistudio.com/wiki/Introduction_to_Arma_Scripting)
+
+Pisząc skrypty będziesz używał [zmiennych](https://community.bistudio.com/wiki/Variables), [funkcji](https://community.bistudio.com/wiki/Function) i [komend](https://community.bistudio.com/wiki/Category:Scripting_Commands).
+
+`Zmienne` mogą być `Globalne` i `Lokalne`. Globalne są dostępne wszędzie, lokalne są dostępne w jakimś [Scope](https://community.bistudio.com/wiki/Variables#Scopes) który jak się wykona to zakończy istnienie tych lokalnych zmiennych. Lokalne są zaczynają się od `_`. Przy używaniu zmiennych globalnych warto dodawać PREFIX w celu wyeliminowania możliwości nadpisania zmiennej globalnej której używa jakiś mod (zwykle gówniany skoro używa globalnych bez prefixów). 
+
+```sqf
+ZmiennaGlobalna = 0;
+Private _ZmiennaLokalna = 1;
+_ZmiennaLokalna2 = 2;
+DDOS_Count = 4; // Globalna z prefixem :)
+```
+
+`Zmienne` mogą być przypisane do wszyskiego i w każdej chwili mogą zmienić swoją wartość i typ.
+
+[Magiczne Zmienne](https://community.bistudio.com/wiki/Magic_Variables) są to zmienne dostępne w róznych miejsach dla wygody np. `this` lub `ThisList` w triggerach
+
+[Typy Danych](https://community.bistudio.com/wiki/Category:Data_Types)
+
+```sqf
+Zmienna1 = player; // komenda która zwraca jednostke gracza, Obiekt
+Zmienna2 = 1; //  Liczba
+Zmienna3 = [1,2,3]; // tablica z liczbami
+Zmienna4 = "Masz piękne oczy"; // Tekst
+Zmienna5 = True; // Boolean
+Zmienan6 = {Player setdamage 1}; // Kod
+Zmienna7 = Zmienna5; // Inna zmienna w tym wypadku to dostanie wartość True
+Zmienna8 = 5 + 3; // liczba powstała w wyniku dodawania
+zmienna9 = Call Function_roll; // Wywołanie funkcji która zwraca wartość
+Zmienna10 = Alive player; //zwróci true albo false. Zależy czy gracz żyje
+```
+
+Będziesz używał masy Bracketów (nie wiem jak to przetłumaczyć)
+
+`[]` - `tablice` (Array) w których będziesz zwykle coś przechowywał. Masa komend zwraca zmienne w postaci tablicy, kolejna masa potrzebuje kilku wartości by wykonać swoje działanie.
+
+```sqf
+ Helka = createVehicle ["ah1w", position player, [], 0, "FLY"];
+ //przypisanie odrazu stworzonego pojazdu do zmiennej
+allplayers; // jest to komenda która zwraca graczy w tablicy [gracz1,gracz2,gracz3...]
+ ```
+
+`()` - Będziesz tego używał by poprawić głównie czytelność swojego kodu i zmiennić kolejność wykonywania działań i IFach.
+
+```sqf
+private _desiredTerrainHeight = (getPosWorld _Crater select 2) - (random 0.50 + 0.25); 
+```
+
+`{}` - Używane przy typie zmiennych typu `code`, przykład w komendzie [AddAction](https://community.bistudio.com/wiki/addAction), czy definiowaniu funkcji.
+
+```sqf
+this addAction
+[
+ "title", // title
+ {
+  params ["_target", "_caller", "_actionId", "_arguments"]; // script
+ },
+ nil,  // arguments
+ 1.5,  // priority
+ true,  // showWindow
+ true,  // hideOnUse
+ "",   // shortcut
+ "true",  // condition
+ 50,   // radius
+ false,  // unconscious
+ "",   // selection
+ ""   // memoryPoint
+];
+
+```
+
+[Funkcje](https://community.bistudio.com/wiki/Function) służą do wywoływania przypisanych do nich skryptów. Często przyjmują dane wejściowe i mogą zwrócić nam dane wyjściowe. użwamy by nie wklejać gigantycznych ścian kodu za każdym razem. W dużym uproszczeniu `Zmienna globalna` z `kodem` który możemy użyć
+
+```sqf
+TAG_fnc_showHint =
+{
+ hint "Function was executed!"; // Function will show a hint when executed
+};
+call TAG_fnc_showHint;
+```
+
+### Scheduler, kod zaplanowany i ten niezaplanowany (scheduled, unscheduled)
+
+W Armie funkocjunje coś takiego jak [Scheduler](https://community.bistudio.com/wiki/Scheduler#Scheduled_Environment). Jest coś w rodzaju nadzorcy skryptów któremu podajemy skrypty, a on je wykonuje.
+
+Jego głównym zadaniem jest kolejkowanie skryptów przy okazji starać się sprawić by było nam jak najtrudniej popsuć armę skryptami.
+
+Wprowadzana on środowiska w którym nasz kod jest wykonywany jest to `Scheduled` i `Unscheduled`.
+
+Pozwolę sobie wkleić gdzie jest kod `Scheduled`:
+
+- `init.sqf`
+- `initServer.sqf`
+- `initPlayerLocal.sqf`
+- `initPlayerServer.sqf`
+- functions with postInit attribute (although suspension is allowed, any long term suspension will halt the mission loading until suspension has finished)
+- code executed with `spawn`
+- code executed with `execVM`
+- code executed with `exec`
+- code executed with `call` from a `scheduled environment`
+
+`Unscheduled`:
+
+- `Debug Console`
+- `Triggers`
+- `Waypoints` (condition and activation)
+- All pre-init code executions including functions with preInit attribute
+- FSM conditions
+- Event Handlers on units and in GUI
+- EachFrame code (Event Handler / Scripted EH / onEachFrame)
+- `Object initialisation fields` <- Czyli nasze inity obiektów w edytorze
+- Expressions of Eden Editor entity/mission attributes
+- Code execution with call from an unscheduled environment
+- Code executed with `remoteExecCall`
+- Code inside isNil
+- SQF code called from SQS code
+- Conversation Event Handler
+- Code inside collect3DENHistory
+
+Czym się te dwa łepki róznią? W `Scheduled` masz gwarancje że kod tam wpisany będzie w takiej samej kolejności jakiej go napisałeś, przy `Unscheduled` istnieje szansa kolejność się zmieni, jednak jest wykonywany "natychmiastowo".
+Kod scheduled ma ogranczenie jak długo może być wykonywany i są to 3ms na kazdą klatkę.
+
+Jeśli w swoim kodzie chcesz użyć `sleep`/`waitUntil`/`While` to będziesz musiał zadbać by ten kod był w środowisku `Scheduled`. Najprościej osiąga się to przy pomocy [Spawn](https://community.bistudio.com/wiki/spawn)
+
+```sqf
+[] spawn {
+    systemchat "Za 5 sekund zostaniesz zabity";
+    sleep 5; 
+    player setdamage 1;
+};
+``````
+
+Przykład na bazie skryptu który napisałem sobie aby postawione kratery  posiadały wokół siebie dodatkowy szczegół kiedy gracz jest niedaleko. Bardziej bije w kwestie optymalizacji, jednak jest to ten typ skryptu na którym można zauważyć było że z każdym kolejnym użyciem `spawn` szybkość wykonania skryptu leciała w dół.
+
+[Scheduled](https://www.youtube.com/watch?v=0ZZFJPHmJHw) [Unscheduled](https://www.youtube.com/watch?v=1yokbJU3M9I)
+
+Na wersji Scheduled widać że dodanie elemetów zaczyna być opóźnione. Samo dodanie jest w miarę "Szybkie" dla silnika więc może się wydawać że różnica jest ignorowalna. No właśnie nie jest. Przy wersji skryptu która wolniej stawiała obiekty ze względu na użycie innej komendy ([createSimpleObject](https://community.bistudio.com/wiki/createSimpleObject) [vs](https://community.bistudio.com/wiki/Code_Optimisation#createSimpleObject_vs_createVehicle) [createVehicleLocal](https://community.bistudio.com/wiki/createVehicleLocal)).
+
+Różnica w wykonianiu obu komend skutkowała widocznym przemieszczaniem i obracaniem obiektów. W wersji "Unscheduled", ze względu na wolniejsze działanie skryptu, każde jego wywołanie generowało krótki "freeze" u gracza. Natomiast w wersji "Scheduled", długotrwałe działanie skryptu skutkowało znacznym wzrostem liczby jednoczesnych wywołań, co wzajemnie opóźniało ich wykonywanie.
+
+Ogólna nauka jest taka by spawnów używać jak najmniej. Na początku jednak wszystkie tutaj wspomniane kwestie są na zasadzie "kiedyś coś napiszesz i się zesra głównie przez to".
+
+[ACE Coding guide dotyczący schedulera](https://ace3.acemod.org/wiki/development/arma-3-scheduler-and-our-practices)
+
+### SQF Syntax
+
+Najlepiej zajrzeć sobie tutaj i poczytać [Armowe Wiki](https://community.bistudio.com/wiki/Category:Syntax) w szczególności:
+
+-[Operators](https://community.bistudio.com/wiki/Operators)
+
+-[Control Structures](https://community.bistudio.com/wiki/Control_Structures)
+
+Rzeczy które są bardzo często wykorzystywane.
+
+[if](https://community.bistudio.com/wiki/if) - zrób coś jeśli
+
+```sqf
+if (alive player) then {
+    systemchat "Ty żyjesz"; // true
+} else { // else jest OPCJONALNE
+    systemchat "Nie żyjesz" // false
+};
+
+if (alive player) then {
+    player setpos (getpos teleport);
+};
+
+if (player distance Vip > 100) exitwith {
+    systemchat "Jesteś dalej niż 100 metrów od Vipa!";
+};
+
+FajnaZmienna = false;
+
+//Wykrzynik sprawia że kod tutaj się wywoła bo teraz sprawdzamy czy jest FajnaZmienna ma wartość False
+
+if !(FajnaZmienna) then { 
+    Systemchat "False";
+};
+
+// Dwa warunki poniżej muszą być true by wykonać kod
+
+if ((alive player) and (player distance Vip > 100)) then {
+        systemchat "Jesteś żywy i dalej niż 100 metrów od Vipa!";
+};
+
+// tutaj jeden
+
+if ((alive player) or (player distance Vip > 100)) then {
+        systemchat "Jesteś żywy lub dalej niż 100 metrów od Vipa!";
+}; 
+
+```
+
+[for](https://community.bistudio.com/wiki/for)- Podstawowa pętla for
+
+```sqf
+for "_i" from 0 to 3 do {
+    systemchat str _i;
+};
+```
+
+[forEach](https://community.bistudio.com/wiki/forEach) - Wykonaj coś dla każdego elementu
+
+```sqf
+{_x setdamage 1} foreach allplayers;
+```
+
+[switch](https://community.bistudio.com/wiki/switch) - Wykonaj coś zależnie od tego co jest wartością.
+
+```sqf
+switch (floor random 5) do
+{
+ case 1: { hint "one"; };
+ case 2: { hint "two"; };
+ default { hint "zero, three or four" }; // zwróć uwagę na brak ":" przy default
+};
+```
+
+[params](https://community.bistudio.com/wiki/params) - Przypisujesz lokalne zmienne  z nazwami dla wygody do dostarczonych wartości, głównie po to by nie pisać w funkcji _this select 0
+
+```sqf
+params ["_unit","_posToMove"];
+_unit doMove _posToMove;
+
+// wersja bez paramsów
+(_this select 0) doMove (_this select 1);
+```
+
+[select](https://community.bistudio.com/wiki/select) - wybierasz wartości z tablicy za pomocą indexu/kodu
+
+```sqf
+private _alivePlayers = allplayers select {alive _x};
+private _PlayerNumber4 = allplayers select 3; //bo pierwszy element ma index 0
+```
+
+[setVariable](https://community.bistudio.com/wiki/setVariable) - Zapisujesz wartość (value), gdzieś (varspace) pod postacią jakieś nazwy (name) z możliwością wysłania danej do wszystkich. Wartości rozesłane globalnie są wysyłane użytkownikom którzy dołączają do rozgrywki
+
+```sqf
+_unit setVariable ["HP",10000,false];
+
+missionNamespace setvariable ["Dupek",player];
+//to praktycznie to samo co
+Dupek = player;
+```
+
+[getVariable](https://community.bistudio.com/wiki/getVariable) - Pobierasz wartość, z możliwością zdefiniowania wartośći zastępczej jakby nie było żadnej wartości
+
+```SQF
+_unit getVariable ["HP",0];
+_unit getVariable "HP";
+```
+
+## Czym jest lokalność i dlaczego jest to coś na co zawsze uważać
+
+[Bohemiowe Wiki](https://community.bistudio.com/wiki/Multiplayer_Scripting#Locality)
+
+W dużym skrócie wiele komend wymaga tego aby zostały one wywołane u "Właściciela"([owner](https://community.bistudio.com/wiki/owner)) obiektu w celu osiągnięcia efektu. Masa z nich ma również w dupie kto ,gdzie i jak je wywoła. Niektóre wymagają by to serwer je wykonał. Mogą  mieć efekt lokalny i globalny, tutaj również jest szansa na komendy gdzie ważny będzie syntax.
+
+Takie rzeczy odczytasz wchodząc na wiki komendy i sprawdzając takie ikonki. Czasami wymogi mogą zależeć od użytego syntaxu komendy
+
+![Ikonki](../_data/guides/Editor/Icons.jpg)
+
+Masa skryptów nie działa przez fakt że części skryptu są wywoływane nie u kogo muszą.
+
+Jest to cholernie ważne by mieć wzgląd na to u kogo co wywołujemy by osiągnąć rzeczy takie jakie chcemy.
+
+Przykładowo
+
+```sqf
+Player setdamage 1;
+```
+
+Odpalone tylko przez serwer dedykowany nie zrobi absolutnie nic bo tam player nie istnieje. Chcąc zabić graczy napiszesz
+
+```sqf
+{_x setdamage 1} foreach allplayers;
+```
+
+setDamage ma już w dupie kto to odpali bo przyjmuje globalne argumenty i ma globalny efekt. Ma też ten plus że odpalenie u jednej osoby, a u wszystkich raczej nie zmieni wiele jak chcemy zabić jeden obiekt, chociaż to trochę głupie by każdy w jednej chwili powie "Giń gnoju" kiedy wystarczy raz.
+
+Zakładamy że wrzucasz graczy do pojazdu i chcesz by ten pojazd doznał uszkodzeń silnika po wjechaniu w jakiś trigger. Jest on przypisane do zmiennej auto (pomijam fakt że można to zrobić modułem w edytorze połączonym z triggerem)
+
+```sqf
+auto setHitPointDamage ["hitEngine", 1.0];
+```
+
+Jest ustawione w polu na kod przy serwerowym triggerze. Odpalasz sobie misje na serwerze i może nie zadziałać. Czemu pisze że może zadziałać? jeśli pojazdem będzie prowadził Bot którego ownerem jest serwer to wtedy właścicielem pojazdu będzie również serwer.
+
+Komenda musi być wywołana u właściciela pojazdu. Najprostrzy fix tutaj to tak naprawdę odznaczenie by trigger był tylko na serwerze. Wtedy ktoś okaże się być ownerem i kod zadziała.
+
+Zakładamy jednak że chcesz aby to był dalej jednak trigger serwerowy. Wtedy trzeba użyć magicznego [remoteExec](https://community.bistudio.com/wiki/remoteExec) lub [remoteExecCall](https://community.bistudio.com/wiki/remoteExecCall) które pozwala nam wywołać zdalnie kod
+
+```sqf
+[auto,["hitEngine",1]] remoteExec ["setHitPointDamage"]; //strzela każdemu 
+[auto,["hitEngine",1]] remoteExec ["setHitPointDamage",auto] //strzela tylko u ownera auta
+```
+
+### Kto jest właścicielem kogo
+
+Najważniejszy aspekt to w sumie jednostki i pojazdy:
+
+- Gracz zawsze jest właścicielem samego siebie.
+- Owner grupy definiuje owner-a jednostek w grupie (wyłączając graczy)
+  - Jeśli masz pod sobą boty jako leader grupy to twój komputer jest ich właścicielem i je liczy
+- Ownerem pojazdu jest owner kierowcy.
+- Ownerem obiektów mapy są wszyscy (Komunizm)
+- Postawione obiekty w edytorze z natury lecą pod serwer.
+- ZEUS-owo postawione jednostki są pod zeusem który je postawił. Chyba że zmieni to sobie wywołując [setGroupOwner](https://community.bistudio.com/wiki/setGroupOwner) na serwerze by ten mu je zabrał, może też połączyć tak postawione boty do grupy której właścicielem jest serwer lub serwer może być tak ustawiony że sam będzie kradł tak zrespione jednostki pod siebie.
+
+### Przykłady wykorzystania lokalności efektu w rozgrywce
+
+Na samej lokalności można się przejechać bardzo dużo razy. Po ogarnięciu można robić całkiem fajne rzeczy.
+
+[Robienie nocy graczom (Skrypt od Veterana)](https://youtu.be/DVS6oxX73Gs?t=6283)
+
+[Bałwiany labirynt](https://www.youtube.com/watch?v=fwbFifQ7wXY)
+
+Po ogarnięciu lokalności łatwiej ugryźć temat efektów cząsteczkowych które korzystają z emiterów które trzeba tworzyć u każdego gracza. Głównie do jakiś dziwnych rzeczy działających na efektach cząsteczkowych, światłach czy dźwięku.
+
+[Latająca łódka](https://www.youtube.com/watch?v=QVvQ0xRwOgk)
+
+
+
+## Dlaczego CBA jest fajne i co warto z niego wiedzieć
+
+Bo dodaje usprawnienia które potrafią ułatwić pisanie rzeczy, zwłaszcza kiedy chcesz się pieprzyć w odpalanie w trakcie misji skryptów które mają być w kogoś wycelowane.
+
+Najbardziej pomocne w mojej opinii przy większej zabawie w skrypty są Event Handlery CBA.
+
+ Dodają one taki odpowiednik Vanillowych [EventHandlerów](https://community.bistudio.com/wiki/Arma_3:_Event_Handlers)
+
+ gdzie definiujemy własne eventy
+
+ ```sqf
+ ["EventName", {systemChat str _this}] call CBA_fnc_addEventHandler;
+ ```
+
+By później wywoływać je z pomocą callów
+
+[Global](https://cbateam.github.io/CBA_A3/docs/files/events/fnc_globalEvent-sqf.html)-[Local](https://cbateam.github.io/CBA_A3/docs/files/events/fnc_localEvent-sqf.html)-[Server](https://cbateam.github.io/CBA_A3/docs/files/events/fnc_serverEvent-sqf.html)-[Target](https://cbateam.github.io/CBA_A3/docs/files/events/fnc_targetEvent-sqf.html)
+
+```sqf
+["EventName",["Jesteś słabym Graczem"]] call cba_fnc_globalEvent; //każdy
+
+private _deadplayers = allplayers select {!(alive_x)};
+
+["EventName",["Ty zwłaszcza, bo nie żyjesz"],_deadplayers] call cba_fnc_targetEvent; //tutaj dostaną tylko martwi gracze
+
+["EventName",["Ja"]] call cba_fnc_localEvent; //tylko u siebie
+
+["EventName",["Napierdalasz po serwerze"]] call cba_fnc_serverEvent; // Tylko serwer
+```
+
+Ja korzystam z tego głównie dlatego że nie cierpie syntaxu remoteExec. Zwyczajnie lepiej mi się pisze
+
+```sqf
+["DDOS_SimpleSparks",[_StartPosRocket]] call cba_fnc_globalEvent;
+//niż jakieś
+[_StartPosRocket] remoteExec ["DDOS_SimpleSparks"];
+```
+
+[CBA_fnc_waitAndExecute](https://cbateam.github.io/CBA_A3/docs/files/common/fnc_waitAndExecute-sqf.html) - mniej wpierdala zasoby niż robienie spawna by uśpić skrypt.
+
+```sqf
+[
+  {params["_sourceSound"]; deleteVehicle _sourceSound;}, //skrypt, pisanie kodu w jednej linii niewskazane
+  [_sourceSound],                                        //argumenty wrzucone w skrypt
+  3                                                      //jak długo czekać 
+] call CBA_fnc_waitAndExecute;
+```
+
+[CBA_fnc_waitUntilAndExecute](https://cbateam.github.io/CBA_A3/docs/files/common/fnc_waitUntilAndExecute-sqf.html) - też mniej wpierdala zasobów niż spawn z waituntil. I ma fajną możliwość dodania zachowania przy tym jak za długo będzie czekał.
+
+```sqf
+//przykład użycia z mojej dziwnej misji. Tutaj jest to użyte do wywołania eksplozji _unit przez event CBA na serwerze kiedy jakiś gracz podejdzie do jednostki lub minie timeout.
+[	
+	{ //warunek
+		params ["_unit"];
+		private _nearPlayers = allplayers select {_x distance _unit < 3};
+		count _nearPlayers > 0;
+	}, 
+	{ //kod jeśli warunek zrobi się true
+		params ["_unit"];
+		["DDOS_WarbotsExplode",[_unit]] call cba_fnc_serverEvent;
+	},
+	[_unit], //arraye do code/warunku
+	random 30 + 30, //timeout
+	{ //kod jak timeout minie
+		params ["_unit"];
+		["DDOS_WarbotsExplode",[_unit]] call cba_fnc_serverEvent;
+	}
+] call CBA_fnc_waitUntilAndExecute;
+```
+
+## Pisanie tasków
 
 ## Wygląd kilku misji w edytorze. Co chciałem osiągnąc i co było skryptowane na misji
 
@@ -665,6 +1147,17 @@ Czas przygotowania:
 - Edytor - 1 godzina
 - Skrypty - 1 godzina, większość wykorzystałem zmienione rzeczy z swoich poprzednich misji.
 
+### GSM
+
+![Alt text](../_data/guides/Editor/GSM1.jpg)
+![Alt text](../_data/guides/Editor/GSM2.jpg)
+![Alt text](../_data/guides/Editor/GSM3.jpg)
+![Alt text](../_data/guides/Editor/GSM4.jpg)
+![Alt text](../_data/guides/Editor/GSM5.jpg)
+
+Z racji faktu że misja nie moja i jej nie grałem. To powiem tylko co ja widzę z samego edytora.
+Prosta misja typu zajmij wioche z helkami. Prawdopodobnie dużo rzeczy było respione z palca w trakcie misji.
+
 ### Po co to wszystko pokazuje
 
 Głównie po to aby pokazać że błędy na misjach zawsze będą (każda ma jakieś błędy, jedne nie wpływają na ogólny przebieg misje inne mogą już niestety bardziej).
@@ -673,245 +1166,10 @@ Głównie po to aby pokazać że błędy na misjach zawsze będą (każda ma jak
 
 Ukazać że krótkie/proste misje są też spoko. Misja z zniszczeniem AA na wyspie trwała może 1h, Można by wywalić tam wszystkie skrypty. wywalić simplespawny i zwyczajnie dokładniej powiedzieć o misji na jej starcie.
 
-Ostatnia misja trochę pokazuje w sumie taką małą ewolucje tego że im więcej się potrafi tym zwyczajnie mniej rzeczy się robi w edytorze. Skrypty w niej są lepszej jakości niż w misji o kradnięciu danych i widać to tym że większość skryptów wisi w plikach, a nie w initach obiektów/triggerach.
+Przedostatnia misja trochę pokazuje w sumie taką małą ewolucje tego że im więcej się potrafi tym zwyczajnie mniej rzeczy się robi w edytorze. Skrypty w niej są lepszej jakości niż w misji o kradnięciu danych i widać to tym że większość skryptów wisi w plikach, a nie w initach obiektów/triggerach.
 
-Nie jest to absolutnie pokazanie że misje mają tak wyglądać. Widzieliśmy wiele misji niektóre były w całości misje robione przez opcje w zeusie, a ich odbiór był lepszy niż moich misji czy innych super skryptowanych misji.
+Nie jest to absolutnie pokazanie że misje mają tak wyglądać. Wiele dobrych misji były w całości robione przez opcje w zeusie, wiele złych misji miało wyszukane skrypty, a się okazało że samo granie było nudne lub srkypt się wywalił.
 
-O czym to świadczy? Od dobrej misji nie wymaga się super skryptów, zajebiste rozbudowania czy by jej przebieg był super oskryptowany/przygotowany, czy były napisane najlepiej jak się da (ale warto próbować bo później łatwiej się korzysta w przyszłości ze swoich skrypcików).
+O czym to świadczy? Od dobrej misji nie wymaga się super skryptów, zajebistego rozbudowania czy by jej przebieg był super oskryptowany/przygotowany, czy były napisane najlepiej jak się da (ale warto próbować bo później łatwiej się korzysta w przyszłości ze swoich skrypcików).
 
-Misja powinna spełniać najważniejszy warunek "być taką że sam byś chciał zagrać". Jako gracz wiesz co potrafiło być meczące, co było spoko itd.
-
-## Na co zwracać uwagę w ogólnym tworzeniu misji, co pomaga, czego unikać i co zwykle nie ma sensu
-
-Ogólne pomocne porady które zwykle potrafią pomóc dostrzec problemy założeń naszej misji, czy przyspieszyć jej powstawanie.
-
-- Stawiaj sobie komentarze na mapie co gdzie chcesz by było/jest. Misje czasami robi się kilka w krótszych sesjach i zwyczajnie łatwiej zapobiec w ten sposób ciągłym zmianom kiedy wcześniej się określi co gdzie ma być. Dodatkowo osobie sprawdzającej misje łatwiej zrozumieć będzie przebieg misji jeśli dużo się postawiło.
-- Ubierać graczy na końcu. Ubierasz graczy często to tego co spotka ich na misje, jak zrobisz to na początku istnieje szansa że i tak będziesz coś poprawiał. Ubieranie graczy trwa zajebiście długo.
-Z własnego doświadczenia powiem że szybkim sposobem ubierania graczy jest wejście w ich arsenał -> wywalenie wszystkiego co mają w ubraniu, dodanie tam medykamentów i radia -> wejście w kamizelke oczyszczenie ją z granatów, dodanie magów bo pewnie były w ubraniu.
-- Pytać o pomoc jak coś zrobić, absolutnie za dużo czasu na początku się traci na rzeczy bo nie wiemy jak je osiągnąć.
-- Nie słuchać ślepo poradników, wiele rzeczy na które zwracają uwage nie mają aż tak wielkiego znaczenia. Ten też traktuj krytycznie i podchodź do niego z dozą że informacje tutaj nie muszą być zawsze dobre.
-- Nie robić pierwszych misji zbyt wielkich czy skomplikowanych. Dobrze zrobione proste rzeczy również dają satysfakcje
-- Pamiętać że gracze wiedzą tylko to co im powiesz. Robisz jakieś dziwne rzeczy czy masz jakiś narzucony plan to lepiej kogoś/jakoś na niego nakierować.
-- Podchodzić krytycznie do opinii/krytki graczy. Czasem to na co narzekają nie jest aż takim dużym problemem, nawet jeśli długo się o tym mówi. Przykładowo Mydło narzekał na dużą liczbę medykamentów dość długo. A to raczej problem niewielki bo gracz może je wyrzucić, jednak pamiętać zawsze o opiniach graczy warto.
-- Szukaj najprostrzych rozwiązań swoich problemów, staraj się wykorzystywać rzeczy które wiesz jak działają. Jak nie wiesz pytaj i pytaj o tłumaczenie. Czytaj wiki komend.
-- Testuj skrypty dzień przed misją.
-- Nie bój się mordować graczy jak grają gówno.
-- Nie przesadzaj z liczbą grenadierów, posiadają losową możliwość zabicia wszystkich (jak zaczną napierdalać z granatnika to często są w tym bardzo skuteczni)
-- Nie dawaj helek czy pojazdów tylko po to by przewiozły na początku graczy. Po co?
-- Zapierdalanie pół mapy gdzie nic się nie dzieje przez 25 minut nie jest fajne.
-- Jeśli są pojazdy dla graczy to zastanowić się nad tym co się stanie jak gracze je stracą i czy nie zdominują rozgrywki.
-
-## Ogólne Zeusowanie, problemy i rozwiązania
-
-## Przykłady wątpliwych decyzji przy tworzeniu misji z wyjaśnieniem
-
-## Wprowadzenie do pisania głupich skryptów w armie
-
-Ta część jest w sumie najważniejsza, a zarazem natrudniejsza do wytłumaczenia. Bo wszędzie pada coś o skryptach, lokalnośći, różnych plikach i zwyczajnie ciężko ogarnąc od czego zacząć. Postaram się jednak wyjaśnić jak najlepiej to co potrafię :>
-
-Uproszczeń będzie masa, niedopowiedzeń jeszcze więcej.
-
-Do pisania skryptów w armie używany jest  SQF (Status Quo Function)
-
-[Bohemiove wprowadzenie do SQF](https://community.bistudio.com/wiki/Introduction_to_Arma_Scripting)
-
-Pisząc skrypty będziesz używał [zmiennych](https://community.bistudio.com/wiki/Variables), [funkcji](https://community.bistudio.com/wiki/Function) i [komend](https://community.bistudio.com/wiki/Category:Scripting_Commands).
-
-`Zmienne` mogą być `Globalne` i `Lokalne`
-
-```sqf
-ZmiennaGlobalna = 0;
-Private _ZmiennaLokalna = 1;
-```
-
-`Zmienne` mogą być przypisane do wszyskiego i w każdej chwili mogą zmienić swoją wartość i typ.
-
-[Magiczne Zmienne](https://community.bistudio.com/wiki/Magic_Variables) są to zmienne dostępne w róznych miejsach dla wygody np. `this` lub `ThisList` w triggerach
-
-[Typy Danych](https://community.bistudio.com/wiki/Category:Data_Types)
-
-```sqf
-// to jest komentarz
-Zmienna1 = player; // komenda która zwraca jednostke gracza, Obiekt
-Zmienna2 = 1; //  Liczba
-Zmienna3 = [1,2,3]; // tablica z liczbami
-Zmienna4 = "Masz piękne Oczy"; // Tekst
-Zmienna5 = True; // Boolean
-Zmienan6 = {Player setdamage 1}; // Kod
-Zmienna7 = Zmienna5; // Inna zmienna w tym wypadku to dostanie wartość True
-Zmienna8 = 5 + 3; // liczba powstała w wyniku dodawania
-zmienna9 = Call Function_roll; // Wywołanie funkcji która zwróci jakąś wartość
-Zmienna10 = Alive player; //zwróci true albo false. Zależy czy gracz żyje
-```
-
-Będziesz używał masy Bracketów (nie wiem jak to przetłumaczyć)
-
-`[]` - `tablice` (Array) w których będziesz miał `zmienne`. Masa komend zwraca zmienne w postaci tablicy, kolejna masa potrzebuje kilku wartości by wykonać swoje działanie.
-
-```sqf
- Helka = createVehicle ["ah1w", position player, [], 0, "FLY"];
- ```
-
-`()` - Będziesz tego używał by poprawić głównie czytelność swojego kodu i zmiennić kolejność wykonywania działań.
-
-```sqf
-private _desiredTerrainHeight = (getPosWorld _Crater select 2) - (random 0.50 + 0.25); 
-```
-
-`{}` - Używane przy typie zmiennych typu `code`, przykład w komendzie [AddAction](https://community.bistudio.com/wiki/addAction)
-
-```sqf
-this addAction
-[
-	"title",	// title
-	{
-		params ["_target", "_caller", "_actionId", "_arguments"]; // script
-	},
-	nil,		// arguments
-	1.5,		// priority
-	true,		// showWindow
-	true,		// hideOnUse
-	"",			// shortcut
-	"true",		// condition
-	50,			// radius
-	false,		// unconscious
-	"",			// selection
-	""			// memoryPoint
-];
-```
-
-[Funkcje](https://community.bistudio.com/wiki/Function) służą do wywoływania przypisanych do nich skryptów. Często przyjmują dane wejściowe i mogą zwrócić nam dane wyjściowe. użwamy by nie wklejać gigantycznych ścian kodu za każdym razem. W dużym uproszczeniu `Zmienna globalna` z `kodem` który możemy uzyć
-
-```sqf
-TAG_fnc_showHint =
-{
-	hint "Function was executed!"; // Function will show a hint when executed
-};
-call TAG_fnc_showHint;
-```
-
-### Scheduler, kod zaplanowany i ten niezaplanowany (scheduled, unscheduled)
-W Armie funkocjunje coś takiego jak [Scheduler](https://community.bistudio.com/wiki/Scheduler#Scheduled_Environment). Jest coś w rodzaju Nadzorcy skryptów któremu podajemy skrypty, a on je wykonuje.
-
-Jego głównym zadaniem jest kolejkowanie skryptów przy okazji starać się sprawić by było nam jak najtrudniej popsuć armę skryptami.
-
-Wprowadzana on coś takiego jak środowiska w którym nasz kod jest wykonywany jest to `Scheduled` i `Unscheduled`.
-
-Pozwolę sobie wkleić gdzie jest kod `Scheduled`:
-
-- `init.sqf`
-- `initServer.sqf`
-- `initPlayerLocal.sqf`
-- `initPlayerServer.sqf`
-- functions with postInit attribute (although suspension is allowed, any long term suspension will halt the mission loading until suspension has finished)
-- code executed with `spawn`
-- code executed with `execVM`
-- code executed with `exec`
-- code executed with `call` from a scheduled environment
-
-`Unscheduled`:
-
-- `Debug Console`
-- `Triggers`
-- `Waypoints` (condition and activation)
-- All pre-init code executions including functions with preInit attribute
-- FSM conditions
-- Event Handlers on units and in GUI
-- EachFrame code (Event Handler / Scripted EH / onEachFrame)
-- Object initialisation fields <- Czyli nasz inity obiektów w edytorze
-- Expressions of Eden Editor entity/mission attributes
-- Code execution with call from an unscheduled environment
-- Code executed with `remoteExecCall`
-- Code inside isNil
-- SQF code called from SQS code
-- Conversation Event Handler
-- Code inside collect3DENHistory
-
-Czym się te dwa łepki róznią? W `Scheduled` masz gwarancje że kod tam wpisany będzie w takiej samej kolejności jakiej go napisałeś, przy `Unscheduled` istnieje szansa kolejność się zmieni.
-Kod scheduled ma ogranieczenie jak długo możesz być wykonywane i są to 3ms na kazdą klatkę.
-
-Kolejną ważną rzeczą jest fakt że bez środowika `Scheduled` nie użyjesz `Sleep` czyli zwyczajnego uśpienia skryptu na jakieś sekundy.
-
-Jednak tutaj odrazu powiem że przy pomocy `Spawn` tworzymy środowiko `Scheduled`
-
-```sqf
-[] spawn {
-    systemchat "Za 5 sekund zostaniesz uleczony";
-    sleep 5; 
-    player setdamage 0;
-};
-```
-### SQF Syntax
-
-Najlepiej zajrzeć sobie tutaj i poczytać [Armowe Wiki](https://community.bistudio.com/wiki/Category:Syntax)
-
-Przykłady z czego się czesto korzysta
-
-[IF](https://community.bistudio.com/wiki/if)
-
-```sqf
-if (alive player) then {
-    systemchat "Ty żyjesz"; // true
-} else { // Przy If część od else jest OPCJONALNA
-    systemchat "Nie żyjesz" // false
-};
-
-if (alive player) then {
-    player setpos (getpos teleport);
-};
-
-if (player distance Vip > 100) exitwith {
-    systemchat "Jesteś dalej niż 100 metrów od Vipa!";
-};
-
-FajnaZmienna = false;
-
-//Wykrzynik sprawia że kod tutaj się wywoła bo teraz sprawdzamy czy jest FajnaZmienna ma wartość False
-
-if !(FajnaZmienna) then { 
-    Systemchat "False";
-};
-
-// Dwa warunki muszą tutaj być true
-
-if ((alive player) and (player distance Vip > 100)) then {
-        systemchat "Jesteś żywy i dalej niż 100 metrów od Vipa!";
-};
-
-// tutaj jeden
-
-if ((alive player) or (player distance Vip > 100)) then {
-        systemchat "Jesteś żywy lub dalej niż 100 metrów od Vipa!";
-}; 
-
-```
-
-[For](https://community.bistudio.com/wiki/for)
-```sqf
-for "_i" from 0 to 3 do {
-    systemchat _i;
-};
-```
-
-[ForEach](https://community.bistudio.com/wiki/forEach)
-```sqf
-{_x setdamage 1} foreach allplayers;
-```
-[Switch](https://community.bistudio.com/wiki/switch)
-
-```sqf
-switch (floor random 5) do
-{
-	case 1: { hint "one"; };
-	case 2: { hint "two"; };
-	default { hint "zero, three or four" };
-};
-```
-
-## Czym jest lokalność i dlaczego jest to coś na co zawsze uważać
-
-## Przykłady napisania skryptów z ogólnego "chce aby X się stało". Pomocne rzeczy CBA i jego fajne komendy
-
-## Pisanie tasków
-
-## Czego unikać przy skryptach, na moich błędach
+Misja powinna spełniać najważniejszy warunek "być taką że sam byś chciał zagrać i przynosiła tobie frajdę". Jako gracz wiesz co potrafiło być meczące, co było spoko itd.
