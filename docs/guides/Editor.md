@@ -1,33 +1,30 @@
-Oto poprawiony tekst:
+# "Od zera do missionmakera" - Poradnik edytora ArmA 3
 
-# Od zera do missionmakera
+Chciałbym, aby każdy kto chce tworzyć misje, posiadał jak najwięcej informacji w jednym miejscu. I robił fajne misje, tak jak ja (DDOS) :)
 
-Chciałbym, aby każdy kto chce tworzyć misje, posiadał jak najwięcej iformacji w jednym miejscu. I robił fajne misje jak ja (DDOS) :)
+Stworzyłem niniejszy poradnik, którego celem jest pokazanie, jak rozpocząć przygodę w tworzeniu misji bez poczucia zagubienia.
 
 ## Wprowadzenie
+W tym poradniku:
 
-To jest poradnik, którego celem jest pokazanie, jak rozpocząć przygodę w tworzeniu misji, bez poczucia zagubienia.
+- przedstawię co warto zaistalować, gdzie zaoglądać i czego się wystrzegać przy szukaniu "jak coś zrobić",
+- omówię ogólny sposób używania edytora i co warto zrobić po pierwszym uruchomieniu,
+- podpowiem atrybuty oraz moduły, które są najcześciej wykorzystywane w edytorze + triggerki + najprostsze wykorzystanie simple spawnów/build spawnów z MAI (Madin AI),
+- wyjaśnię czym jest "preset",
+- zasugeruję co można robić, aby mieć jak największe szanse osiągnąć dobre fps-y,
+- objaśnię na co zwracać uwagę w ogólnym tworzeniu misji, co pomaga, czego unikać i co zwykle nie ma sensu,
+- dodam ogólne porady dot. Zeusowania, możliwych problemów i rozwiązań,
+- wprowadzę do świata skryptów (język SQF) w Armie,
+- opowiem czym jest lokalność i dlaczego jest to coś, na co zawsze trzeba uważać,
+- uzasadnię dlaczego CBA jest fajne i co warto z niego wiedzieć,
+- nauczę pisania tasków,
+- pokażę wygląd kilku misji w edytorze - co chciałem osiągnąc i co było skryptowane na misji.
 
-W tym poradniku omówię:
-
-- Co warto zaistalować, gdzie zaoglądać i czego się wystrzegać przy szukaniu "jak coś zrobić".
-- Ogólny sposób używania edytora i co warto zrobić po pierwszym uruchomieniu.
-- Attributes, moduły które w edytorze są najcześciej wykorzystywane + triggerki + najprostrze wykorzystanie simple spawnów/build spawnów z MAI-a.
-- Wyjaśnienie presetu.
-- Co można robić by mieć jak największe szanse osiągnąć dobre fps-y.
-- Na co zwracać uwagę w ogólnym tworzeniu misji, co pomaga, czego unikać i co zwykle nie ma sensu
-- Ogólne Zeusowanie, problemy i rozwiązania
-- Wprowadzenie do skryptów w armie.
-- Czym jest lokalność i dlaczego jest to coś na co zawsze trzeba uważać.
-- Dlaczego CBA jest fajne i co warto z niego wiedzieć.
-- Pisanie tasków
-- Wygląd kilku misji w edytorze. Co chciałem osiągnąc i co było skryptowane na misji.
-
-Chciałbym zaznaczyć, że nie jestem ekspertem w tej dziedzinie, więc ten poradnik zawierać będzie uproszczenia i niedopowiedzenia, które będziesz musiał samodzielnie zrozumieć. Zachęcam do dzielenia się uwagami i poprawkami.
+Chciałbym zaznaczyć, że nie jestem ekspertem w dziedzinie tworzenia misji. Ten poradnik zawierauproszczenia i niedopowiedzenia, które będziesz musiał samodzielnie zrozumieć jako missionmaker. Zachęcam do dzielenia się uwagami i poprawkami.
 
 ## 1. **Co warto zainstalować, gdzie szukać informacji i na co uważać, gdy próbujesz dowiedzieć się "jak coś zrobić"**
 
-Aby stworzyć ogólną misję, która pozwoli nam wszystkim grać, wystarczy w zasadzie sama Arma wraz z presetem. [Preset](https://discord.com/channels/386882491484602368/541577429010087937) to gotowa misja, która zawiera podstawową strukturę plików misji, na której będziesz pracować.
+Aby stworzyć ogólną misję, która pozwoli nam wszystkim zagrać, wystarczy w zasadzie sama Arma wraz z presetem. Na kanale discorda [presety_i_bzdety](https://discord.com/channels/386882491484602368/541577429010087937) znajdziesz najbardziej aktualny Preset, który jest gotowym szablonem misji Armaforces. Zawiera on podstawową strukturę plików, na której będziesz pracować.
 
 Poniżej znajdziesz programy, linki i mody, które w wielu przypadkach mogą nie być konieczne, ale warto z nimi się zapoznać, aby w przyszłości łatwiej znaleźć potrzebne informacje.
 
@@ -35,43 +32,44 @@ Poniżej znajdziesz programy, linki i mody, które w wielu przypadkach mogą nie
 
 Podczas tworzenia misji spędzisz dużo czasu na przeglądaniu stron internetowych, takich jak:
 
-- [Google](https://www.google.com/) - aby sprawdzić, czy ktoś gdzieś nie opublikował prostego skryptu, którego potrzebujesz. Wiele wyników przekieruje cię do Forum Bohemia i Wiki Army.
-- [Wiki Army](https://community.bistudio.com/wiki/Category:Scripting_Commands) - Każdy skrypt, który znajdziesz na Google, opiera się na komendach dostępnych tutaj. Większość z nich jest szczegółowo opisana, z przykładami zastosowania i uwagami społeczności.
-- [Kanały "mission_making" na naszym discordzie](https://discord.com/channels/386882491484602368/590073885362487306) - Służą podobnym celom co Google. Możesz tam zadawać pytania, a ktoś kiedyś na pewno na nie odpowie. Warto pytać, jeśli wyniki w Google nie są jasne lub masz wątpliwości, niezależnie od tego, czy dotyczy to skryptów, koncepcji czy możliwości osiągnięcia czegoś.
-- [Wiki CBA](https://cbateam.github.io/CBA_A3/docs/index/General.html) - CBA zawiera kilka przydatnych rzeczy często wykorzystywanych w podstawowych skryptach, opisanych w sekcji poświęconej skryptom.
-- [ACE Functions Wiki](https://ace3.acemod.org/wiki/functions/) - ACE jest na zdecydowanej większości misji i dodaje wiele usprawnień oraz funkcji, których brakuje w wersji podstawowej Army (głównie po to, by irytować Krystola). Zajrzyj tutaj, aby dowiedzieć się, jak stworzyć skrypt leczący gracza ACE Medical na misji.
-- Githuby/inne odpowiedniki - wiele potrzebnych rzeczy już zostało napisanych i użytych przez kogoś wcześniej. Zazwyczaj, po zadaniu pytania, otrzymasz link do funkcji lub kodu, który spełnia twoje potrzeby.
-- Tutoriale dotyczące skryptowania - [Poradniki Bohemiove: ](https://community.bistudio.com/wiki/Category:Arma_Scripting_Tutorials), [Przewodnik Ace Coding](https://ace3.acemod.org/wiki/development/coding-guidelines), [Poradnik Acre](https://acre2.idi-systems.com/wiki/development/coding-guidelines-sqf)
+- [Google](https://www.google.com/) - aby sprawdzić, czy ktoś gdzieś nie opublikował prostego skryptu, którego potrzebujesz. Wiele wyników przekieruje cię do Forum Bohemia i Wiki Army,
+- [Wiki Army (BI/BIS)](https://community.bistudio.com/wiki/Category:Scripting_Commands) - każdy skrypt, który znajdziesz na Google, opiera się na komendach dostępnych tutaj. Większość z nich jest szczegółowo opisana, z przykładami zastosowania i uwagami społeczności,
+- [kanały "mission_making" na naszym discordzie](https://discord.com/channels/386882491484602368/590073885362487306) - służą podobnym celom, co Google. Możesz tam zadawać pytania, a ktoś kiedyś na pewno na nie odpowie. Warto pytać, jeśli wyniki w Google nie są jasne lub masz wątpliwości - niezależnie od tego, czy dotyczy to skryptów, koncepcji czy też możliwości osiągnięcia czegoś zgodnie z wizją missionmakera,
+- [Wiki CBA](https://cbateam.github.io/CBA_A3/docs/index/General.html) - CBA zawiera kilka przydatnych rzeczy często wykorzystywanych w podstawowych skryptach, opisanych w sekcji poświęconej skryptom,
+- [ACE Functions Wiki](https://ace3.acemod.org/wiki/functions/) - ACE jest na zdecydowanej większości misji i dodaje wiele usprawnień oraz funkcji, których brakuje w wersji podstawowej Army (głównie po to, by irytować Krystola). Zajrzyj tutaj, aby dowiedzieć się, jak stworzyć skrypt leczący gracza ACE Medical na misji,
+- Githuby/inne odpowiedniki - wiele potrzebnych rzeczy już zostało napisanych i użytych przez kogoś wcześniej. Zazwyczaj, po zadaniu pytania, otrzymasz link do funkcji lub kodu, który spełnia twoje potrzeby,
+- tutoriale dotyczące skryptowania - [poradniki  Bohemii: ](https://community.bistudio.com/wiki/Category:Arma_Scripting_Tutorials), [przewodnik ACE Coding](https://ace3.acemod.org/wiki/development/coding-guidelines), [poradnik ACRE](https://acre2.idi-systems.com/wiki/development/coding-guidelines-sqf) .
 
-### **Mody**
+### **Mody (do tworzenia misji)**
 
-W trakcie tworzenia misji na swojej liście modów NALEŻY mieć:
+W trakcie tworzenia misji na swojej liście modów <u>NALEŻY</u> mieć:
 
-- [3denEnhanced](https://steamcommunity.com/workshop/filedetails/?id=623475643) - Dodaje wiele przydatnych narzędzi, które przyspieszają i ułatwiają tworzenie misji.
-- [ZeusEnhanced](https://steamcommunity.com/workshop/filedetails/?id=1779063631) - Rozbudowuje i ułatwia wiele aspektów zeusowania.
-- [MAI-Dev](https://steamcommunity.com/sharedfiles/filedetails/?id=1852213757) - Simple spawny, Build Spawny i twory Madina (które na ogół są wyłączone na serwerze) mogą znacząco zoptymalizować misje. Ten mod jest opcjonalny. Zwyczajnie jednak łatwo z jego pomocą zachować ładne fps-y
+- [3denEnhanced](https://steamcommunity.com/workshop/filedetails/?id=623475643) - dodaje wiele przydatnych narzędzi, które przyspieszają i ułatwiają tworzenie misji,
+- [ZeusEnhanced](https://steamcommunity.com/workshop/filedetails/?id=1779063631) - rozbudowuje i ułatwia wiele aspektów zeusowania,
+- [MAI-Dev](https://steamcommunity.com/sharedfiles/filedetails/?id=1852213757) - Simple spawny, Build Spawny i inne twory Madina (które na ogół są wyłączone na serwerze) mogą znacząco zoptymalizować misje. Z uwagi na jego wysoką użyteczność, jest on umieszczony w tej sekcji pomimo tego, że jest de facto opcjonalny - łatwo z jego pomocą zachować ładne fps-y.
 
-Opcjonalne, ale czasem przydatne mody z Warsztatu:
+Opcjonalne, ale czasem przydatne mody z Warsztatu do tworzenia misji:
 
-- [Deformer](https://steamcommunity.com/sharedfiles/filedetails/?id=2822758266) - Pozwala edytować teren w edytorze na potrzeby misji.
-- [ZEI-Zeus and Eden Interiors](https://steamcommunity.com/sharedfiles/filedetails/?id=1251859358) - Dodaje moduł, który wypełnia budynki meblami oraz zapełnia podłogi/stoliki.
-- [Emitter 3Ditor](https://steamcommunity.com/sharedfiles/filedetails/?id=1613905318) - Przydatny, gdy chcesz dodać efekty cząsteczkowe do swoich skryptów (bardzo zaawansowane).
+- [Deformer](https://steamcommunity.com/sharedfiles/filedetails/?id=2822758266) - pozwala edytować teren w edytorze na potrzeby misji,
+- [ZEI-Zeus and Eden Interiors](https://steamcommunity.com/sharedfiles/filedetails/?id=1251859358) - dodaje moduł, który wypełnia budynki meblami oraz zapełnia podłogi/stoliki,
+- [Emitter 3Ditor](https://steamcommunity.com/sharedfiles/filedetails/?id=1613905318) - przydatny, gdy chcesz dodać efekty cząsteczkowe do swoich skryptów (bardzo zaawansowane),
 - Kompozycje budynków, takie jak:
-  - [ZEC - Zeus and Eden Templates / Building Compositions](https://steamcommunity.com/sharedfiles/filedetails/?id=642912021)
-  - [ZECCUP - Zeus and Eden Templates for CUP Terrains](https://steamcommunity.com/sharedfiles/filedetails/?id=750186990)
-- [O&T Expansion Eden](https://steamcommunity.com/sharedfiles/filedetails/?id=1923321700) - Mod dodający vanillove obiekty, które zazwyczaj są trudno dostępne, np. modele piorunów, drzewa.
-- [Snapping for Eden and Zeus](https://steamcommunity.com/sharedfiles/filedetails/?id=2961167812) - Przydatny, gdy tworzysz własne miasta z wieloma płotami i obiektami. Będą starać się dopasować do innych obiektów wokół nich.
+  - [ZEC - Zeus and Eden Templates / Building Compositions](https://steamcommunity.com/sharedfiles/filedetails/?id=642912021),
+  - [ZECCUP - Zeus and Eden Templates for CUP Terrains](https://steamcommunity.com/sharedfiles/filedetails/?id=750186990),
+- [O&T Expansion Eden](https://steamcommunity.com/sharedfiles/filedetails/?id=1923321700) - mod dodający vanillove obiekty, które zazwyczaj są trudno dostępne, np. modele piorunów, drzewa,
+- [Snapping for Eden and Zeus](https://steamcommunity.com/sharedfiles/filedetails/?id=2961167812) - przydatny, gdy tworzysz własne miasta z wieloma płotami i obiektami. Będą starać się dopasować do innych obiektów wokół nich.
 
-UWAGA: Podczas tworzenia misji lepiej unikać "opcjonalnych" modów. JSRS może zostawić ślad w pliku misji, a potem okaże się, że mod jest wymagany. To nie jest coś, co całkowicie psuje misję, ale wprowadza niepotrzebny krok, aby uruchomić misję poprawnie na serwerze.
+**<u>UWAGA</u>**: Podczas tworzenia misji lepiej unikać "opcjonalnych" modów. JSRS może zostawić ślad w pliku misji, a potem okaże się, że mod jest wymagany. To nie jest coś, co całkowicie psuje misję, ale wprowadza niepotrzebny krok, aby uruchomić misję poprawnie na serwerze.
 
 ### **Programy**
 
-W przypadku prostych misji można spokojnie używać edytora Armowego oraz notatnika lub Notepad++. Jednak w przypadku bardziej zaawansowanych projektów, z pewnością docenisz narzędzia, które pomogą w efektywnym pisaniu skryptów:
+W przypadku prostych misji można spokojnie używać edytora Armowego oraz notatnika lub Notepad++. W przypadku bardziej zaawansowanych projektów, z pewnością docenisz narzędzia, które pomogą w efektywnym pisaniu skryptów:
 
-- [Visual Studio Code](https://code.visualstudio.com/) - Program do pisania kodu. Kiedy twoje skrypty zaczynają być dłuższe niż 3 linijki, docenisz fakt, że program ten proponuje komendy, koloruje czcionkę zależnie od typu danych, oraz podpowiada, gdzie zakończyć nawiasy itd.
+- [Visual Studio Code (VSC)](https://code.visualstudio.com/) - Program do pisania kodu. Kiedy twoje skrypty zaczynają być dłuższe niż 3 linijki, docenisz fakt, że program ten proponuje komendy, koloruje czcionkę zależnie od typu danych, oraz podpowiada, gdzie zakończyć nawiasy itd.
 
-  - [Rozszerzenie SQF Language](https://marketplace.visualstudio.com/items?itemName=Armitxes.sqf) - Ułatwia pracę z SQF (Scripting Language używanym w Armie).
-- Jakiś klient FTP, który pozwoli na łatwe przesyłanie plików na serwer, np. [WinSCP](https://winscp.net/eng/download.php).
+  - [rozszerzenie VSC - SQF Language](https://marketplace.visualstudio.com/items?itemName=Armitxes.sqf) - ułatwia pracę z SQF (Scripting Language używanym w Armie),
+  - [rozszerzenie VSC - SQFLint](https://marketplace.visualstudio.com/items?itemName=skacekachna.sqflint) - poszerza dokumentację funkcji SQF, "próbuje" debugować kod ale ma jeszcze wiele do poprawienia. Wyrzuca dużo problemów dot. niezdefiniowanych zmiennych ale można to ominąć stosując w filtrze problemów - niechciany tekst należy poprzedzić znakiem `!` i wpisac np. `!possibly`,
+- jakiś klient FTP, który pozwoli na łatwe przesyłanie plików na serwer, np. [WinSCP](https://winscp.net/eng/download.php).
 
 ### **Czego unikać przy szukaniu informacji na temat "jak coś zrobić"**
 
@@ -83,7 +81,7 @@ Następnie sprawdź, co ta komenda robi w Wiki Army3 i spróbuj ją zastosować 
 
 Dzięki takim działaniom zdobywasz doświadczenie i zrozumienie, co dana komenda robi, co pozwoli Ci w przyszłości tworzyć bardziej zaawansowane skrypty.
 
-Unikaj skryptów, które często zawierają wyrażenia takie jak` _this select 0`. Jest to ważne z kilku prostych powodów. Jeśli widzisz te wyrażenia wielokrotnie, to znaczy, że kod jest długi. Kiedy ktoś nie zadbał o czytelność i nie użył zrozumiałych nazw zmiennych, staje się to utrudnione do zrozumienia. Ślepe kopiowanie kodu bez zrozumienia jego działania nie jest efektywne ani mądre.
+Unikaj skryptów, które często zawierają wyrażenia takie jak` _this select 0`. Jest to ważne z kilku prostych powodów. Jeśli widzisz te wyrażenia wielokrotnie, to znaczy, że kod jest długi. Kiedy ktoś nie zadbał o czytelność i nie użył zrozumiałych nazw zmiennych, staje się to utrudnione do zrozumienia. Ślepe kopiowanie kodu bez zrozumienia jego działania nie jest, ani efektywne ani mądre.
 
 ## 2. **Ogólny sposób używania edytora i co warto zrobić po pierwszym uruchomieniu**
 
@@ -91,118 +89,117 @@ Po włączeniu edytora zobaczymy coś takiego
 
 ![CałyEdytor](../_data/guides/Editor/FullEditor.jpg)
 
-Mimo że jest tu trochę rozwijanych menu które rozwijają się w kolejne opcje to pokaże tylko te rzeczy które są najbardziej używane
+Pomimo tego, że jest tu trochę rozwijalnych menu przechodzącychj w kolejne opcje, to pokażę tylko te rzeczy, które są najbardziej używane.
 
 ### Prawy przybornik
 
 ![prawy Przybornik](../_data/guides/Editor/PrawyPrzybornik.jpg)
 
-- **F1** -> pojedyńcze jednostki podzielone na przypisanane im bazowo strony, cywile i obiekty
+- **F1** -> pojedyncze jednostki podzielone na przypisane im bazowo "strony konfliktu" oraz osobne grupy dla cywili oraz dla obiektów,
 
-- **F2** -> Kompozycje, Tak samo jak wyżej. Dodatkowo jest jeszcze "CUSTOM" w którym znajdować się będą nasze zapisane kompozycje.
+- **F2** -> kompozycje, podobnie jak wyżej. Dodatkowo, dostępna jest jeszcze opcja "CUSTOM", w której znajdować się będą nasze własne, zapisane kompozycje,
 
-- **F3** ->  Triggerki
+- **F3** -> triggerki,
 
-- **F4** -> Waypointy, aby jest móc postawić musisz mieć wybraną jakiegoś bota.
+- **F4** -> waypointy, które można postawić dopiero gdy ma się wybranego jakiegoś bota,
 
-- **F5** -> Moduły (zębatka) w które stawiasz na mapie i one coś robią, czy to same czy po aktywacji z triggerem. Później wypisze te najcześciej stosowane. Są też Logic Entities ale z tego raczej nigdy nie skorzystasz. Opisane w dalszej części  
+- **F5** -> moduły (zębatka), które stawiasz na mapie i one coś robią, czy to same czy po aktywacji z triggerem - później wypiszę te najcześciej stosowane. Są też Logic Entities, ale z tego raczej nigdy nie skorzystasz - mimo to, opisane w dalszej części poradnika,
 
-- **F6** -> Markery do stawiania na mapie
+- **F6** -> markery do stawiania na mapie.
 
-W wyszukiwarce na dole można wyszukać jakiś obiekt, kategorie, obiekty z moda (prefix moda można wybrać klikając strzałeczke po lewo)
+W wyszukiwarce, dostępnej w górnej części przybornika, można wyszukać jakąś konkretna jednostkę, wybraną kategorie, a nawet jednostki wyłącznie z wybranego moda (prefix moda można wybrać klikając strzałeczkę po lewej stronie wyszukiwarki).
 
 ### **Lewy Przybornik**
 
 ![Lewy Przybornik](../_data/guides/Editor/LewyPrzybornik.jpg)
 
-Tutaj będą się pokazywać wszystkie stawiane przez nas obiekty.
+Tutaj będą się pokazywać wszystkie stawiane przez nas obiekty. Można je przyporządkowywać do różnych warstw/folderów - w tym predefiniowanych, a także własnych (np. "Pojazdy", "Piechota", itd.).
 
-Guzikami na dole można usunąć puste foldery jeśli jakieś dodaliśmy, ukryć, zrobić nowe, zablokować edycje czy widoczność obiektów w folderze.
+Guzikami na dole można usunąć puste warstwy/foldery jeśli jakieś dodaliśmy, ukryć, zrobić nowe, zablokować edycję czy też widoczność obiektów w danej warstwie/folderze.
 
 ### **Pasek u góry i Pasek narzędzi**
 
-![Paski u góry](../_data/guides/Editor/Paski.jpg)
+![Paski u góry](../_data/guides/Editor/Paski.jpg) <!-- PROPONUJĘ OSOBNE OBRAZKI, ALBO WYCIĘTE ALBO Z ZAKREŚLENIEM -->
 
 #### **Pasek u góry**
 
 Pozwól mi omówić tylko te elementy, które mogą sprawiać trudności lub wymagają uwagi na górnym pasku narzędzi. Przedstawię je w kolejności, zaczynając od góry i wskazując, które z nich są częściej używane. Czasami podam także skróty klawiszowe.
 
-- **Scenario**
-  - **Save/Open Mission** - Przy zapisywaniu misji, zalecam odznaczenie opcji "**BINARIZE SCENARIO"**, aby ułatwić rozwiązywanie ewentualnych problemów z wczytywaniem modów po stworzeniu misji z modami których być nie powinno.
-  - **MERGE** - Pozwala na połączenie dwóch misji na tej samej mapie. Przydatne, gdy wspólnie tworzy się misje.
-- **Edit** - Do tej zakładki nie zajrzysz pratkycznie wcale,wszystkie elementy takie jak odpowiedniki CTRL+Z/Y (Cofnij/Znów) są na na paskach.
-- View
-  - **Center on Selected entity (F)** - Przydatne, gdy na mapie jest wiele obiektów i próbujesz zlokalizować wybrany obiekt z lewego panelu narzędzi.
-  - **Toggle Flashlight (L)** - Włącza latarkę, co pomaga w ciemności, jeśli gra jest ustawiona na noc.
-  - **Toggle Vision (N)** - Przełącza tryb widzenia między normalnym, noktowizyjnym a termowizyjnym.
-- Attributes
-  - **General** - Zawiera ustawienia, które są często ustawiane przez plik presetu. Zazwyczaj nie trzeba niczego zmieniać lub przeglądać w tej sekcji.
-  - **Environment** - Zawiera ustawienia dotyczące pogody i mgły. Należy unikać zmiany ustawień "visualsettings", ponieważ są one zawarte w presecie(init.sqf). Wartości "forecast" określają  wartości pogody do której pogoda dąży w określonym czasie.
-  - **Multiplayer** - To odpowiednik sekcji "General" dla trybu wieloosobowego. Zazwyczaj nie ma potrzeby dokonywania tu zmian, ponieważ większość ustawień jest skonfigurowana w pliku presetu.
-  - **Performance** - Tutaj znajdziesz ustawienia dotyczące zbierania śmieci przez kolektor Bohemii oraz ogólne ustawienia dotyczące dynamicznej symulacji.
-- **Tools** - Ta sekcja jest często używana, ponieważ zawiera wiele przydatnych narzędzi, Pojawi się tutaj również Deformer.
-  - **Debug Console (Ctrl+D)** - Otwiera konsolę debugowania, w której można wpisywać komendy, wklejać skrypty i monitorować wartości w grze dotyczące siebie, graczy i serwera (MONITORY).
-  - **Functions Viewer** - Pozwala na przeglądanie dostępnych funkcji w grze i modach.
-  - **Animations Viewer** - Pozwala na przeglądanie dostępnych animacji.
-  - **Camera/Splendid Camera** - Włącza tryb kamery, który pozwala robić znakomite zdjęcia.
-  - **Field Manual** - Zawiera poradniki Bohemii oraz dodatkowe informacje od twórców modów.
-  - **Lobby Manager** - Pozwala na konfigurację kolejności slotów na misje.
+- **Scenario:**
+  - **Save/Open Mission** - przy zapisywaniu misji, zalecam odznaczenie opcji "**BINARIZE SCENARIO"** aby ułatwić rozwiązywanie ewentualnych problemów z wczytywaniem modów po stworzeniu misji z modami, których być nie powinno,
+  - **MERGE** - pozwala na połączenie dwóch misji na tej samej mapie. Przydatne, gdy wspólnie tworzy się misje (lub naprawia pliki misji),
+- **Edit** - do tej zakładki nie zajrzysz praktycznie wcale bo wszystkie potrzebne element, takie jak odpowiedniki CTRL+Z/Y (Cofnij/Ponów), są na na paskach,
+- **View:**
+  - **Center on Selected entity (F)** - przydatne, gdy na mapie jest wiele obiektów i próbujesz zlokalizować wybrany obiekt z lewego przybornika,
+  - **Toggle Flashlight (L)** - włącza latarkę, która pomaga w ciemności, jeśli misja została ustawiona na noc,
+  - **Toggle Vision (N)** - przełącza tryb widzenia między normalnym, noktowizyjnym a termowizyjnym,
+- **Attributes:**
+  - **General** - zawiera ustawienia, które są często ustawiane przez plik presetu. Zazwyczaj nie trzeba niczego zmieniać lub przeglądać w tej sekcji,
+  - **Environment** - zawiera ustawienia dotyczące pogody i mgły. Należy unikać zmiany ustawień "visualsettings", ponieważ są one zawarte w presecie (init.sqf). Wartości "forecast" (prognoza) określają  wartości pogody, do której pogoda dąży w określonym czasie,
+  - **Multiplayer** - to odpowiednik sekcji "General" dla trybu wieloosobowego. Zazwyczaj nie ma potrzeby dokonywania tu zmian, ponieważ większość ustawień jest skonfigurowana w pliku presetu,
+  - **Performance** - tutaj znajdziesz ustawienia dotyczące zbierania śmieci przez kolektor Bohemii oraz ogólne ustawienia dotyczące dynamicznej symulacji,
+- **Tools:** - ta sekcja jest często używana, ponieważ zawiera wiele przydatnych narzędz. Pojawi się tutaj również Deformer,
+  - **Debug Console (Ctrl+D)** - otwiera konsolę debugowania, w której można wpisywać komendy, wklejać skrypty i monitorować wartości w grze dotyczące siebie, graczy i serwera (MONITORY), <!-- POTRZEBNE WYJAŚNIENIE -->
+  - **Functions Viewer** - pozwala na przeglądanie dostępnych funkcji (a przynajmniej większości) w grze i modach,
+  - **Animations Viewer** - pozwala na przeglądanie dostępnych animacji,
+  - **Camera/Splendid Camera** - włącza tryb kamery, który pozwala robić znakomite zdjęcia,
+  - **Field Manual** - zawiera poradniki Bohemii oraz dodatkowe informacje od twórców modów,
+  - **Lobby Manager** - pozwala na konfigurację kolejności slotów na misje.
 
-Tutaj zaczynają się kategorie z większą ilością narzędzi i skryptów. Napiszę tylko te, które są częściej wykorzystywane z tych kategorii.
+Tutaj zaczynają się kategorie z większą ilością narzędzi i skryptów. Opiszę tylko te, które są częściej wykorzystywane.
 
-Poprawiona wersja:
+- **Utilities:**
+  - **3den Radio** - pozwala zobaczyć dostępne pliki muzyczne oraz ich długość. Przydatne do znalezienia classname potrzebnego do odtworzenia muzyki za pomocą skryptu,
+  - **Texture Finder** - wyświetli wszystkie dostępne tekstury, choć ładowanie może potrwać. Przydatne, gdy chcesz ustawić teksturę aktualnej mapy na białej tablicy i potrzebujesz jej ścieżki,
+  - **Placement Tools** - raczej nie będziesz często korzystać z tych narzędzi. Pozwalają one na umieszczanie obiektów w określonych układach, takich jak koła, siatki czy linie,
+- **Loadout Tools:**
+  - **Equipment Storage Editor** - alternatywa do umieszczania przedmiotów w skrzyniach lub pojazdach. Czasami jest to łatwiejsze niż vanillowe dodawanie przedmiotów do pojazdów lub skrzyń,
+  - **Copy/Apply Loadouts (Ctrl+Shift+C/A)** - bardzo przydatne narzędzie przy ubieraniu graczy. Pozwala na kopiowanie i wklejanie całych ekwipunków, <!-- CZY NIE POWINNO BYĆ "Ctrl+Shift+C/V"? -->
+  - **Remove NVGs** - przydatne, gdy dodajesz jednostki domyślnie wyposażone w noktowizory. Zaznaczasz wszystkie jednostki, klikasz, i noktowizory zostaną im odebrane,
+- **Vehicle Customization** - praktycznie nic tutaj nie jest użyteczne,
+- **Debug Tools** - tutaj również nie znajdziesz przydatnych narzędzi,
+- **Miscellaneous Tools:**
+  - **Toggle Simple Object (ALT + S)** - przełącza obiektowi cechę "Simple Object", <!-- POTRZEBNE WYJAŚNIENIE -->
+  - **Toggle Simulation (ALT + E)** - przełącza symulowanie fizyki danego obiektu, 
+  - **Toggle Dynamic Simulation (ALT + D)** - przełącza symulację dynamiczną danego obiektu, <!-- POTRZEBNE WYJAŚNIENIE -->
+  - **Toggle Local Object (ALT + S)** - przełącza lokalizację/przypisanie obiektu w komunikacji sieciowej, <!-- POTRZEBNE WYJAŚNIENIE -->
+- **Settings:**
+  - **Preferences** - preferencje edytora. Polecam odznaczyć opcję domyślnego binarizowania nowych misji.
+  - **Addon Options** - umożliwia dostosowanie ustawień modów,
+- **Play:**
+  - **Play in Multiplayer** - odpalisz tutaj selfhosta aby móc dołączyć drugą instacją gry i sprawdzić poprawność lokalności skryptów,
+- **Help** - zbiór różnych pomocnych linków. Czasem bardziej, czasem mniej.
 
-- **Utilities**
-  - **3den Radio** - Pozwala zobaczyć dostępne pliki muzyczne oraz ich długość. Przydatne do znalezienia classname potrzebnego do odtworzenia muzyki za pomocą skryptu.
-  - **Texture Finder** - Wyświetli wszystkie dostępne tekstury, choć ładowanie może potrwać. Przydatne, gdy chcesz ustawić teksturę aktualnej mapy na białej tablicy i potrzebujesz jej ścieżki.
-  - **Placement Tools** - Raczej nie będziesz często korzystać z tych narzędzi. Pozwalają one na umieszczanie obiektów w określonych układach, takich jak koła, siatki czy linie.
-- **Loadout Tools**
-  - **Equipment Storage Editor** - Alternatywa do umieszczania przedmiotów w skrzyniach lub pojazdach. Czasami jest to łatwiejsze niż vanillowe dodawanie przedmiotów do pojazdów lub skrzyń.
-  - **Copy/Apply Loadouts (CTRL+Shift+C/A)** - Bardzo przydatne narzędzie przy ubieraniu graczy. Pozwala na kopiowanie i wklejanie całych ekwipunków.
-  - **Remove NVGs** - Przydatne, gdy dostajesz jednostki domyślnie wyposażone w noktowizory. Zaznaczasz wszystkie jednostki, klikasz, i noktowizory zostaną im odebrane.
-- **Vehicle Customization** - Praktycznie nic tutaj nie jest użyteczne.
-- **Debug Tools** - Tutaj również nie znajdziesz przydatnych narzędzi.
-- **Miscellaneous Tools**
-  - **Toggle Simple Object (ALT + S)** - Przełącza obiektowi  Simple Object.
-  - **Toggle Simulation (ALT + E)** - Przełącza symulację na wybranym obiekcie.
-  - **... Dynamic Simulation (ALT + D)** - Przełącza symulację dynamiczną.
-  - **... Local Object (ALT + S)** -Przełącza Obiekt w sferze komunikacji sieciowej.
-- **Settings**
-  - **Preferences** - Preferencje do edytora. Polecam odznaczyć opcję domyślnego binarizowania nowych misji.
-  - **Addon Options** - Umożliwia dostosowanie ustawień modów.
-- **Play**
-  - **Play in Multiplayer** - Odpalisz tutaj selfhosta aby móc dołączyć drugą instacją gry i sprawdzić poprawność lokalności skryptów.
-- **Help** - Zbiór różnych pomocnych linków. Czasem bardziej, czasem mniej.
+Reszta to zwykłe odnośniki do dokumentacji moda bądź naszego wiki.
 
-Reszta to zwykłe odnośniki do dokumentacji moda bądź naszego wiki
+#### **Pasek narzędzi**
 
-#### **Pasek Poniżej**
+![Paski u góry](../_data/guides/Editor/Paski.jpg) <!-- PROPONUJĘ OSOBNE OBRAZKI, ALBO WYCIĘTE ALBO Z ZAKREŚLENIEM -->
 
-![Paski u góry](../_data/guides/Editor/Paski.jpg)
+Zaczynając od lewej:
 
-Zaczynając od lewej
-
-- Nowy plik , otwórz plik, zapisz plik, opublikuj misje w steam
-- Cofnij ostatnią czynność (UNDO) , Cofnij cofnięcie zmiany (REDO)
-- Zwykły kursor, Przesuwanie, Obracanie, Skalowanie.
-- Switch do widgetów który zmienia ich orientacje między obiektem i światem, włączenie przyciągania obiektów do ziemii, wlączenie przyciągania do powierzchni
-- Przesuwanie o dany dystans, obracanie o dany kąt, trzecie to niby area scaling tylko nie wiem z czym to działa.
-- ustawienia pogody(czemu to się nazywa intel?), wlączenie mapy, włączenie latarki, przełączenia trybu kamery
-- Ostatnia rzecz nas nie interesuje, zawsze Scenario
+- Nowy plik, Otwórz plik, Zapisz plik, Opublikuj misję w Steam Workshop,
+- Cofnij ostatnią czynność (UNDO), Przywróć ostatnią czynność po jej cofnięciu (REDO),
+- Zwykły kursor, Przesuwanie, Obracanie, Skalowanie,
+- Switch do widgetów który zmienia ich orientację między obiektem i światem, Włączenie przyciągania obiektów do ziemi, Wlączenie przyciągania do powierzchni,
+- Przesuwanie o dany dystans, Obracanie o dany kąt, Trzecie to niby area scaling tylko nie wiem z czym to działa,
+- Ustawienia pogody (czemu to się nazywa intel?), Wlączenie mapy, Włączenie latarki, Przełączenia trybu kamery,
+- Ostatnia rzecz nas nie interesuje - w multiplayer zawsze musi być ustawione "Scenario".
 
 ### **Podsumowanie przydatnych skrótów klawiszowych**
 
-    - Toggle Vision (N)
-    - Center on Selected entity (F)
-    - Toggle Flashlight (L)
-    - Debug Console (Ctrl+D)
-    - Toggle Simple object (ALT + S) 
-    - Toggle Simulation (ALT + E) 
-    - Toggle Dynamic Simulation (ALT + D)
-    - Toggle Local Object (ALT + S) 
-    - Copy/Apply Loadouts (CTRL + Shift + C / CTRL + Shift + A)
-    - Undo/Redo (CTRL + Z / CTRL + Y)
-    - Delete Selected (CTRL + X lub DELETE)
+    - Toggle Vision (N),
+    - Center on Selected entity (F),
+    - Toggle Flashlight (L),
+    - Debug Console (Ctrl+D),
+    - Toggle Simple object (ALT + S),
+    - Toggle Simulation (ALT + E),
+    - Toggle Dynamic Simulation (ALT + D),
+    - Toggle Local Object (ALT + S),
+    - Copy/Apply Loadouts (CTRL + Shift + C / CTRL + Shift + A), 
+  <!-- CZY NIE POWINNO BYĆ "Ctrl+Shift+C/V"? -->
+    - Undo/Redo (CTRL + Z / CTRL + Y),
+    - Delete Selected (CTRL + X lub DELETE).
 
 ### **Podstawowe klikanie w edytorze i wigety**
 
