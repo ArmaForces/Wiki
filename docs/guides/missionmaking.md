@@ -40,6 +40,11 @@ Przygotowując misję, będziesz chciał (a w naszej grupie, nawet musiał) korz
 
 Aby ustawić modlistę na misji, wystarczy że wybierzesz mody (lub skorzystasz z naszych gotowych modlist) i uruchomisz grę. Przy każdym kolejnym uruchomieniu Army pamiętaj żeby uruchamiać tę samą modlistę. W razie pomyłki edytor pokaże czego brakuje.
 
+**UWAGA**
+Przy tworzeniu misji używaj modlisty tylko z modami wymaganymi, bez modów opcjonalnych. Później może to powodować problemy. 
+
+W przypadku kiedy postanawiasz zrezygnować z jakiegoś moda/modlisty i nie chcesz zaczynać przygotowywania misji od początku, usuń wszystkie elementy modów, których chcesz się pozbyć i zapisz misję bez binaryzowania - w edytorze wybierz `Zapisz jako...` (`Save as...`) i **odznacz** opcję `Zbinaryzuj pliki scenariusza` (`Binarize the Scenario File`). Następnie w folderze misji znajdź plik `mission.sqm`, otwórz go i znajdź: `addons[]={...}` i usuń całą zawartość między klamrami. Powtórz czynność dla `class AddonsMetaData {...}`. Wtedy wczytaj misję ponownie na poprawnej modliście. 
+
 ## **4. Ubierz lalki**
 
 Masz już postawionych graczy, czas dostosować ich liczbę, ubranka i sprzęt.
@@ -187,6 +192,8 @@ Pamiętaj o tym żeby ją wywołać globalnie, a nie lokalnie, bo wtedy zakończ
 Do ustawienia botów wykorzystaj poradniki @Madin. Dobrą praktyką jest ustawianie 10-15 botów na gracza. Oczywiście liczba jest bardzo orientacyjna i zależy to od charakteru misji, jej długości, rodzaju uzbrojenia itd.
 
 Pamiętaj tylko o tym, że Buildspawny mogą nie działać ze wszystkimi budynkami. Zdarza się tak, że działa np. jeden budynek na wioskę, co może na szybko powodować wrażenie, że działa a jednak nie działa. 
+
+Kiedy decydujesz się na użycie SimpleSpawna i chcesz rozmieścić boty w budynkach to możesz uprościć ten proces korzystając z funkcji `Obsadź budynki...` (`Garrison Buildings...`). Zaznacz jednostki które mają być rozmieszczone w budynkach, kliknij prawym przyciskiem myszy i wybierz ww. opcję. Ustaw promień w jakim mają być obsadzone budynki (jak ma być to tylko jeden budynek to ustaw małą wartość) i gotowe. Przy obsadzaniu większej liczby budynków pamiętaj że boty zawsze będą się grupować do formacji, czyli będą wybiegać z budynków, dlatego rozważ wyłączenie poruszania się botom lub rozdzielenie sekcji do pojedynczych jednostek, żeby tego uniknąć. 
 
 ## **9. Importowanie ustawień do testów**
 
