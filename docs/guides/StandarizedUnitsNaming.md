@@ -2,7 +2,7 @@
 
 
 
-## Wstęp
+## Wstęp + rozpiska komunikacji radiowej
 
 W Armaforces przyjęło się stosowanie zwyczajowego, standardowego nazewnictwa jednostek. Należy tu zaznaczyć, że zwyczajowe nazewnictwo nie jest obowiązkowe (nie jest wymuszane na missionmakerach). Missionmaker może wprowadzić inne nazewnictwo w swojej misji. 
 
@@ -12,8 +12,8 @@ Przykładowo, w przeszłosci występowały różnice w nazewnictwie, np.:
 
 W związku z powyższym, należy przyjmować poniższe nazewnictwo wyłącznie jako "dobre praktyki". 
 
-Adekwatnie, standardowy sposób komunikacji na misji przez radio używajac ACRE2, dostępny jest tutaj: 
-[Standardowa rozpiska komunikacji](#Standardowa-rozpiska-komunikacji)
+Adekwatnie, standardowy sposób komunikacji na misji, używając radia z ACRE2, dostępny jest tutaj: 
+[Standardowa rozpiska komunikacji](https://docs.google.com/spreadsheets/d/1gDA2t6YibfjD4XZMrUL5eZU3Ge1cIQzBiBfBN6-AW08/edit#gid=1772918807)
 
 <u>Stosowane skróty</u>:
 
@@ -113,9 +113,3 @@ Adekwatnie, standardowy sposób komunikacji na misji przez radio używajac ACRE2
 - #### **Xray** (JFO - wsparcie Zulu <span style="color:red">???</span>) <!-- prośba o potwierdzenie, potencjalnie wymagana dyskusja -->
 - #### **Yankee** (NCO - wsparcie Zulu <span style="color:red">???</span>) <!-- prośba o potwierdzenie, potencjalnie wymagana dyskusja -->
 - #### **Zulu** (głównodowodzący)
-
-
-
-# Standardowa rozpiska komunikacji
-
-Dostępna pod następującym linkiem do arkusza Google: [Komunikacja](https://docs.google.com/spreadsheets/d/1gDA2t6YibfjD4XZMrUL5eZU3Ge1cIQzBiBfBN6-AW08/edit#gid=1772918807)
