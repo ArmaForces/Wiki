@@ -1,115 +1,56 @@
 # Standardowe nazewnictwo jednostek
 
+## Wstęp
 
+W Armaforces przyjęło się, że jednostki zazwyczaj nazywa się tak samo - przez lata wypracowane zostało nazewnictwo zwyczajowe, przedstawione w niniejszym artykule.
 
-## Wstęp + rozpiska komunikacji radiowej
+Należy tu zaznaczyć, że nazewnictwo zwyczajowe nie jest obowiązkowe (nie jest wymuszane na missionmakerach) - należy je przyjąć jako wyłącznie jako "dobre praktyki". Missionmaker może wprowadzić inne nazewnictwo w swojej misji:
 
-W Armaforces przyjęło się stosowanie zwyczajowego, standardowego nazewnictwa jednostek. Należy tu zaznaczyć, że zwyczajowe nazewnictwo nie jest obowiązkowe (nie jest wymuszane na missionmakerach). Missionmaker może wprowadzić inne nazewnictwo w swojej misji. 
+- nazwać jednostki zupełnie inaczej, w celu zachowania klimatu misji (*Alpha* -> *Anton*, *Bravo* -> *Boris*, itd.),
+- zmienić funkcję niektórym jednostkom (np. polecenie *Mike* roli transportu lądowego zamiast powietrznego).
 
-Przykładowo, w przeszłosci występowały różnice w nazewnictwie, np.:
-- jednostki były nazywane zupełnie inaczej, np. w celu zachowania klimatu misji (np. Alpha -> Anton, Bravo -> Boris, itd.),
-- rzadziej używane jednostki (inne niż np. Alpha, Bravo, Kilo, November, Zulu, itd.) miały inne funkcje niż zazwyczaj (np. Mike był transportem lądowym zamiast powietrznym).
-
-W związku z powyższym, należy przyjmować poniższe nazewnictwo wyłącznie jako "dobre praktyki". 
-
-Adekwatnie, standardowy sposób komunikacji na misji, używając radia z ACRE2, dostępny jest tutaj: 
+Adekwatnie, standardowy sposób komunikacji na misji, używając radia z ACRE2, dostępny jest tutaj:
 [Standardowa rozpiska komunikacji](https://docs.google.com/spreadsheets/d/1gDA2t6YibfjD4XZMrUL5eZU3Ge1cIQzBiBfBN6-AW08/edit#gid=1772918807)
 
-<u>Stosowane skróty</u>:
+### Stosowane skróty
 
-**ATC** - Air Traffic Control
+**ATC** - *Air Traffic Control* (kontroler ruchu powietrznego, może wyznaczać zadania oraz wskazywać obszary odpowiedzialności wsparciu powietrznemu)
 
-**BPP** - Biedna Pie*dolona Piechota
+**CAS** - *Close Air Support* (powietrzne wsparcie ogniowe, zazwyczaj blisko własnych sił lądowych)
 
-**CAS** - Close Air Support
+**JTAC** - *Joint Terminal Attack Controller* (koordynator różnych rodzajów wojsk)
 
-**FAC** - <span style="color:red">Forward Air Controller</span> <!-- prośba o potwierdzenie, potencjalnie wymagana dyskusja -->
+**MEDEVAC** - *MEDical EVACuation* (ewakuacja medyczna)
 
-**JFO** - <span style="color:red">Joint Fire Observer</span> <!-- prośba o potwierdzenie, potencjalnie wymagana dyskusja -->
+**NCO** - *Non-Commissioned Officer* ("Second in command", prawa ręka Zulu)
 
-**JTAC** - Joint Terminal Attack Controller
+## Jednostki uporządkowane wg alfabetu fonetyczego ICAO
 
-**MEDEVAC** - MEDical EVACuation
-
-**NCO** - Non-Commissioned Officer
-
-
-
-## Uporządkowane wg rodzajów wojsk:
-
-### <u>Dowództwo</u>
-
-- #### **Zulu** (głównodowodzący)
-
-- #### **Xray** (JFO - wsparcie Zulu <span style="color:red">???</span>) <!-- prośba o potwierdzenie, potencjalnie wymagana dyskusja -->
-
-- #### **Yankee** (NCO - wsparcie Zulu <span style="color:red">???</span>) <!-- prośba o potwierdzenie, potencjalnie wymagana dyskusja -->
-
-
-### <u>Siły lądowe (podstawa)</u>
-
-- #### **Alpha** (BPP)
-
-- #### **Bravo** (BPP)
-
-- #### **Charlie** (BPP)
-
-- #### **Delta** (BPP)
-
-
-### <u>Siły lądowe (wsparcie)</u>
-
-- #### **Golf** (wsparcie logistyczne)
-
-- #### **Juliett** (JTAC/FAC/ATC <span style="color:red">???</span>) <!-- prośba o potwierdzenie, potencjalnie wymagana dyskusja -->
-
-- #### **Kilo** (wsparcie pancerne)
-
-- #### **Papa** (wsparcie artyleryjskie) 
-
-
-### <u>Wojska specjalne</u>
-
-- #### **India** (komandosi)
-
-- #### **Lima** (snajperzy/rozpoznanie)
-
-
-### <u>Siły powietrzne</u>
-
-- #### **Mike** (transport)
-
-- #### **Oscar** (MEDEVAC)
-
-- #### **November** (CAS)
-
-
-
-## Uporządkowane wg alfabetu fonetyczego ICAO:
-
-- #### **Alpha** (BPP)
-- #### **Bravo** (BPP)
-- #### **Charlie** (BPP)
-- #### **Delta** (BPP)
-- #### **Echo** (<span style="color:red">???</span>) <!-- jakiś rodzaj specjalsów? prośba o wsparcie -->
-- #### **Foxtrot** (<span style="color:red">???</span>) <!-- jakiś rodzaj specjalsów? prośba o wsparcie --> 
-- #### **Golf** (wsparcie logistyczne)
-- #### **Hotel** (<span style="color:red">???</span>) <!-- nie pamiętam, prośba o wsparcie --> 
-- #### **India** (komandosi)
-- #### **Juliett** (JTAC/FAC/ATC <span style="color:red">???</span>) <!-- prośba o potwierdzenie, potencjalnie wymagana dyskusja -->
-- #### **Kilo** (wsparcie pancerne)
-- #### **Lima** (snajperzy/rozpoznanie)
-- #### **Mike** (transport)
-- #### **November** (CAS)
-- #### **Oscar** (MEDEVAC)
-- #### **Papa** (wsparcie artyleryjskie) 
-- #### **Quebec**(<span style="color:red">???</span>) <!-- nie pamiętam, prośba o wsparcie --> 
-- #### **Romeo** (<span style="color:red">???</span>) <!--  jakiś rodzaj specjalsów? nie pamiętam, prośba o wsparcie --> 
-- #### **Sierra** (<span style="color:red">???</span>) <!--  jakiś rodzaj specjalsów? nie pamiętam, prośba o wsparcie --> 
-- #### **Tango** (<span style="color:green">wolny</span>) <!-- prośba o potwierdzenie, potencjalnie wymagana dyskusja -->
-- #### **Uniform** (<span style="color:green">wolny</span>) <!-- prośba o potwierdzenie, potencjalnie wymagana dyskusja -->
-- #### **Victor** (<span style="color:green">wolny</span>) <!-- prośba o potwierdzenie, potencjalnie wymagana dyskusja -->
-- #### **Whiskey** (<span style="color:red">???</span>) <!-- nie pamiętam, prośba o wsparcie --> 
-- #### **Xray** (JFO - wsparcie Zulu <span style="color:red">???</span>) <!-- prośba o potwierdzenie, potencjalnie wymagana dyskusja -->
-- #### **Yankee** (NCO - wsparcie Zulu <span style="color:red">???</span>) <!-- prośba o potwierdzenie, potencjalnie wymagana dyskusja -->
-- #### **Zulu** (głównodowodzący)
+| Znak wywoławczy |      Rodzaj wojsk      |         Funkcja        |
+|:---------------:|:----------------------:|:----------------------:|
+|      Alpha      | Siły lądowe (podstawa) |        Piechota        |
+|      Bravo      | Siły lądowe (podstawa) |        Piechota        |
+|     Charlie     | Siły lądowe (podstawa) |        Piechota        |
+|      Delta      | Siły lądowe (podstawa) |        Piechota        |
+|       Echo      |           ???          |           ???          |
+|     Foxtrot     |           ???          |           ???          |
+|       Golf      | Siły lądowe (wsparcie) |  wsparcie logistyczne  |
+|      Hotel      |           ???          |           ???          |
+|      India      |    Wojska specjalne    |        komandosi       |
+|     Juliett     | Siły lądowe (wsparcie) |        JTAC/ATC        |
+|       Kilo      | Siły lądowe (wsparcie) |    wsparcie pancerne   |
+|       Lima      |    Wojska specjalne    |  snajperzy/rozpoznanie |
+|       Mike      |     Siły powietrzne    |        transport       |
+|     November    |     Siły powietrzne    |           CAS          |
+|      Oscar      |     Siły powietrzne    |         MEDEVAC        |
+|       Papa      | Siły lądowe (wsparcie) | wsparcie artyleryjskie |
+|      Quebec     |           ???          |           ???          |
+|      Romeo      |           ???          |           ???          |
+|      Sierra     |           ???          |           ???          |
+|      Tango      |           ???          |           ???          |
+|     Uniform     |           ???          |           ???          |
+|      Victor     |           ???          |           ???          |
+|     Whiskey     |           ???          |           ???          |
+|       Xray      |        Dowództwo       |   wsparcie Zulu i NCO  |
+|      Yankee     |        Dowództwo       |           NCO          |
+|       Zulu      |        Dowództwo       |     głównodowodzący    |
