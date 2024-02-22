@@ -177,6 +177,12 @@ Wykaz czynności, które należy zastosować w zależności od ciśnienia i tęt
 
 Należy zapamiętać najważniejszy próg ciśnienia oraz tętna – 50/60, tętno 40. Od tych wartości zaczyna istnieć jakakolwiek szansa na odzyskanie przytomności.
 
+### Zaszywanie ran
+
+Aby zaszyć rany, musisz być medykiem oraz posiadać zestaw do szycia. Upewnij się, że wszystkie rany są zabandażowane i przystąp do zaszywania ran. **Ponieważ każdą część ciała musisz zaszyć osobno**, najlepiej jest zająć się ranami najbardziej rozległymi - pozwoli to na mniejszą utratę krwi w przypadku, gdyby bandaże się otworzyły.
+
+Tak jak w przypadku każdej akcji ACE, możesz przerwać ją przy użyciu klawisza ESC - na przykład w sytuacji, gdzie jako medyk znajdujesz się w sytuacji bezpośredniego zagrożenia, musząc obronić siebie lub rannego.
+
 ### Leki
 
 - Adrenalina służy do podniesienia przede wszystkim tętna, a przy tym ciśnienia krwi. W większości przypadków będzie miała ona za zadania skontrować działanie morfiny, obniżające tętno w przypadku nieprzytomnego rannego.
