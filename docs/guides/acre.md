@@ -16,7 +16,10 @@ Addons -> ACRE2 Enabled)
 1. Otwórz Options -> Controls -> Configure addons -> Z listy: ACRE2
 2. Usuń przypisanie dla Default radio key
 3. Usuń przypisanie dla Babel Cycle Language
-4. Przypisz klawisz CAPSLOCK do Alt radio key 1
+4. Przypisania klawiszy - w grze możesz używać maksymalnie trzech radiów, a aktywacja konkretnego następuje przez wciśnięcie przycisku Push-To-Talk. Aby sprawdzić aktualną konfigurację przycisków, zwróć uwagę na pozycje "Radio Transmit" znajdujące się na szczycie ustawień ACRE2. Zalecamy pozostawienie domyślnych ustawień - dalsza część poradnika będzie używała poniższych ustawień:
+    * Radio 1 Transmit (PTT 1) - CAPS LOCK
+    * Radio 2 Transmit (PTT 2) - CTRL + CAPS LOCK
+    * Radio 3 Transmit (PTT 3) - ALT + CAPS LOCK
 
 # Rozpiska komunikacji
 
@@ -53,7 +56,7 @@ PRC-117F - długie
 
 W żadnym z nich nie istnieje pojęcie zmiany bloków, zmienia się wyłącznie kanały. Współdzielą one kanały! Zdanie wypowiedziane na kanale 1 przez PRC-152 będzie słyszane na kanale 1 w PRC-117F.
 
-W większości przypadków używane jest jako drugie radio obok 343, aby na nim coś powiedzieć należy użyć klawiszy Lewy CTRL+Capslock.
+W większości przypadków używane jest jako drugie radio obok 343, aby na nim coś powiedzieć należy użyć klawiszy CTRL + CAPS LOCK.
 
 ## Ustawienie kanału
 
@@ -71,7 +74,7 @@ W większości przypadków używane jest jako drugie radio obok 343, aby na nim 
 
 # Sprawdzenie ustawień i komunikacja
 
-!> Po zmianie kanału (oraz bloku) na poprawny, sprawdź czy ustawiłeś go poprawnie poprzez zgłoszenie się na radiu (Capslock to mówienie na radiu), mówiąc np. "Alpha 1, check"
+!> Po zmianie kanału (oraz bloku) na poprawny, sprawdź czy ustawiłeś go poprawnie poprzez zgłoszenie się na radiu (CAPS LOCK i pozostałe bindy), mówiąc np. "Alpha 1, check"
 
 # FAQ
 
